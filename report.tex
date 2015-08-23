@@ -1,0 +1,285 @@
+\documentclass[a4paper, 11pt]{article}
+
+%\usepackage[parfill]{parskip}
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage[T1]{fontenc}
+
+\newlength{\drop}
+\usepackage{epigraph}
+\usepackage{dirtytalk}
+\usepackage{wrapfig}
+\usepackage{quoting}
+
+%\usepackage[pdftex,active,tightpage]{preview} 
+%\setlength\PreviewBorder{2mm} 
+\usepackage{gantt}
+\renewcommand{\epigraphflush}{center}
+\renewcommand{\epigraphwidth}{1\textwidth}
+
+%........................
+% Header/Footers
+%........................
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+
+%%%%%%%START%%%%%%%
+\begin{document}
+  \begin{titlepage}
+	\thispagestyle{empty}
+    \drop=0.1\textheight
+    \centering
+    \vspace*{\baselineskip}
+    \rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
+    \rule{\textwidth}{0.4pt}\\[\baselineskip]
+    {\Large{MSc Computer Science\\[0.3\baselineskip] }} 	
+    {\huge{Project Report\\[0.3\baselineskip] }}
+	
+    \rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt}
+    \rule{\textwidth}{1.6pt}
+    \\[\baselineskip]
+    \scshape
+    {\Large Ubiquitous Consumer Inventory Management System For Waste Prevention\\}
+%    Location, date from--to\par
+    \vspace*{2\baselineskip}
+    %Edited by \\[\baselineskip]
+    {\normalsize\emph{Supervisor: }{\large Professor George Roussos\par}}
+    {\normalsize\emph{Author: }{\large Keimi Okamoto\par}}
+    
+    {\itshape 2015}
+    \vfill
+    {\large BIRKBECK UNIVERSITY OF LONDON\par}
+{\footnotesize DEPARTMENT OF COMPUTER SCIENCE \& INFORMATION SYSTEMS}\par
+  \end{titlepage}
+  
+%\maketitle
+
+%........................
+% Contents
+%.......................
+\pagenumbering{roman}
+\tableofcontents
+\clearpage
+
+\clearpage
+
+
+
+%........................
+% Introduction
+%........................
+
+\pagestyle{fancy}
+\renewcommand{\sectionmark}[1]{\markboth{#1}{}}
+\fancyhf{} % sets both header and footer to nothing
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\footskip}{80pt}
+\lhead{}
+\chead{}
+\rhead{Project Report}
+\pagenumbering{arabic}
+\lfoot{Section \thesection}
+\cfoot{\fancyplain{}{\leftmark }} 
+\rfoot{\thepage\ of \pageref{LastPage}}
+
+\setcounter{page}{1}
+\section{Introduction}
+
+\subsection{Abstract}
+What the project is about in regards to the proposal. The problem i am trying to solve. Over production food.
+Tackeling the core, If the consumers stop over purchasing the supermarkets will stop over producing. 
+
+
+\subsection{Structure of the report}
+Present the reader with an overview of each chapter.
+
+\subsection{Development Methodology}
+UML and agile. And the reasons why this is a productive methodology.
+Version control for documentation and history. 
+\clearpage
+
+%..................................................
+% Background
+%..................................................
+\section{Background \& Analysis}
+This section will present the problem and the main intent for the project.
+
+\subsection{Motivation}
+The intention of the system is to aid the reduction in food waste created by households. \vspace{\baselineskip}
+Globally food waste has exceeded to two billion tonnes annually. Spoiling food emits methane, a particularly harmful greenhouse gas, contributing to the warming of the earth?s surface and threatening the echo-system. Due to human activity methane gas being released into the atmosphere has increased two and a half folds since the industrial revolution. Further more, resources used during the rearing and plantation process for the produce, as well as the use of packaging and transportation all contribute to the detrimental effect to our environment. Local councils are continuously pressured to fuel more funds into waste management and landfill sites are overflowing and space to accommodate the waste is fast diminishing.\vspace{\baselineskip}
+In the United Kingdom alone consumers and households are responsible for at least seven million tonnes of waste, whilst in comparison the retailers contribute only a mere two hundred and twenty five thousand tonnes. Although the reported figures implicate the household as the largest corporate for the generation of food waste, retailers are in fact the catalyst for the mass generation of waste. Frequent buy-one-get-one-free and multi-buy discounts hosted by retailers contribute largely to the problem and is a clear indication of over production. Competition for market share is fierce between the retailers and goods must always be available at a lower price than that of their neighbours. Farmers and other producers alike are pressured to over produce to accommodate for a sudden rise in demand or to simply to cover the risk of a potentially bad harvest. But when the sales forecast is not met or the harvest is overly fruitful, supermarkets will routinely deduct the price of food nearing expiration as a method of damage control to manage their investment. Consumers are enticed by the attractive offer of discounted goods and encouraged to over purchase goods that they do not need and will most likely not consume before the sell by date. Thus, waste that was originally created by the retailers is pushed down the chain, and the waste resides with the consumers. This aggressive promotion strategy not only causes monetary waste to the individual but also engineers the blind participation in driving up the demand of goods and in turn encouraging the overproduction of food.\vspace{\baselineskip}
+The other problem is simply human errors. We purchase products with the good intention of consuming them. But as the demands of the fast paced modern life-style take priority, we forget all about the existence of an item and inadvertently let it expire where it is no longer fit for consumption. Expiry dates for produces vary and keeping track of all dates is a near impossible task by relying on human memory alone. A popular study carried out in by George Armitage Miller, a prominent figure in the field of cognitive psychology discovered that the number of objects an average human can hold in working memory is seven, give or take two. With this limited capacity is no surprise that once the fridge door is shut it is inevitable that some of the produce is destined for the waste bin.
+\subsection{Current Waste Reduction Methods}
+Governments and organizations have implemented various measures to tackle the rising figures in waste. \subsubsection{Manual Labour} 
+Such efforts include manual labour by distributing flyers aimed to inform and educate individuals if the implications of waste. Engaging with communities by setting up stalls and public demonstrations to raise awareness has been a favourable method for generating interest. This form of engagement is inspirational and informative but an expensive operation; sustaining the interest of the community is tough and effects are short lived.\subsubsection{Anaerobic Digestion} 
+Waste management organizations such as Biffa and the retail giant Sainsbury?s have collaborated to recycle food waste using anaerobic digestion. By utilising the gases produced from the waste they are able to generate power to sustain the running of retail stores. Anaerobic digestion creates a circular process where the waste produced by the retailers is pumped back into the production line to fuel the very instrument creating the problem. This method has been questioned as to whether it is a true solution as the resources used throughout the process also leave a carbon footprint.\subsubsection{Smart Fridge} Smart fridges were introduced in the early 2000?s as a home inventory management system. Designed to be integrated with our every day lives and to monitor the inhabitants investment. The user inputs the product on either an embedded screen or mobile device. The fridge was designed to keep track and inform the owner if items are running low on stock and support the automatic replenishment of goods. The primary hindrance to sales of this product is largely attributed to cost and lack of infrastructure. \subsubsection{Nano Technology} 
+Most recently, Nano technology has been used to monitor the stages of decomposition in foods. A small gel like cube emits a colour corresponding to a particular stage of decomposition and visually representing the shelf life of the product. Nano technology is able to remove the need for printed sell-by-dates but it still requires the inhabitants to actively open the fridge door, view, process and memorise the colours of the tags for various products. 
+
+\subsubsection{Mobile Application} 
+
+
+\subsection{Proposed Solution}
+
+\subsubsection{Automation}
+\subsubsection{Mobile \& Ubiqueitous}
+
+\subsection{Current Item Level Product Identification Methods}
+\subsubsection{Barcode}
+
+\subsection{Requirements}
+\subsubsection{Functional Requirements}
+\subsubsection{Non-Functional Requirements}
+
+
+\subsection{Technologies}
+\subsubsection{Mobile Platforms}
+Why i chose android over iOS
+\subsubsection{Java}
+Android Java and JavaEE compare and discuss. Scalaroid? IAndroid studio inteliJ like IDE.
+\subsubsection{RFID}
+Currently used in xyz, provide examples. Different classifications. 
+\subsubsection{Cloud Services} 
+Getting rid of the burden of server maintenace. 
+\paragraph{Google and Amazon Web Services}
+A bit of history
+%\paragraph{In the past decade cloud services have become increasingly popular alternative to the traditional in house main frame architecture due to their highly available nature and the ability to scale on demand. }
+
+
+\subsection{NoSQL vs Relational}
+%\paragraph{DynamoDB is a NoSQL database created by Amazon. 
+%The reason to NoSQL, why not relations 
+%TWhy amazon created it then opened it to the public}
+
+\clearpage
+
+%..................................................
+% Design
+%..................................................
+\section{Design}
+
+\subsection{Design Strategy}
+
+Activity diagrams
+Sequence diagram
+
+\subsection{Architecture Design} Describes hardware software and network infrastructure. 
+\subsection{Interface Design} How the user will navigate through the application. Navigation methods such as buttons and settings.
+
+\subsection{Database and File specification} Defines exactly what date is being stored and where they will be stored.
+
+\subsubsection{DynamoDB} 
+DynamoDB is a NoSQL key, value store distributed database designed by Amazon. The original motivation behind this was to cope with the massive amounts of data Amazon produces. The primary principal for DynamoDB is high availability, with data being replicated across multiple nodes if a node eliminating the single point of failure. Heartbeat signals are sent to the. 
+\subsubsection{Android Storage} 
+
+\subsection{Program Design}This defines the programs that need to be written and exactly what each program will do. 
+
+\subsubsection{Amazon Web Service SDK}
+\subsubsection{Multi-platform Consistency}
+\subsubsection{Amazon Web Service Cognito}
+
+%WHAT - Definition, history
+%TWHY - Motivation what is the reason why i chose it.
+%INTENT
+%COMPARISON
+%OUTCOME
+
+%what cloud services to use. Google app engine and sales force. Azure.
+%What is a cloud service: 
+
+%Why did i choose it?
+%Available anytime, how it thrives big data. Admals Law Gustofsons Law
+%Failure tolerance. how cloud services replicate data across nodes. 
+%Why is it so popular. 
+%Cost. 
+%AWS stack for mobile development.
+%Security
+
+\(This may for the conclusion or implementation.\)Security:
+
+\subsubsection{Mobile Application} 
+%Android. IOS. Acknowledge the existence of IOS but focus on android. 
+
+\subsubsection{RFID Client} %Different classifications of NFC.
+
+%...................................................
+% Implementation
+%..................................................
+\section{Implementation}
+
+\subsection{System Construction}
+\subsection{Android} 
+
+\subsubsection{Life Cycle of a Process}
+java for android.
+
+\subsubsection{User Interface and Responsiveness}
+
+\subsubsection{Networking}
+
+\subsubsection{Threads and concurrency management}
+Design static or dynamic comparidant
+Activity life cycle.
+UI and threads
+
+\subsection{Setting up Amazon Web Service}
+%Amazon Web Services operates on a 'pay as you go' basis. Each account is billed only for the rescouces used. Typically most organisations employ multiple employees with various responsibilities and roles, such employers must have different access rights and privileges to resources to avoid unintentional modification of data. For instance a database administrator should have read-write and table creating deletion and creating access whilst a programmer may not need the full access right to the table. AWS handles this the use of Identity Authentication Management (IAM).
+
+%Horror stories of people uploading their credentials on the web such as version control.
+%AWS created Cognito to avoid users having to hardcode credentials into application that are intended to mass distribution
+
+\subsubsection{Amazon Web Service IAM}
+
+
+\subsubsection{Amazon Web Service Cognito}
+%Cognito is part of the AWS mobile development kit. AWS have enforced the use of Cognito to avoid the need to hard code credentials into applications that are intended for mass distribution such as mobile applications. Cognito uses Identity Pools to authenticate a user. Identity pools have a security policy where the details of the policy is created. 
+
+Example policy goes here
+
+\subsection{User Authentication}
+\subsubsection{Third-party Authentication}
+
+
+%-facebook google iam roles
+%cognito and the use of identity pool. 
+%-Analytics, how these api's provide analytics, user patterns
+
+\subsection{Data Management}
+\subsubsection{Amazon Web Service DynamoDB}
+%What is it? Key value, uses JSON serialisation. supports strings integers etc. 
+%Limitations 4k blocks
+
+%Discoveries?
+%Outcome
+\subsubsection{Relational model vs NoSQL model}
+%TNoSQL comparison to relational database. 
+\subsubsection{Data modelling} 
+\subsubsection{Caching Data} offline use 
+
+\subsection{RFID Client}%classification, rather than using the android phone i used an actual reader.
+
+%...................................................
+% Testing and evaluation
+%..................................................
+\section{Testing and Evaluation}
+Importance, maintainable code.
+\subsection{Unit test and mocking}
+\subsection{Integration Test}
+
+%...................................................
+% Conclusion 
+%..................................................
+\section{Review and Conclusion}
+\subsection{Security Concerns} look at link from George. 
+
+
+
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+
+
+
+
+
+\end{document}
