@@ -6,16 +6,17 @@
 \contentsline {subsection}{\numberline {2.1}Motivation}{2}
 \contentsline {subsubsection}{\numberline {2.1.1}Environment}{2}
 \contentsline {subsubsection}{\numberline {2.1.2}Public Health}{3}
-\contentsline {subsubsection}{\numberline {2.1.3}Aiding the Modern Lifestyle}{3}
+\contentsline {subsubsection}{\numberline {2.1.3}Aiding the modern lifestyle}{3}
 \contentsline {subsection}{\numberline {2.2}Current Waste Reduction Methods}{3}
 \contentsline {subsubsection}{\numberline {2.2.1}Manual Labour}{3}
 \contentsline {subsubsection}{\numberline {2.2.2}Anaerobic Digestion}{4}
 \contentsline {subsubsection}{\numberline {2.2.3}Smart Fridge}{4}
 \contentsline {subsubsection}{\numberline {2.2.4}Nano Technology}{4}
-\contentsline {subsubsection}{\numberline {2.2.5}Mobile Application}{5}
+\contentsline {subsubsection}{\numberline {2.2.5}Mobile Application}{4}
+\contentsline {subsubsection}{\numberline {2.2.6}Radio Frequency Identification}{5}
 \contentsline {subsection}{\numberline {2.3}Proposed Solution}{5}
 \contentsline {subsubsection}{\numberline {2.3.1}Automation}{5}
-\contentsline {subsubsection}{\numberline {2.3.2}Mobile \& Ubiqueitous}{5}
+\contentsline {subsubsection}{\numberline {2.3.2}Ubiqueitous}{5}
 \contentsline {subsection}{\numberline {2.4}Current Item Level Product Identification Methods}{5}
 \contentsline {subsubsection}{\numberline {2.4.1}Barcode}{5}
 \contentsline {subsection}{\numberline {2.5}Requirements}{5}
