@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.27)  25 AUG 2015 00:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.27)  27 AUG 2015 17:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -656,32 +656,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9] (./report.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[9] (./report.aux) ) 
 Here is how much of TeX's memory you used:
  13255 strings out of 493117
  266104 string characters out of 6135433
- 308395 words of memory out of 5000000
+ 308397 words of memory out of 5000000
  16434 multiletter control sequences out of 15000+600000
  15177 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,11n,61p,996b,213s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr
-/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/l
-ocal/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfcc0900.pfb></usr/loc
-al/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local
-/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/t
-exlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/tex
-live/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texli
-ve/2014/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive
-/2014/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb>
-Output written on report.pdf (12 pages, 191882 bytes).
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-supe
+r/cm-super-t1.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-supe
+r/sfbx1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/
+sfbx1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sf
+bx1440.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfcc
+0900.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfcc12
+00.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfcc1440
+.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1095.p
+fb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb>
+Output written on report.pdf (12 pages, 192220 bytes).
 PDF statistics:
  91 PDF objects out of 1000 (max. 8388607)
  65 compressed objects within 1 object stream
