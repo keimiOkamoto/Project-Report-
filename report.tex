@@ -122,6 +122,8 @@ In addition to the environmental damage, there are growing concerns over the pub
 \subsubsection{Aiding the modern lifestyle}
 The final problem is simply human errors. We purchase produce with the good intention of consuming them. But as the demands of our fast paced modern life-style take priority, we often forget all about the existence of what we stocked and inadvertently let our stock expire until it is no longer fit for consumption. Expiry dates for different produces vary, and keeping track of all dates is a near impossible task by relying on human memory alone. A popular study carried out in by George Armitage Miller, a prominent figure in the field of cognitive psychology discovered that the number of objects an average human can hold in working memory is seven, give or take two. With this limited capacity is no surprise that once the fridge door is closed, it is inevitable that some of the produce is destined for the waste bin.
 
+Many homes are made up of multiple inhabitants. Errors such as double purchasing due to lack of communication is a common occurrence. If two occupiers notice an item is low on stock at different times they may both set out to replace the item, resulting in duplicate items being purchased and increasing the risk of waste occurring. 
+
 
 \vspace{\baselineskip}
 \vspace{\baselineskip}
@@ -146,23 +148,63 @@ Apps such Love Food Hate Waste and other product login applications all suffer f
 \subsubsection{Radio Frequency Identification} 
 Radio frequency identification (RFID) has been utilised in the food supply chain for many years for inventory tracking. Recently Dutch researchers have developed sensor enabled tag, the tag monitors atmospherical changes in the environment the produce is exposed to during transit. By analysing the data collected with the Pasteur sensor tag an estimate shelf life for the produce is generated thus reducing the likelihood of waste occurring. Currently this technology is only available for large-scale shipments and used only to protect the transportation between producers to retailers. 
 
-
 \subsection{Proposed Solution}
+In the past the British government has intervened in attempts to reduce the production of waste. Officials pressured retailers to abolish the multi-buy offers but the suggestion was met with reluctance. Instead a compromise was met and the revised promotions allowed the consumers a wider variety of products to choose from. It is evident from this that persuading retailers to prioritise the reduction of waste over the potential increase in revenue is an up hill battle. The multi-buy marketing strategy has proven successful in increasing market share and responsible trading can easily be overlooked in favour of this.For this reason the proposed solution is not to try to persuade the retailer to change their practice but the consumer. By equipping the consumer with an application that will monitor the contents of their fridge over stocking can be avoided and avoid the temptation of the seemingly attractive offers. Driven by the incentive of monetary savings, the system intends to encourage the user to stop excessive purchasing, as a side effect this intends to prevent the generation of waste occurring at the consumer level. Theoretically creating an up stream ripple effect that will keep the waste at bay with the retailers, forcing the termination of over production. 
 
-In the past the British government has intervened in attempts to reduce the production of waste. Officials pressured retailers to abolish the multi-buy offers but the suggestion was met with reluctance, instead a compromise was met and the revised promotions allowed the consumers a wider variety of products to choose from. It is evident from this that persuading retailers to prioritise the reduction of waste over the potential increase in revenue is an up hill battle. The multi-buy marketing strategy has proven successful in increasing revenue and responsible trading can easily be overlooked in favour of this.For this reason the proposed solution is not to try to persuade the retailer to change their practice but the consumer. By equipping the consumer with an application that will monitor the contents of their fridge, over stocking can be avoided and reduce the likelihood of succumbing to the attractive offers. With the incentive of monetary savings and the positive side-effect of waste prevention, the system intends to achieve an up stream ripple effect that will keep the waste at bay with the retailers that in turn will provide enough motivation for the retailers to termination of over production. 
+\subsubsection{System Overview}
+
+\subsection{Requirements Definition Report}
+A requirement definition report is provided to support the development of the new system. Here the requirements are organised into categories following the UML recommended presentation as described in the book, ?System Analysis and Design with UML? by Tegarden and Wixom. (Suggestion was taken from the Information Systems module as part of the MSc Computer Science.)
+
+\subsection{Automated Identification}
+For the fridge or application to be able to manage and monitor inventory, registration of a product is a vital. As mentioned in the previous chapter, the primary draw back of existing systems is the lack of automation in the registration process.Convincing the consumer to change habitual behaviour such as restocking the fridge is difficult and will be met with resistance unless the newer process yields better results than the current. Thus the user having to either manually punch in the product name, or having to scan each item with a barcode reader before the restocking process can be completed is unappealing and discourages the user from using the technology. 
+
+\subsubsection{Current Item Level Product Identification Methods} 
+Current methods of item level identification predominantly use barcodes. Barcodes are have been prevalent since the 199999 and have been used to identify items for years. These codes are made up of a of a binary number that uniquely identify a collection of items. The registration process requires a laser to scan the code and nothing must obstructs the line of sight between the code ad the laser. The smallest scratch or dirt can render the code unreadable.  Barcodes hold very little data. 
+
+\subsubsection{RFID Item Level Product Identification}
 
 
-\subsubsection{Automation}
+\subsection{Ubiquitous}
 
 
-\subsubsection{Ubiqueitous}
-
-\subsection{Current Item Level Product Identification Methods}
-\subsubsection{Barcode}
-
-\subsection{Requirements}
-\subsubsection{Functional Requirements}
 \subsubsection{Non-Functional Requirements}
+\underline{Operational Requirements}
+\begin{itemize}
+  \item The mobile element system should be able to operate in an Android environment.   \item The system should be portable and accessible from a mobile phone.
+  \item The system should persist and read data from the database. 
+  \item The system should scan and register RFID tags.
+\end{itemize}
+\underline{Performance Requirements}
+\begin{itemize}
+  \item The user interface must constantly be active.
+  \item The system should be available for use 24 hours per day, 365 days per year.  \item Any communication between the clients and the server must not exceed 5 seconds.
+  \item The system should be durable and preserve data integrity.
+\end{itemize}
+\underline{Security Requirements}
+\begin{itemize}
+  \item Only authorised users can use the system.
+  \item Users may only see the content of the subscribed fridge.
+\end{itemize}
+
+\vspace{\baselineskip}
+
+\subsubsection{Functional Requirements}
+\underline{Multi-user Support}
+\begin{itemize}
+  \item Any user should be able to join an existing fridge by entering the unique code provided to the primary owner of the fridge.
+\end{itemize}
+\underline{Information Viewing}
+\begin{itemize}
+  \item User should be able to view a list of their stocked items.  \item User should be able to view the expiry date of the items with ease.   \item User should be able to see the quantity for each item.  \item User should be notified when an item is added to their inventory.
+  \item Users may only see the content of the subscribed fridge.
+\end{itemize}
+\underline{User Registration}
+\begin{itemize}
+  \item Users should be able to login to the system.   \item User should be able to logout by pressing the logout button.\end{itemize}
+
+
+
 
 
 \subsection{Technology Analysis}
@@ -201,15 +243,15 @@ Sequence diagram
 
 \subsection{Database and File specification} Defines exactly what date is being stored and where they will be stored.
 
-\subsubsection{DynamoDB} 
+\subsubsection{NoSQL Database} 
 DynamoDB is a NoSQL key, value store distributed database designed by Amazon. The original motivation behind this was to cope with the massive amounts of data Amazon produces. The primary principal for DynamoDB is high availability, with data being replicated across multiple nodes if a node eliminating the single point of failure. Heartbeat signals are sent to the. 
-\subsubsection{Android Storage} 
+\subsubsection{Internal Device Storage} 
 
 \subsection{Program Design}This defines the programs that need to be written and exactly what each program will do. 
 
-\subsubsection{Amazon Web Service SDK}
+\subsubsection{Delay Tolerant Networking}
+\subsubsection{Distributed Authentication \& Access Control}
 \subsubsection{Multi-platform Consistency}
-\subsubsection{Amazon Web Service Cognito}
 
 %WHAT - Definition, history
 %TWHY - Motivation what is the reason why i chose it.
@@ -246,7 +288,7 @@ DynamoDB is a NoSQL key, value store distributed database designed by Amazon. Th
 \subsubsection{Life Cycle of a Process}
 java for android.
 
-\subsubsection{User Interface and Responsiveness}
+\subsubsection{User Experience Design and Responsiveness}
 
 \subsubsection{Networking}
 
@@ -310,9 +352,6 @@ Importance, maintainable code.
 \vspace{\baselineskip}
 \vspace{\baselineskip}
 \vspace{\baselineskip}
-
-
-
 
 
 \end{document}
