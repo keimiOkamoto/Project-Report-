@@ -16,11 +16,11 @@
 \contentsline {subsubsection}{\numberline {2.2.6}Radio Frequency Identification}{5}
 \contentsline {subsection}{\numberline {2.3}Proposed Solution}{5}
 \contentsline {subsubsection}{\numberline {2.3.1}System Overview}{5}
-\contentsline {subsection}{\numberline {2.4}Requirements Definition Report}{5}
-\contentsline {subsection}{\numberline {2.5}Automated Identification}{6}
-\contentsline {subsubsection}{\numberline {2.5.1}Current Item Level Product Identification Methods}{6}
-\contentsline {subsubsection}{\numberline {2.5.2}RFID Item Level Product Identification}{6}
-\contentsline {subsection}{\numberline {2.6}Ubiquitous}{6}
+\contentsline {subsection}{\numberline {2.4}Automated Identification}{5}
+\contentsline {subsubsection}{\numberline {2.4.1}Current Item Level Product Identification Methods}{6}
+\contentsline {subsubsection}{\numberline {2.4.2}RFID Item Level Product Identification}{6}
+\contentsline {subsection}{\numberline {2.5}Ubiquitous}{6}
+\contentsline {subsection}{\numberline {2.6}Requirements Definition Report}{6}
 \contentsline {subsubsection}{\numberline {2.6.1}Non-Functional Requirements}{6}
 \contentsline {subsubsection}{\numberline {2.6.2}Functional Requirements}{7}
 \contentsline {subsection}{\numberline {2.7}Technology Analysis}{7}
