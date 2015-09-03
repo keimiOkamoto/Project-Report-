@@ -14,55 +14,56 @@
 \contentsline {subsubsection}{\numberline {2.2.4}Nano Technology}{4}
 \contentsline {subsubsection}{\numberline {2.2.5}Mobile Application}{4}
 \contentsline {subsubsection}{\numberline {2.2.6}Radio Frequency Identification}{5}
-\contentsline {subsection}{\numberline {2.3}Proposed Solution}{5}
+\contentsline {subsection}{\numberline {2.3}Proposed Approach to the Problem}{5}
 \contentsline {subsubsection}{\numberline {2.3.1}System Overview}{5}
-\contentsline {subsection}{\numberline {2.4}Automated Identification}{6}
-\contentsline {subsubsection}{\numberline {2.4.1}Current Item Level Product Identification Methods}{6}
-\contentsline {subsubsection}{\numberline {2.4.2}Proposed Item Level Product Identification}{6}
-\contentsline {subsection}{\numberline {2.5}Ubiquitous}{6}
-\contentsline {subsection}{\numberline {2.6}Requirements Definition Report}{6}
-\contentsline {subsubsection}{\numberline {2.6.1}Non-Functional Requirements}{7}
-\contentsline {subsubsection}{\numberline {2.6.2}Functional Requirements}{7}
-\contentsline {subsection}{\numberline {2.7}Technology Analysis}{8}
-\contentsline {subsubsection}{\numberline {2.7.1}Mobile Platforms}{8}
-\contentsline {subsubsection}{\numberline {2.7.2}Java}{8}
-\contentsline {subsubsection}{\numberline {2.7.3}RFID}{8}
-\contentsline {subsubsection}{\numberline {2.7.4}Cloud Services}{8}
-\contentsline {paragraph}{Google and Amazon Web Services}{8}
-\contentsline {subsubsection}{\numberline {2.7.5}NoSQL vs Relational}{8}
-\contentsline {section}{\numberline {3}Design}{9}
-\contentsline {subsection}{\numberline {3.1}Design Strategy}{9}
-\contentsline {subsection}{\numberline {3.2}Architecture Design}{9}
-\contentsline {subsection}{\numberline {3.3}Interface Design}{9}
-\contentsline {subsection}{\numberline {3.4}Database and File specification}{9}
-\contentsline {subsubsection}{\numberline {3.4.1}NoSQL Database}{9}
-\contentsline {subsubsection}{\numberline {3.4.2}Internal Device Storage}{9}
-\contentsline {subsection}{\numberline {3.5}Program Design}{9}
-\contentsline {subsubsection}{\numberline {3.5.1}Delay Tolerant Networking}{9}
-\contentsline {subsubsection}{\numberline {3.5.2}Distributed Authentication \& Access Control}{9}
-\contentsline {subsubsection}{\numberline {3.5.3}Multi-platform Consistency}{9}
-\contentsline {subsubsection}{\numberline {3.5.4}Mobile Application}{10}
-\contentsline {subsubsection}{\numberline {3.5.5}RFID Client}{10}
-\contentsline {section}{\numberline {4}Implementation}{10}
-\contentsline {subsection}{\numberline {4.1}System Construction}{10}
-\contentsline {subsection}{\numberline {4.2}Android}{10}
-\contentsline {subsubsection}{\numberline {4.2.1}Life Cycle of a Process}{10}
-\contentsline {subsubsection}{\numberline {4.2.2}User Experience Design and Responsiveness}{10}
-\contentsline {subsubsection}{\numberline {4.2.3}Networking}{10}
-\contentsline {subsubsection}{\numberline {4.2.4}Threads and concurrency management}{10}
-\contentsline {subsection}{\numberline {4.3}Setting up Amazon Web Service}{10}
-\contentsline {subsubsection}{\numberline {4.3.1}Amazon Web Service IAM}{10}
-\contentsline {subsubsection}{\numberline {4.3.2}Amazon Web Service Cognito}{10}
-\contentsline {subsection}{\numberline {4.4}User Authentication}{10}
-\contentsline {subsubsection}{\numberline {4.4.1}Third-party Authentication}{10}
-\contentsline {subsection}{\numberline {4.5}Data Management}{10}
-\contentsline {subsubsection}{\numberline {4.5.1}Amazon Web Service DynamoDB}{10}
-\contentsline {subsubsection}{\numberline {4.5.2}NoSQL model}{10}
-\contentsline {subsubsection}{\numberline {4.5.3}Data modelling}{10}
-\contentsline {subsubsection}{\numberline {4.5.4}Caching Data}{10}
-\contentsline {subsection}{\numberline {4.6}RFID Client}{10}
-\contentsline {section}{\numberline {5}Testing and Evaluation}{10}
-\contentsline {subsection}{\numberline {5.1}Unit test and mocking}{11}
-\contentsline {subsection}{\numberline {5.2}Integration Test}{11}
-\contentsline {section}{\numberline {6}Review and Conclusion}{11}
-\contentsline {subsection}{\numberline {6.1}Security Concerns}{11}
+\contentsline {subsection}{\numberline {2.4}Mobile \& Ubiquity}{6}
+\contentsline {subsection}{\numberline {2.5}Automated Identification}{6}
+\contentsline {subsubsection}{\numberline {2.5.1}Current Item Level Product Identification Methods}{6}
+\contentsline {subsubsection}{\numberline {2.5.2}Proposed Item Level Product Identification}{7}
+\contentsline {subsubsection}{\numberline {2.5.3}Case Studies}{7}
+\contentsline {paragraph}{Transparency \& Consumer Rights}{7}
+\contentsline {subsection}{\numberline {2.6}Requirements Definition Report}{8}
+\contentsline {subsubsection}{\numberline {2.6.1}Non-Functional Requirements}{8}
+\contentsline {subsubsection}{\numberline {2.6.2}Functional Requirements}{8}
+\contentsline {subsection}{\numberline {2.7}Technology \& Risk Analysis}{9}
+\contentsline {subsubsection}{\numberline {2.7.1}Mobile Platforms}{9}
+\contentsline {subsubsection}{\numberline {2.7.2}RFID}{10}
+\contentsline {subsubsection}{\numberline {2.7.3}Cloud Services}{10}
+\contentsline {paragraph}{Google and Amazon Web Services}{10}
+\contentsline {subsubsection}{\numberline {2.7.4}Data Storage}{10}
+\contentsline {section}{\numberline {3}Design}{11}
+\contentsline {subsection}{\numberline {3.1}Design Strategy}{11}
+\contentsline {subsection}{\numberline {3.2}Architecture Design}{11}
+\contentsline {subsection}{\numberline {3.3}Interface Design}{11}
+\contentsline {subsection}{\numberline {3.4}Database and File specification}{11}
+\contentsline {subsubsection}{\numberline {3.4.1}NoSQL Database}{11}
+\contentsline {subsubsection}{\numberline {3.4.2}Internal Device Storage}{11}
+\contentsline {subsection}{\numberline {3.5}Program Design}{11}
+\contentsline {subsubsection}{\numberline {3.5.1}Delay Tolerant Networking}{11}
+\contentsline {subsubsection}{\numberline {3.5.2}Distributed Authentication \& Access Control}{11}
+\contentsline {subsubsection}{\numberline {3.5.3}Multi-platform Consistency}{11}
+\contentsline {subsubsection}{\numberline {3.5.4}Mobile Application}{12}
+\contentsline {subsubsection}{\numberline {3.5.5}RFID Client}{12}
+\contentsline {section}{\numberline {4}Implementation}{12}
+\contentsline {subsection}{\numberline {4.1}System Construction}{12}
+\contentsline {subsection}{\numberline {4.2}Android}{12}
+\contentsline {subsubsection}{\numberline {4.2.1}Life Cycle of a Process}{12}
+\contentsline {subsubsection}{\numberline {4.2.2}User Experience Design and Responsiveness}{12}
+\contentsline {subsubsection}{\numberline {4.2.3}Networking}{12}
+\contentsline {subsubsection}{\numberline {4.2.4}Threads and concurrency management}{12}
+\contentsline {subsection}{\numberline {4.3}Setting up Amazon Web Service}{12}
+\contentsline {subsubsection}{\numberline {4.3.1}Amazon Web Service IAM}{12}
+\contentsline {subsubsection}{\numberline {4.3.2}Amazon Web Service Cognito}{12}
+\contentsline {subsection}{\numberline {4.4}User Authentication}{12}
+\contentsline {subsubsection}{\numberline {4.4.1}Third-party Authentication}{12}
+\contentsline {subsection}{\numberline {4.5}Data Management}{12}
+\contentsline {subsubsection}{\numberline {4.5.1}Amazon Web Service DynamoDB}{12}
+\contentsline {subsubsection}{\numberline {4.5.2}NoSQL model}{12}
+\contentsline {subsubsection}{\numberline {4.5.3}Data modelling}{12}
+\contentsline {subsubsection}{\numberline {4.5.4}Caching Data}{12}
+\contentsline {subsection}{\numberline {4.6}RFID Client}{12}
+\contentsline {section}{\numberline {5}Testing and Evaluation}{12}
+\contentsline {subsection}{\numberline {5.1}Unit test and mocking}{13}
+\contentsline {subsection}{\numberline {5.2}Integration Test}{13}
+\contentsline {section}{\numberline {6}Review and Conclusion}{13}
+\contentsline {subsection}{\numberline {6.1}Security Concerns}{13}
