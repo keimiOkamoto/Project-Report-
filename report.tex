@@ -11,6 +11,11 @@
 \usepackage{dirtytalk}
 \usepackage{wrapfig}
 \usepackage{quoting}
+\usepackage{courier}
+%\usepackage{titlesec}
+
+
+%\setcounter{secnumdepth}{4}
 
 %\usepackage[pdftex,active,tightpage]{preview} 
 %\setlength\PreviewBorder{2mm} 
@@ -103,17 +108,12 @@ Version control for documentation and history.
 % Background
 %..................................................
 \section{Background \& Analysis}
-This section presents the problem and the intent for the project supported by the analysis of currently available processes. 
+The first section of this chapter presents the problem and the motivation for the project. Then an analysis of currently available processes that are implemented to tackle the problem will be discussed. The last part will provide an analysis of the technologies that will aid the development of the system that will lead to the design of the system. 
 
 \subsection{Motivation}
-The intention of the system is to aid the reduction in food waste created by households. Below highlight the motivation for the project and the cause of waste. 
 
 \subsubsection{Environment}
-Globally food waste has exceeded to two billion tonnes annually. Spoiling food emits methane, a particularly harmful greenhouse gas contributing to the warming of the earth's surface and threatening the echo-system. Due to human activity methane gas being released into the atmosphere has increased two and a half folds since the industrial revolution. Further more, resources used during the rearing and plantation process for the produce, as well as the use of packaging and transportation all contribute to the detrimental effect on our environment. Local councils are continuously pressured to fuel more funds into waste management recourses, landfill sites are overflowing and space to accommodate the waste is fast diminishing.
-
-In the United Kingdom alone consumers and households are responsible for at least seven million tonnes of waste, whilst in comparison the retailers contribute a mere two hundred and twenty five thousand tonnes. Although the reported figures implicate the household as the largest culprit, retailers are in fact the catalyst force behind the mass generation of waste. Frequent buy-one-get-one-free and multi-buy discounts hosted by retailers contribute largely to the problem. Competition for market share is fierce between the retailers and goods must always be available at a lower price than that of their neighbours. Farmers and other producers alike are pressured to over produce to accommodate for a sudden rise in demand or to simply cover the risk of a potentially bad harvest. But when the sales forecast is not met or the harvest is overly fruitful, supermarkets will routinely deduct the price of food nearing expiration as a method of damage control for their investment. 
-
-Consumers are enticed by the attractive offer of a free item after purchasing two, and encouraged to over purchase food that they do not need and will most likely not consume before the use-by-date. Thus, waste that was originally created by the retailers is pushed down the chain, residing with the consumers. This aggressive sales strategy not only causes monetary waste to the individual but also engineers the blind participation in driving up demands in goods, in turn encouraging the overproduction of food. 
+Globally, food waste has exceeded to two billion tonnes annually. This excessive generation of waste has a severe impact on our environment. Spoiling foods emit methane, a particularly harmful greenhouse gas contributing to the warming of the earth?s surface and casing the expansion of the ozone hole. The ozone layer is vital to the survival of living organisms as it protects against harmful radiation form the sun. Too much exposure can result to illnesses such as cancer and eye damage. Resources used during the rearing and plantation process for produce as well as the manufacturing materials for packaging and fuel used for transportation all contribute to the detrimental effect on our environment. Councils are continuously pressured to fuel more funds into waste management recourses and landfill sites are overflowing at such a rapid pace, space to accommodate the waste is fast diminishing.In the United Kingdom alone consumers and households are responsible for at least seven million tonnes of waste, whilst in comparison the retailers contribute a mere two hundred and twenty five thousand tonnes. Although the reported figures implicate the household as the largest culprit, retailers are in fact the catalyst force behind the mass generation of waste. Frequent buy-one-get-one-free and multi-buy discounts hosted by retailers contribute largely to the problem. Competition for market share is fierce between the retailers and goods must always be available at a lower price than that of their neighbours. Farmers and other producers alike are pressured to over produce to accommodate for a sudden rise in demand or to simply cover the risk of a potentially bad harvest. But when the sales forecast is not met or the harvest is overly fruitful, supermarkets will routinely deduct the price of food nearing expiration as a method of damage control for their investment. Consumers are enticed by the attractive offer of a free item after purchasing two, and encouraged to over purchase food that they do not need and will most likely not consume before the use-by-date. Thus, waste that was originally created by the retailers is pushed down the chain, residing with the consumers. This aggressive sales strategy not only causes monetary waste to the individual but also engineers the blind participation in driving up demands in goods, in turn encouraging the overproduction of food. 
 
 
 \subsubsection{Public Health}
@@ -149,25 +149,109 @@ Apps such Love Food Hate Waste and other product login applications all suffer f
 Radio frequency identification (RFID) has been utilised in the food supply chain for many years for inventory tracking. Recently Dutch researchers have developed sensor enabled tag, the tag monitors atmospherical changes in the environment the produce is exposed to during transit. By analysing the data collected with the Pasteur sensor tag an estimate shelf life for the produce is generated thus reducing the likelihood of waste occurring. Currently this technology is only available for large-scale shipments and used only to protect the transportation between producers to retailers. 
 
 \subsection{Proposed Approach to the Problem}
-In attempts to reduce the generation of food waste, in the past the British government has intervened and officials pressured retailers to abolish the multi-buy offers. But the suggestion was met with reluctance. Instead a compromise was reached and the revised promotions allowed consumers a wider variety of products to choose from. Although figures declined periodically it was not sustainable. It is evident from this that persuading retailers to prioritise the reduction of waste over the potential increase in revenue is an up hill struggle. Without constant monitoring, retailers will favour the increase in revenue over the betterment of the public and responsible trading can easily be overlooked. For this reason the proposed solution is not to persuade the retailer to change their practice but the consumer. By equipping the consumer with an application that is able to monitor their inventory overstocking can be discouraged. The consumer will be driven by the incentive of monetary savings and as a side-effect reduce the risk of waste occurring at the consumer level. Theoretically creating an upstream ripple effect that will keep the waste at bay with the retailers and forcing the termination of over production. 
+In attempts to reduce the generation of food waste, in the past the British government has intervened and officials pressured retailers to abolish the multi-buy offers. But the suggestion was met with reluctance. Instead a compromise was reached and the revised promotions allowed consumers a wider variety of products to choose from. Although figures declined periodically it was not sustainable. It is evident from this that persuading retailers to prioritise the reduction of waste over the potential increase in revenue is an up hill struggle. Without constant monitoring, retailers will favour the increase in revenue over the betterment of the public and responsible trading can easily be overlooked. 
 
-\subsubsection{System Overview}
+For this reason the proposed solution is not to persuade the retailer to change their practice but the consumer. By equipping the consumer with an application that is able to monitor their inventory overstocking can be discouraged. The consumer will be driven by the incentive of monetary savings and as a side-effect reduce the risk of waste occurring at the consumer level. Theoretically creating an upstream ripple effect that will keep the waste at bay with the retailers and forcing the termination of over production. 
+
+\subsubsection{Proposed System}
 The proposed system is comprised of two key components. The first is the RFID client. An RFID reader will reside in the fridge and monitor the presence of any tags in its vicinity, facilitating the automatic registration when loading and unloading products from the fridge, keeping an accurate inventory of the users contents. The user need not alter any previous behaviour. The second component is the mobile client that the consumer is able to access any time any place.
 
 \subsection{Mobile \& Ubiquity}
 As popularity in Smartphones increase many applications have identified the need for ubiquitously accessible counterpart software. Whether it is in the form of a web form, such as the popular taxi booking application Uber or by using available mobile platforms such as IOS for Apple or Android, the way in which we utilise software has shifted from the traditional static machines to mobile systems. The convenient size and connectivity has enabled Smart devices to evolve at a rapid pace and daily tasks such as checking our emails can now be completed on the go. But with the increase in popularity an over crowded market arises. A poorly functioning design can result in instant negative feedback displayed for all the world to see impacting whether others choose to download the application or not. Thus a sophisticated and responsive application is a high priority when developing such applications. 
 
 \subsection{Automated Identification}
-As discussed in the previous chapter, the primary draw back of existing systems such as the smart fridge and the mobile applications is the lack of automation in the item registration process. Convincing consumers to alter habitual behaviours such as stocking the fridge is challenging and would most likely be met with resistance unless the newer process yields better results than the current. Thus the user having to either manually punch in the product name, or scan every item with a barcode reader is an unappealing process and can prevent the user from utilising the technology. 
+As discussed in the previous chapter, the primary draw back of existing systems such as the smart fridge and the mobile applications is the lack of automation in the item registration process. Convincing consumers to alter habitual behaviours such as stocking the fridge is challenging and would most likely be met with resistance unless the newer process yields better results than the current. Thus the user having to either manually punch in the product name, or scan every item with a barcode reader is an unappealing process and can prevent the user from utilising the technology. 
+
 
 \subsubsection{Current Item Level Product Identification Methods} 
 Predominantly, the current methods of item level identification in the supply chain rely on the ?picket-fence? style, one-dimensional barcode. add image Barcodes have been prevalent in grocery stores since the 1970?s and introduced as a means to manage inventory and to accelerate the checkout process. A laser scans the code and the catalogued code is used to retrieve detailed data such as the item name and cost of the product from the database. The scanning of the barcode requires that no objects obstruct the line of sight between the code and laser and even the smallest scratch or dirt can render the code unreadable. Simultaneous reads are not possible and must be scanned one by one with precision. Barcodes have limited capacity; usually can only hold twenty to twenty-five characters. Furthermore, the code is limited to identifying a collection of items rather than the individual item level, omitting crucial individual information such as sell-by-dates and fine-grain information of the produce. 
 
 \subsubsection{Proposed Item Level Product Identification}
-The proposed method of item-level product identification is by utilising RFID technology. RFID utilises electromagnetic waves emitted by a reader. The tag is comprised of a coil and transistor that harvests the energy from the reader. Once the tag has enough power the data is transmitted and the information is read from the tag. NFC registration and stock keeping systems have been successfully installed in retail stores, in particular clothing retailers. Before, logging of stock was a manual task. Employees would walk around the store floor with a laser reader and scan each item one by one. If the barcode had been damaged they would have to note the reference number down to enter into the system at a later time. With the use of RFID the employee now holds a reader and walks by the rack of garments, where the tags are read simultaneously, and the details captured with ease. Some grocery stores also use NFC but the technology is reserved for valuable goods to serve as an anti-theft device. Tags are applied in the form of a sticker and when detected by the readers, normally situated at the store exits, it will trigger an alarm to notify staff.NFC has a few advantages over the traditional method of product identification. Firstly the tag does not require a clear line of sight. The reader may interrogate any tag within the vicinity of the transmitted electromagnetic field. The energy is passable through objects and some readers can even facilitate simultaneous reads. Secondly, tags are more durable than the traditional printed kind and can be embedded within the packaging or inconspicuously applied to the product. NFC also has more space to hold data.With the use of RFID the consumer need not alter any behaviour. The item registration process can be completely automated removing the need for the consumer to manually enter product information or line up lasers with codes. Some other benefits can also be experienced through the application of item-level RFID, although out of the scope of the project the following case studies can highlight the benefits of item-level RFID identification in the food supply chain.
+The proposed method of item-level product identification is by utilising RFID technology. RFID utilises electromagnetic waves emitted by a reader. The tag is comprised of a coil and transistor that harvests the energy from the reader. Once the tag has enough power the data is transmitted and the information is read from the tag. 
+
+NFC registration and stock keeping systems have been successfully installed in retail stores, in particular clothing retailers. Before, logging of stock was a manual task. Employees would walk around the store floor with a laser reader and scan each item one by one. If the barcode had been damaged they would have to note the reference number down to enter into the system at a later time. With the use of RFID the employee now holds a reader and walks by the rack of garments, where the tags are read simultaneously, and the details captured with ease. Some grocery stores also use NFC but the technology is reserved for valuable goods to serve as an anti-theft device. Tags are applied in the form of a sticker and when detected by the readers, normally situated at the store exits, it will trigger an alarm to notify staff.
+
+NFC has a few advantages over the traditional method of product identification. Firstly the tag does not require a clear line of sight. The reader may interrogate any tag within the vicinity of the transmitted electromagnetic field. The energy is passable through objects and some readers can even facilitate simultaneous reads. Secondly, tags are more durable than the traditional printed kind and can be embedded within the packaging or inconspicuously applied to the product. NFC also has more space to hold data.
+
+With the use of RFID the consumer need not alter any behaviour. The item registration process can be completely automated removing the need for the consumer to manually enter product information or line up lasers with codes. Some other benefits can also be experienced through the application of item-level RFID, although out of the scope of the project the following case studies can highlight the benefits of item-level RFID identification in the food supply chain.
 
 \subsubsection{Case Studies}
-\paragraph{Transparency \& Consumer Rights} Even though producs are same in brand fresh goods can differ from batch to batch. Form the diets the cattel were on to the conditions the crops were exposed to such as pestisided. All this has an effect on our helth.Food labels provide limited information of the produce we are consuming and have even been blamed for the lack of information given to consumers and that's why only minimal information is given.  
+\paragraph{Transparency \& Consumer Rights} Even though producs are same in brand fresh goods can differ from batch to batch. Form the diets the cattel were on to the conditions the crops were exposed to such as pestisided. All this has an effect on our helth.
+Food labels provide limited information of the produce we are consuming and have even been blamed for the lack of information given to consumers and that's why only minimal information is given.  
+
+\subsection{Technology \& Risk Analysis}
+It has been estimated that 68\% of information technology projects fail, with this unfavourable statistic careful analysis and risk assessment of each technology is necessary to minimise the likelihood of encountering problems. Below analysis of each major component has been carried out.
+
+\subsubsection{Mobile Platforms}
+Currently the most used mobile platforms are Android and Apple IOS. Globally, the most widely used platform is Android, boasting an estimated user base of one billion users. 
+
+IOS applications are written in languages such as Objective C, which requires the developer to manage the memory of objects. Recently a new language, Swift was introduced by Apple. Swift supports automatic reference counting (ARC), this eliminates large memory leaks that frequently occurred in it?s predecessor Objective C. Android on the other hand, has a high-performance memory management system that cleans up unused objects, also know as the garbage collector, allowing the developer to focus their time and attention on the functionality of the application. Android applications are written in Oracle Java. It is also note worthy to mention that Android has a unique ecosystem unlike that of a typical Java application. The developer must understand and abide by a certain rules of the environment and failing to do so can result in undesired outcomes. 
+
+Swift being a relatively young language meant that less support is available compared to the others increasing the risks of encountering difficulties. Objective C will require diligent memory management and can shift focus from the core of the application and problems may arise from the lack of personal expertise.
+
+Having previous exposure to Java, as it was taught as a core module (Programming in Java), the Android development environment was a sensible option. The familiarity of the language and integrated memory management minimised the risk of encountering difficulties. Android also has a larger user base making the application accessible to a wider audience.
+
+\subsubsection{RFID}
+
+Currently used in xyz, provide examples. Different classifications. 
+
+\subsubsection{Cloud Services} 
+Cloud services have gained notoriety due to the I.T giants Google, Amazon and Microsoft. The underlining principals of cloud computing of automated scalability and constant availability have converted the way I.T businesses operate. Enabling small organizations to begin developing with minimal capital expenditure. Traditional in house server farms and systems required thousands of pounds to for initial setup and maintain but with the delegation of responsibility to a cloud vendor, software and hardware is in effect rented, allowing businesses to focus on developing the application. To further emphasis, more businesses are adopting the agile methodology where change is to be expected and must be embraced, cloud services facilitates change by only charging the user for the resources consumed. Giving teams agility to react to change efficiently with minimal financial risk.
+
+It?s highly responsive nature to demand and pay as you go style billing suites this project perfectly. Due to the unpredictable peaks and troughs in usage much like online retailers were the system for the most part experience steady traffic, but with the possibly of sudden spikes in demand during the holiday seasons and sales when consumers are most active. If the system cannot cope with the traffic and crashes it can cause severe damage to the business as an unresponsive application can cause users to go elsewhere. 
+
+Out of the three leading cloud service Google Cloud Platform (GCP), Amazon Web Services (AWS) and Microsoft Azure the most fitting is AWS. Azure is recommended for those who are currently utilising the Microsoft stack such as C\# and MySql neither of which is relevant for this project. GAE?s data analytics engine has been praised as superior to that of AWS owed to the massive amounts of data harvested by Google. But in terms of services available AWS is without a doubt the leading vendor (see image).  AWS also has higher availability with eleven geographical locations that resources can be distributed to and users can efficiently access in comparison Google has only three regions. Although a notable disadvantage with AWS?s myriad of services is grasping the understanding of the complex network topology creating a steeper learning curve to GCP. Although GCP is simpler and user friendly it has been concluded that the positive elements of AWS has outweighed the negative.
+
+\subsubsection{Data Storage}
+For any system the way in which data is stored and received strongly impacts system performance. 
+
+Relational database management systems (RDBMS) provide a secure, reliable and tried and tested method of data management. Data is organised into schemas that are designed using normalisation techniques and queried using structured query language (SQL). Schemas are predefined and comply with the ACID properties. 
+
+Although RDBMS provide a robust and secure data management solution, in some cases it?s not the best solution. A common problem is the relationship ambiguity that the schemas can present even after the data is normalised. For example, the image below, one might argue that that it is describing one person with two qualifications but another may interpret this as two separate entities which happen to have the same name but with different degrees. Schemas are predefined and constraints are applied to disallow invalid values. One way in which RDBMS ensures consistency is with the utilisation of strict locking protocols but heavy locking of tables and rows can case threads to wait and compromises availability to ensure consistency of data. 
+
+The inability to articulate how the date is to be perceived and the need for BigData processing and the utilisation of massively distributed systems was a motivational factor for the NoSQL movement. NoSQL databases can vary from document, graph and key value storage methods. Data can be modelled dynamically and NoSQL databases allow flexibility with data and attributes that can be applied dynamically where entities are in charge of their own attributes.
+
+As the use case for the proposed system isn?t mission critical, eventual consistency will suffice and  high availability of the recourse takes precedence. Flexibility is needed when modelling of the data, as the system may need to respond to change rapid thus a NoSQL data storage solution is to be selected. 
+
+\subsubsection{Distributed Authentication \& Access Control}
+Different security levels and access restrictions must be enforced depending on the user to avoid data corruption and data breach. For cloud services in particular, where each account is billed on a pay as you go basis, if resources are not regulated and credentials not managed appropriately, can end up costing hundreds if not thousands of pounds. AWS SDK provides an access control service that can be implemented using an API. Different roles and policies may be assigned to users, granting granular level permissions. 
+
+\clearpage
+
+%..................................................
+% Design
+%..................................................
+\section{Design}
+The first part of this section will present the requirements and use cases for the system. The second part will design decisions driven by the analysis of technologies and existing systems made in the previous chapter. 
+
+\subsection{Requirements}
+Information gathered in the analysis stage has highlighted the following requirements. 
+\subsubsection{Automated Product Logging Using RFID}
+The logging of products must be automated using RFID technology. The RFID interrogator is to be embedded in a fridge were it must listen for incoming and outgoing tagged products. The logging mechanism must provide accurate real-time stock keeping of products. 
+\subsubsection{Offline Inventory Management}
+The RFID application must have a local cache that logs items even when an Internet connection is not present. When connection resumes the cache and the database must be consistent. 
+\subsubsection{User Verification}
+Users must be verified from an Android device in order to use the service. Authentication must be made possible either by email or a popular third-party user authentication API. By keeping a record of the users if the user happens to remove the application and later decide to reinstall the application. The previous account can be restored allowing the user to skip time-consuming registration steps. User verification is also a necessity to avoid the wastage of cloud recourses.
+\subsubsection{Access Control to Resources}
+The RFID client and Android client must have different layers of access to resources. AWS credentials must not be hard coded into applications as the application is intended for mass distribution across multiple devices.
+
+\subsubsection{Data Organisation}
+Data must be available via wireless communication and must be constantly available to facilitate the displaying of real-time representation of the users inventory. Data must be organised and follow best practice data modelling techniques. 
+
+\subsubsection{Multiple user support}
+A single fridge may have multiple users. Application use must mirror real life scenarios where multiple users exist for one fridge. Once a user is verified via the Android application he or she will have the opportunity to enter a unique fridge code that will grant them access to view the contents of the fridge. 
+
+\subsubsection{Displaying of Fridge Contents}
+The contents must be visible on an Android powered Smartphone. When connected to the Internet the data should be consistent with the current state of the fridge. Items will display the products in priority order with the earliest use-by-date at the head and the latest at the tail. 
+
+\subsubsection{Offline Viewing}
+For situations where there is no Internet connection or sudden loss of connection the last view of the fridge before the connection is terminated must be visible. To enable this feature a local cache must be made that saves the intermediate data.
+
+\subsubsection{Engaging Users with Notifications}
+When a new item is added to the fridge it must push a notification to all android devices subscribing to a particular fridge.  Ensuring all parties is up to date with the alterations. 
+
+\subsubsection{User Interface}
+The user interface must be easy to navigate and follow Android best practices. Instantly recognizable icons and screen gestures will be utilised to ensure the user has a stress free introduction to the application.
 
 \subsection{Requirements Definition Report}
 A requirement definition report is provided to support the development of the new system. Here the requirements are organised into categories following the UML recommended presentation as described in the book, ?System Analysis and Design with UML? by Tegarden and Wixom. (Suggestion was taken from the Information Systems module as part of the MSc Computer Science.)
@@ -175,14 +259,16 @@ A requirement definition report is provided to support the development of the ne
 \subsubsection{Non-Functional Requirements}
 \underline{Operational Requirements}
 \begin{itemize}
-  \item The mobile element system should be able to operate in an Android environment.   \item The system should be portable and accessible from a mobile phone.
+  \item The mobile element system should be able to operate in an Android environment. 
+  \item The system should be portable and accessible from a mobile phone.
   \item The system should persist and read data from the database. 
   \item The system should scan and register RFID tags.
 \end{itemize}
 \underline{Performance Requirements}
 \begin{itemize}
   \item The user interface must constantly be active.
-  \item The system should be available for use 24 hours per day, 365 days per year.  \item Any communication between the clients and the server must not exceed 5 seconds.
+  \item The system should be available for use 24 hours per day, 365 days per year.
+  \item Any communication between the clients and the server must not exceed 5 seconds.
   \item The system should be durable and preserve data integrity.
 \end{itemize}
 \underline{Security Requirements}
@@ -200,146 +286,125 @@ A requirement definition report is provided to support the development of the ne
 \end{itemize}
 \underline{Information Viewing}
 \begin{itemize}
-  \item User should be able to view a list of their stocked items.  \item User should be able to view the expiry date of the items with ease.   \item User should be able to see the quantity for each item.  \item User should be notified when an item is added to their inventory.
+  \item User should be able to view a list of their stocked items.
+  \item User should be able to view the expiry date of the items with ease. 
+  \item User should be able to see the quantity for each item.
+  \item User should be notified when an item is added to their inventory.
   \item Users may only see the content of the subscribed fridge.
 \end{itemize}
 \underline{User Registration}
 \begin{itemize}
-  \item Users should be able to login to the system.   \item User should be able to logout by pressing the logout button.\end{itemize}
+  \item Users should be able to login to the system. 
+  \item User should be able to logout by pressing the logout button.
+\end{itemize}
 
 
+\subsection{Usecase Report}
 
-\subsection{Technology \& Risk Analysis}
-It has been estimated that 68\% of information technology projects fail, with this unfavourable statistic careful analysis and risk assessment of each technology is necessary to minimise the likelihood of encountering problems. Below analysis of each major component has been carried out.
+\subsection{Program Design}
+This section defines the programs that need to be written and the methods that will be utilised to satisfy the requirements.
 
-\subsubsection{Mobile Platforms}
-Currently the most used mobile platforms are Android and Apple IOS. Globally, the most widely used platform is Android, boasting an estimated user base of one billion users. IOS applications are written in languages such as Objective C, which requires the developer to manage the memory of objects. Recently a new language, Swift was introduced by Apple. Swift supports automatic reference counting (ARC), this eliminates large memory leaks that frequently occurred in it?s predecessor Objective C. Android on the other hand, has a high-performance memory management system that cleans up unused objects, also know as the garbage collector, allowing the developer to focus their time and attention on the functionality of the application. Android applications are written in Oracle Java. It is also note worthy to mention that Android has a unique ecosystem unlike that of a typical Java application. The developer must understand and abide by a certain rules of the environment and failing to do so can result in undesired outcomes. Swift being a relatively young language meant that less support is available compared to the others increasing the risks of encountering difficulties. Objective C will require diligent memory management and can shift focus from the core of the application and problems may arise from the lack of personal expertise.Having previous exposure to Java, as it was taught as a core module (Programming in Java), the Android development environment was a sensible option. The familiarity of the language and integrated memory management minimised the risk of encountering difficulties. Android also has a larger user base making the application accessible to a wider audience.
+\subsubsection{Distributed Authentication \& Access Control}
+The authentication process will be completed through the Android application. One AWS account may be used for multiple applications and so it is important to authenticate users and only grant access to the relevant resources. AWS Cognito and Identity and Access Management (IAM) tool kit provides an API and console to mange users and delegate role policies to restrict resource access. 
 
-\subsubsection{RFID}
+Sequence diagram goes here
 
-Currently used in xyz, provide examples. Different classifications. 
+\subsubsection {User Authentication}
+A user must be authenticated to avoid unnecessary AWS resource consumption. Authentication is to be made possible via email or a third-party service such as Facebook, Google or Twitter. Majority of users will have previously signed up to popular social networking sites and it has become a popular authentication pattern to utilise these services rather than to provide a custom sign up flow. By utilizing existing API?s repetitive user behaviour can me avoided and provides a speedy hassle free process. 
 
-\subsubsection{Cloud Services} 
-Cloud services have gained notoriety due to the I.T giants Google, Amazon and Microsoft. The underlining principals of cloud computing of automated scalability and constant availability have converted the way I.T businesses operate. Enabling small organizations to begin developing with minimal capital expenditure. Traditional in house server farms and systems required thousands of pounds to for initial setup and maintain but with the delegation of responsibility to a cloud vendor, software and hardware is in effect rented, allowing businesses to focus on developing the application. To further emphasis, more businesses are adopting the agile methodology where change is to be expected and must be embraced, cloud services facilitates change by only charging the user for the resources consumed. Giving teams agility to react to change efficiently with minimal financial risk.It?s highly responsive nature to demand and pay as you go style billing suites this project perfectly. Due to the unpredictable peaks and troughs in usage much like online retailers were the system for the most part experience steady traffic, but with the possibly of sudden spikes in demand during the holiday seasons and sales when consumers are most active. If the system cannot cope with the traffic and crashes it can cause severe damage to the business as an unresponsive application can cause users to go elsewhere. Out of the three leading cloud service Google Cloud Platform (GCP), Amazon Web Services (AWS) and Microsoft Azure the most fitting is AWS. Azure is recommended for those who are currently utilising the Microsoft stack such as C\# and MySql neither of which is relevant for this project. GAE?s data analytics engine has been praised as superior to that of AWS owed to the massive amounts of data harvested by Google. But in terms of services available AWS is without a doubt the leading vendor (see image).  AWS also has higher availability with eleven geographical locations that resources can be distributed to and users can efficiently access in comparison Google has only three regions. Although a notable disadvantage with AWS?s myriad of services is grasping the understanding of the complex network topology creating a steeper learning curve to GCP. Although GCP is simpler and user friendly it has been concluded that the positive elements of AWS has outweighed the negative.
+Sequence diagram goes here
 
-\subsubsection{Data Storage}
-%\paragraph{DynamoDB is a NoSQL database created by Amazon. 
-%The reason to NoSQL, why not relations 
-%TWhy amazon created it then opened it to the public}
+\subsubsection {Delay Tolerant Networking}
+The system must be able to keep a consistent state by utilising a local cache on both the Android device and the Fridge application even in an event where Internet connection does not exist. Heterogeneous networks with multiple dependencies and the reliance on wireless Internet access must be fault tolerant.
+
+\subsubsection {Database \& File Specification}
+\paragraph{AWS DynamoDB}Data will be stored in Amazon?s key-value NoSQL database DynamoDB. DynamoDB is a managed distributed database built on Solid State Drives (SSD) for efficient low latency response time. Data is free to store and Amazon will only charge for throughput used. As user demand grows DynamoDB is able to scale seamlessly and traffic is managed and balanced automatically. The highly available nature is backed by a robust fault recovery mechanism. Data is replicated across multiple nodes to ensure that even in a situation where a cluster is damaged and is offline another is always available. 
+
+\paragraph{Internal Device Storage}The Android application will utilise the devices internal storage to localize retrieved data.  The SharedPreference class is a lightweight method of storing data in a key-value pair. For complex objects on both the Android application and RFID application the Java I/O library will be used to serialize data.  
+
+\subsubsection {Interface Design}
+Over the years Smartphone users have become accustom to certain navigation patterns. Keeping with popular gestures and icon designs provides the user with a stress free user experience. For example users instinctively recognise certain icons to give a particular functionality such as the ?settings? button. (See image below). It would be ineffective to redesign a settings icon and make the user learn a new pattern of navigation and can even cause the user to reject the application. A common pattern for refreshing a list is to pull down the screen where a loading icon is displayed. This feature is to be implemented for refreshing the screen. The interface must constantly be responsive and provide feedback to the user to avoid the user thinking the application has crashed. 
+
+\subsubsection {RFID Client}
+The RFID client will be written using the Java development kit version 8, using the IntelliJ Integrated development Environment (IDE). The AWS SDK will also be used to access DynamoDB resources. Tag ID?s will be read and persisted in the relevant fridge where the android application will receive the data. The hardware will be connected to an Internet enabled computer with the Java Runtime Environment installed. A console will display a log to communicate any errors that may occur. 
+
+\subsubsection {Android Client}
+The Android application will be written using Java and utilise the Android SDK version 4.4 to target as many devices as possible. The application will be developed using Android Studio IDE and the AWS Mobile SDK. Implementation will take into consideration Android?s unique activity lifecycle methods to avoid undesired behaviour. Android development and object oriented best practices will be applied to maximise code reusability and minimise decoupling of classed to avoid strong dependencies between classes and activities.
 
 \clearpage
-
-%..................................................
-% Design
-%..................................................
-\section{Design}
-
-\subsection{Design Strategy}
-
-Activity diagrams
-Sequence diagram
-
-\subsection{Architecture Design} Describes hardware software and network infrastructure. 
-\subsection{Interface Design} How the user will navigate through the application. Navigation methods such as buttons and settings.
-
-\subsection{Database and File specification} Defines exactly what date is being stored and where they will be stored.
-
-\subsubsection{NoSQL Database} 
-DynamoDB is a NoSQL key, value store distributed database designed by Amazon. The original motivation behind this was to cope with the massive amounts of data Amazon produces. The primary principal for DynamoDB is high availability, with data being replicated across multiple nodes if a node eliminating the single point of failure. Heartbeat signals are sent to the. 
-\subsubsection{Internal Device Storage} 
-
-\subsection{Program Design}This defines the programs that need to be written and exactly what each program will do. 
-
-\subsubsection{Delay Tolerant Networking}
-\subsubsection{Distributed Authentication \& Access Control}
-\subsubsection{Multi-platform Consistency}
-
-%WHAT - Definition, history
-%TWHY - Motivation what is the reason why i chose it.
-%INTENT
-%COMPARISON
-%OUTCOME
-
-%what cloud services to use. Google app engine and sales force. Azure.
-%What is a cloud service: 
-
-%Why did i choose it?
-%Available anytime, how it thrives big data. Admals Law Gustofsons Law
-%Failure tolerance. how cloud services replicate data across nodes. 
-%Why is it so popular. 
-%Cost. 
-%AWS stack for mobile development.
-%Security
-
-\(This may for the conclusion or implementation.\)Security:
-
-\subsubsection{Mobile Application} 
-%Android. IOS. Acknowledge the existence of IOS but focus on android. 
-
-\subsubsection{RFID Client} %Different classifications of NFC.
 
 %...................................................
 % Implementation
 %..................................................
 \section{Implementation}
 
-\subsection{System Construction}
-\subsection{Android} 
-
-\subsubsection{Life Cycle of a Process}
-java for android.
-
-\subsubsection{User Experience Design and Responsiveness}
-
-\subsubsection{Networking}
-
-\subsubsection{Threads and concurrency management}
-Design static or dynamic comparidant
-Activity life cycle.
-UI and threads
-
-\subsection{Setting up Amazon Web Service}
-%Amazon Web Services operates on a 'pay as you go' basis. Each account is billed only for the rescouces used. Typically most organisations employ multiple employees with various responsibilities and roles, such employers must have different access rights and privileges to resources to avoid unintentional modification of data. For instance a database administrator should have read-write and table creating deletion and creating access whilst a programmer may not need the full access right to the table. AWS handles this the use of Identity Authentication Management (IAM).
-
-%Horror stories of people uploading their credentials on the web such as version control.
-%AWS created Cognito to avoid users having to hardcode credentials into application that are intended to mass distribution
-
-\subsubsection{Amazon Web Service IAM}
+\subsection{RFID Client}%classification, rather than using the android phone i used an actual reader.
 
 
-\subsubsection{Amazon Web Service Cognito}
-%Cognito is part of the AWS mobile development kit. AWS have enforced the use of Cognito to avoid the need to hard code credentials into applications that are intended for mass distribution such as mobile applications. Cognito uses Identity Pools to authenticate a user. Identity pools have a security policy where the details of the policy is created. 
+\subsection{Android Development} 
 
-Example policy goes here
-
-\subsection{User Authentication}
-\subsubsection{Third-party Authentication}
+\subsubsection{Android Activity \& Life Cycle Methods}Android uses a component called an activity to depict an action a user may accomplish within the application. When an activity class is extended some key methods listed below may be overridden and custom behaviour can be implemented. The developer has no control over when the methods are called and so given a situation the implementations can vary. Figure \ref{fig:activity} shows the life cycle of an activity and the methods that may be called. Careful management and implantation of the methods is needed to avoid unexpected behaviour and system crashes.Activities may be launched as an intent. When activities are launched they are places on top of a stack, where the history of the activity is kept, this is called the back stack. Upon the user pressing the back button the current activity is popped off the stack and they may return to the previously running activity. 
 
 
-%-facebook google iam roles
-%cognito and the use of identity pool. 
+\subsubsection{Login Activity}The login activity is responsible for the user authentication process. Graphical elements such as buttons and text boxes instantly translate the needed actions the user is to take. **Add image
+
+\paragraph{Buttons}The LoginActivity class implements the \texttt{onClickListenter()} interface which enforces the implementation of the \texttt{onClick()} method. In this method a switch statement is used to determine which button was pressed. The switch statement checks for the interacted resource ID and executed the necessary block . For example, \texttt{R.id.facebook\_login\_button} corresponds to the Facebook login button. When the Facebook button is pressed the  user must go through Facebook?s authentication process if the user has not previously signed up. If the user is a retuning user then the login process is avoided and the user is directed straight to the main activity.  When the user enters their credentials, a request for an access token is made to Facebook. If the user is a registered member of Facebook a new activity is launched requesting that the user grant the application permission to extract the listed details from their account. In this case the user?s profile and email address is needed to use the application, as shown in Figure \ref{fig:fbProfileEmail}. If the user accepts, a graph JSON object is retuned containing the user?s details and the next activity is launched.\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{fbProfileEmail}
+\caption{onClick() method implementation.}
+\end{figure}
+
+If the user is invalid the error will display a toast message communicating the failure to the user. The user will stay on the login page and will not be able progress until valid credentials are provided. Once the user has been authenticated this state is preserved to avoid the user needing to go through the signup flow each time the application is closed. Only when the logout button situated in the settings is explicitly pressed the user is logged out and in order for the user to use the app the sign up activity is launched again. 
+
+
+\paragraph{Back Stack Management}When launching a new Intent, flags may be added to it to manage the Back Stack. The history of the login page is not needed and does not need to be kept on the stack, doing so could even pose a security risk if the user is able to navigate back to the page where they entered confidential information. Also if the Back Stack is not managed, a trail of activities become visible when exiting the application and is perceived as bad practice and unprofessional. Activities that the user will never return to should be disposed of and should avoid being kept on the Back Stack. To ensure that the user cannot return to the login activity the history must be removed. By calling the Intents \texttt{addFlags()} method and passing it the parameters \texttt{Intent.FLAG\_ACTIVITY\_NO\_HISTORY}, if this is set then the intent is not saved in the tasks history.\paragraph{Graceful Application shutdown}Commonly, if the user is on the main page and the back button is pressed the application will exit and return to either the device home screen or the previously running application on the Back Stack. But as the aim is to get the user to sign up, if the back button is pressed the application will ask for confirmation from the user that the user truly would like to exit, if so the user is prompted to press the back button again. This is achieved by overriding the \texttt{onBackPressed()}method. **add image
+
+\subsubsection{Fridge Code Request Activity}Users will be able to subscribe to a fridge using this activity. The activity displays a text box there they are prompted to enter a unique ID. If the ID is valid the contents of the fridge will be retrieved and displayed. If the user is an existing user of the application this activity will not be launched and they will be directed to the main activity, listing the contents of their subscribed fridge.After the user logs in the first a query will be made to the database to check if the user has previously signed up. If the records exist they are received and the EnterFridgeIDActivity is never launched. If no records exist this intent will be launched and the user will not be able to proceed unless the \paragraph{User actions and feedback}When the application requires the user to input or edit a field the actions must be visually translated to the user. If no feedback is provided to the user they may mistake that the application has frozen or is broken. Toast messages may be used to provide feedback to the user. Here when an empty field is submitted the user will be prompted of their error. However if the entered id is invalid another message will be displayed so the user is informed of the mistake with accurate detail. **Add images both toast messages
+
+\subsubsection{Main Activity}The main activity is launched after the user is successfully authenticated. This activity will allow the user to remotely access the contents of the fridge. Below describes the construction process of the activity. \paragraph{Fragments} The Main Activity is made up of fragments. In Android development the use of fragments is encouraged to avoid duplication of code and to create a transportable UI element that can be used with devices that vary in screen size. Fragments can be composed into activates allowing UI elements to be transported with ease and promote code reusability. Fragments belong inside an activity and also has a life cycle of it?s own, similar to an Activity. The fragment can be declared in two ways. Either statically using the activities layout file, or programmatically set in the \texttt{onCreate()} method.  	\paragraph{Custom List Adapter} As the format the data is presented in the list element is not available using the Android library, a custom list view and adapter were made. The \texttt{InventoryListAdapter} class extends an \texttt{ArrayAdapter}. The adapter class is responsible for dynamically setting the graphical elements and text fields in the list elements.  In the \texttt {onCreateView()} method in the \texttt{InventoryFragment} the custom adapter is set to the list view. As the activity?s \texttt{onCreate()} method is called and in turn the fragments are launched the information will display to the viewer. The \texttt{compare()} method in the products class is overridden and in the Adapter, the products are rearranged in priority order. The text will be displayed in red if the product is expiring today and green if there is no urgency. ** Image 
+
+\paragraph{Settings} The settings icon and location have conformed to the Android recommended design practice. As shown in \ref{fig:settings} the settings contains the logout button where the user must navigate to in order to logout. To implement this the ::onOptionsItemSelected() must be overridden. Same as the onClickListener() method it uses the resource ID to find which field was selected.  \subsubsection{Graphical User Interface Design \& Resources}Interface elements can be created using XML elements that make up the UI. Elements that build the GUI are declared inside the layout files and can be styled within the XML document. Alternatively graphical elements can be set at runtime programmatically using Views and ViewGroups objects, where graphical elements can be extracted and edited within the code. For each Activity and Fragment the application will style the interface using XML to keep the business logic and GUI logic separated, allowing the code to be more readable and maintainable. Figure \ref{fig:xml} is the layout used for the Main Activity. **image goes hereResources such as graphical icons, logos, colours and Strings are stored in the values file within the resources. Strings are kept in a separate XML document so others may reference it and avoid hardcoding into the code and created a single access point where modifications can be made. Android operates world wide so this approach can also facilitate the 
+
+\subsubsection{Manifest File}All Android application has a manifest file. Activities, services, receivers and content providers must all be registered in this file in order for them to be utilised. Permission are also set here to enable privileged features such as access to the Internet and cross application data sharing. Application name and screen orientation and even setting the start up activity is declared in this document.
+
+
+\subsubsection{Notifications}Android uses notification alerts to communicate with the user. Notifications can be triggered when certain events occur. When a new item is added to the fridge an alert is triggered notifying the user of the change in state. This way even without the user having the application open they are kept informed of the state reducing the likelihood of the user unknowingly purchasing the same product.**add image\subsubsection{Threads \& Concurrency Management}
+\subsubsection{Service}
+\subsubsection{Error Handling}\paragraph{Exceptions}\paragraph{Logging}
+
+\subsection{Distributed Authentication and Access Control}Access control to resources is imperative to avoid security breeches and data loss. When using AWS mobile SDK, AWS enforces the use of Cognito for mobile identity management. Cognito uses Identity Pools to manage the different layers of user privileges and Identity Access Management (IAM) roles.\subsubsection{Identity Pool}An identity pool is specific to the application. As a single AWS account is used by many different applications the segmentation of users can help organise the subscribing users and facilitate the allocation of correct recourses to the user. By using the Cognito client developers can avoid hardcoding credentials into the application?s source code. This is particularly important for programs intended for mass distribution. The image below is a method that initialises the Cognito client using the activities context, Identity pool id of the Amazon Resource Name (ARN) and the region code the resource resides on, in this case it accessing the servers in Ireland.  %\vspace{\baselineskip}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{cognito_client_code.png}
+\caption{Initialisation of Cognito Client}
+\end{figure}
+
+\subsubsection{Identity Access Management Role}IAM Roles are assigned in identity pools. IAM roles allow fine grain access control to AWS resources such as S3 and DynamoDB. The Cognito client utilises the IAM role?s ARN to specify the access rights of each role. By default AWS creates an authenticated and unauthenticated access role for an identity pool. Authenticated users may only access the specified resources in the policy if the requirements are met in the statement. Unauthenticated roles are for users that may want to try the application before committing to signing up. Internally, temporary credentials are created for an unauthenticated user granting them temporary access to resources. 
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{iam_policy.png}
+\caption{Policy for Authenticated Users}\label{fig:iam}
+\end{figure}\paragraph{Security Policy}Policy statements are written in Java Script Object Notation (JSON). The statement is split into three sections, actions, resource and effect. The action block specifies the actions that are allowed on the service. For example the policy in Figure \ref{fig:iam} lists the actions that may be performed on a service, in this case DynamoDB. Actions that are not explicitly specified will be rejected. Resource block specify the AWS recourse that the policy is allowing access to, a resources is indicated by the ARN. The effect block specifies the result after the user requests access to the service. By default the effect is set to ?deny? so this must explicitly set. Additionally, a condition block may be set to further restrict the type of user gaining access. In the example below only users associated with Facebook are granted access.
+
+
+\subsection{Delay Tolerant Networking}
+poo 
 %-Analytics, how these api's provide analytics, user patterns
 
 \subsection{Data Management}
-\subsubsection{Amazon Web Service DynamoDB}
-%What is it? Key value, uses JSON serialisation. supports strings integers etc. 
-%Limitations 4k blocks
+poo
 
-%Discoveries?
-%Outcome
-\subsubsection{NoSQL model}
-%TNoSQL comparison to relational database. 
-\subsubsection{Data modelling} 
-\subsubsection{Caching Data} offline use 
+\clearpage
 
-\subsection{RFID Client}%classification, rather than using the android phone i used an actual reader.
 
 %...................................................
 % Testing and evaluation
 %..................................................
 \section{Testing and Evaluation}
 Importance, maintainable code.
-\subsection{Unit test and mocking}
+\subsection{Unit Tests \& Mocking}
 \subsection{Integration Test}
 
 %...................................................
