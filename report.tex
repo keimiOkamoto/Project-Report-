@@ -13,7 +13,8 @@
 \usepackage{quoting}
 \usepackage{courier}
 %\usepackage{titlesec}
-
+\usepackage{tabularx} 
+\usepackage{pbox}
 
 %\setcounter{secnumdepth}{4}
 
@@ -176,11 +177,9 @@ NFC has a few advantages over the traditional method of product identification. 
 With the use of RFID the consumer need not alter any behaviour. The item registration process can be completely automated removing the need for the consumer to manually enter product information or line up lasers with codes. Some other benefits can also be experienced through the application of item-level RFID, although out of the scope of the project the following case studies can highlight the benefits of item-level RFID identification in the food supply chain.
 
 \subsubsection{Case Studies}
-\paragraph{Transparency \& Consumer Rights} Even though producs are same in brand fresh goods can differ from batch to batch. Form the diets the cattel were on to the conditions the crops were exposed to such as pestisided. All this has an effect on our helth.
-Food labels provide limited information of the produce we are consuming and have even been blamed for the lack of information given to consumers and that's why only minimal information is given.  
-
-\subsection{Technology \& Risk Analysis}
-It has been estimated that 68\% of information technology projects fail, with this unfavourable statistic careful analysis and risk assessment of each technology is necessary to minimise the likelihood of encountering problems. Below analysis of each major component has been carried out.
+\paragraph{Transparency \& Consumer Rights} The need for transparency of the origin of the produce is important to better the quality of living. Granular information can help consumers control what they consume to aid a healthier life. Produce information is often documented by the producers and passed to the supplier but the information fails to make it down the chain.[18] Meats in particular have unique backgrounds. Ranging from the rearing environments, type of feed consumed and drugs administered. This information can provide awareness to consumers whether it is for health reasons, environmental or the ethically conscious individual. Such areas as Japan where vegetables and livestock were exposed to nuclear radiation due to the Fukushima Daiichi disaster raises serious health concerns. Damage caused by radiation exposure by consumption of contaminated foods can surface much later in a persons life and in some cases even be inherited by offspring. This highlights the urgency for transparent detail of the product?s life cycle and the importance for the consumer to be fully aware of the risks and responsible for what they consume.[20] The law enforces that the label on fresh meat must contain the country of origin. But this does not apply to the same meat that is processed, such as hamburgers, pies and sausages. Meats may be mixed providing that the animals are slaughtered in the same country, meaning a single hamburger could be made up of several cows.[18] Officials have used over crowding of labels as a reason not to provide the customer with details of a produce and has deemed it unnecessary. ?It is clear that many consumers want more information on the origin of meat ingredients in meat products, and in the Agency?s consumer research the ingredients in dairy pro- duce also score highly in this respect. The law requires an origin declaration on fresh beef but not on the same product when it has been seasoned. Providing information on the origin of all ingredients in all products would be dispropor- tionately burdensome for industry, and would risk overload- ing the label with information that is not seen as important by consumers.?- Food Standard Agency, ?country of origin labelling guidance?[18] With the use of RFID the overloading of the label would no longer be a reason to withhold information from the consumer. Allowing the individual to decide what information is of importance. \paragraph{Food Safety and tractability} In the past there has been nu- merous incidents when products have been recalled due to the presence of bacteria or other abnormalities. A notable incident is the 2013 meat adulteration scandal in the EU, where traces of horse meat where dis- covered in various products such as minced meat and ready prepared meals. The time and resources to trace back through the supply chain was estimated to have cost the Food Standard Agency (FSA) \pounds900,000 between 2011 and 2012 and a further £1.6 million between 2012 and 2013 [18]. Other casualties include the reputations and integrity of the blameless producers falsely accused due to limited and inaccurate information that implicated them as the guilty.[9] With item level identification the contaminated produce could be traced back immediately and the products recalled.[13][14] For example if an infected animal is used in various products, all items holding that particular code can be instantly traceable, effectively compartmentalizing the outbreak and maximizing efficiency in damage control. 
+\paragraph{Remote amendment of human errors} Frequently food is wasted due to human errors. On the 13th April 2015, a mass recall for 'Starbucks Black \& White Mini Cookies' was issued due to undeclared use of milk products. Misprinting of information or neglecting to provide adequate product details that abides by the food standard regulations are a common error in the production pipeline and perfectly consumable food is wasted. By applying RFID tags to groceries products, errors can be amended remotely and immediate alerts issued, notifying customers of the mistake. This provides a different approach to error management and can avoid the generation of unnecessary waste. 
+\paragraph{Efficient Checkout Process} The traditional checkout process requires the cashier to scan each item one by one, even with the new self checkout systems introduced to reduce queuing time, the line is often held up by an unreadable barcode or the numerous failed attempts of the laser initiating a read. Items must be loaded out of the basket or shopping-trolley and places into a shopping bag. As demonstrated by MyGrocer, a system that was designed to modernise the shopping experience, utilises a trolley lined with RFID readers. As tagged products are loaded the readers record the presence of goods and upon checkout all the user needs to do is pay a bill. \paragraph{Discounting Tags} When products are nearing expiration it is common practice for the retailers to discount the products. A store assistant will usually carry a barcode-printing device that generates a sticker with the discounted code. He or she will manually check the date and if the item is eligible a sticker with a new discounted barcode will replace the original. With the use of RFID the amendment can be made remotely and automatically, filtering and amending only the relevant products. 
 
 \subsubsection{Mobile Platforms}
 Currently the most used mobile platforms are Android and Apple IOS. Globally, the most widely used platform is Android, boasting an estimated user base of one billion users. 
@@ -192,8 +191,7 @@ Swift being a relatively young language meant that less support is available com
 Having previous exposure to Java, as it was taught as a core module (Programming in Java), the Android development environment was a sensible option. The familiarity of the language and integrated memory management minimised the risk of encountering difficulties. Android also has a larger user base making the application accessible to a wider audience.
 
 \subsubsection{RFID}
-
-Currently used in xyz, provide examples. Different classifications. 
+There are many different classifications of RFID readers and tags that differ in the amount of memory it can hold to the range and direction it may transmit data. Radio waves transmitted by the readers differ in frequency from low (LF) to high (HF) to ultra-high frequency (UHF). LF readers typically operate at 125KHz with a read range of around 10cm, as the frequency increased the read range also expands and so may the sensitivity to radio wave interference. Tags also vary in specifications, passive tags may only be activated by a reader where semi-active and active tags may initiate communications. For this project the focus will be Near Field Communication. (NFC) NFC is most notably used in transport ticketing and contactless payment management systems. NFC has successfully automated the ticketing and payment systems in many countries. Instead of manually punching in digits on a keypad the user can touch or wave the NFC embedded card near the reader and a transaction can be processed. RFID has sped up various registration and transaction processes. Many mobile phones currently available on the market also are equipped with NFD readers as an alternative method of communication. NFC is inexpensive and durable making it a primary candidate for tagging on food products that are frequently moved from different containers during the transportation process. 
 
 \subsubsection{Cloud Services} 
 Cloud services have gained notoriety due to the I.T giants Google, Amazon and Microsoft. The underlining principals of cloud computing of automated scalability and constant availability have converted the way I.T businesses operate. Enabling small organizations to begin developing with minimal capital expenditure. Traditional in house server farms and systems required thousands of pounds to for initial setup and maintain but with the delegation of responsibility to a cloud vendor, software and hardware is in effect rented, allowing businesses to focus on developing the application. To further emphasis, more businesses are adopting the agile methodology where change is to be expected and must be embraced, cloud services facilitates change by only charging the user for the resources consumed. Giving teams agility to react to change efficiently with minimal financial risk.
@@ -299,7 +297,94 @@ A requirement definition report is provided to support the development of the ne
 \end{itemize}
 
 
-\subsection{Usecase Report}
+\subsection{Use Case Reports}
+
+\subsubsection{Add item into the fridge.}
+\begin{center}
+\noindent\resizebox{\textwidth}{!}{
+\begin{tabular}{ | l | l | }
+ \hline
+ \textbf{Use Case} & User loads the fridge with items.\\ 
+ \hline
+ \textbf{Primary Actor} & A member of the public who installs the application.  \\ 
+ \hline 
+ \textbf{Description} & \pbox{10cm}{A user who has a RFID embedded fridge stocks the fridge with tagged items.} \\ \hline 
+  \textbf{Assumptions} & \pbox{10cm}{1.The application is installed and successfully running in a Java runtime environment.\\2. The component is connected to the Internet.\\3.The fridge's unique code persists in the database.\\4.All items that are loaded into the fridge are tagged with RFID tags.} \\
+  \hline 
+ \textbf{Success Scenario} & \pbox{10cm}{ 1. A user opens the fridge and adds the products.\\2.The tag is registered and interrogated for it's ID.\\3.The item ID is stored in the user's database.\\ 4. When an item is removed the RFID reader will read and the application ID will be removed.} \\ 
+ \hline 
+ \textbf{Alternative Flows} & \pbox{10cm}{If Internet is not present the item ID is persisted locally.} \\ 
+ \hline 
+ \textbf{\pbox{4cm}{Non-Behavioural \\Requirements}}&  \pbox{10cm}{If there is no Internet connection the application must save the tag ID's locally. Once the connection is present the data must be saved to the database.} \\ 
+ \hline 
+ \textbf{Issues} &  n/a\\ 
+ \hline 
+\end{tabular}
+}
+\end{center}
+
+
+
+
+
+
+\subsubsection{User Login}
+\begin{center}
+\noindent\resizebox{\textwidth}{!}{
+\begin{tabular}{ | l | l | }
+ \hline
+ \textbf{Use Case} & Initial start up of Android Application.   \\ 
+ \hline
+ \textbf{Primary Actor} & A member of the public who installs the application.  \\ 
+ \hline 
+ \textbf{Description} & \pbox{10cm}{A ew user opens the application for the first time.} \\ \hline 
+  \textbf{Assumptions} & \pbox{10cm}{1.The application is installed and running on a device running the Android environment. \\2. The device is connected to a wireless Internet connection.\\3. The RFID client is successfully running.} \\
+  \hline 
+ \textbf{Success Scenario} & \pbox{10cm}{ 1. A user selects the application icon on the home screen. \\2. The application does not recognise the user as previously registered and will display the login page.\\3. The user will enter valid credentials and grant permissions for the application to access user information.\\4. The user will then be directed to a page to enter a unique Fridge code. The user will enter a valid code.\\5.The user will succesfully subscribe to the and will be presented with the contents of the fridge in order of priority with the latest expiary date at the top.} \\ 
+ \hline 
+  \textbf{Alternative Flows} &  \pbox{10cm}{If the user has previously signed up the sign up process is skipped and the user is presented with the main page.\\ If the user does not have and valid credentials they will not be able to proceed.} \\  \hline 
+ \textbf{\pbox{4cm}{Non-Behavioural \\Requirements}}&  \pbox{10cm}{User details must be stored in the database. Only users with a valid fridge ID is able to access the contents of a particular fridge.} \\ 
+ \hline 
+ \textbf{Issues} &  n/a\\ 
+ \hline 
+\end{tabular}
+}
+\end{center}
+
+\subsubsection{Refresh Contents.}
+\begin{center}
+\noindent\resizebox{\textwidth}{!}{
+\begin{tabular}{ | l | l | }
+ \hline
+ \textbf{Use Case} & User can refresh content view upon request.\\ 
+ \hline
+ \textbf{Primary Actor} & A member of the public who installs the application.  \\
+ \hline 
+ \textbf{Description} & \pbox{10cm}{Using the pull down gesture the contents of the fridge can be refreshed and displayed.} \\
+  \hline 
+ \textbf{Assumptions} & \pbox{10cm}{1.The application is installed and running on a device running the Android environment. \\2. The device is connected to a wireless Internet connection.\\3. The RFID client is successfully running.\\4.The user has successfully signed in.} \\
+  \hline 
+ \textbf{Success Scenario} & \pbox{10cm}{ 1. User pulls the list down and releases. 2. If any changes have occurred in the fridge the list will be updated displaying the latest informattion. } \\ 
+ \hline 
+ \textbf{Alternative Flows} &  \pbox{10cm}{n/a} \\ 
+ \hline 
+ \textbf{\pbox{4cm}{Non-Behavioural \\Requirements}}&  \pbox{10cm}{The application must display data as close to real time as possible. Any alterations to the database will trigger a notification to the user.} \\ 
+ \hline 
+ \textbf{Issues} &  n/a\\ 
+ \hline 
+\end{tabular}
+}
+\end{center}
+
+\subsection{Business Process Modelling with Activity Diagrams}
+\subsubsection{User Login}
+Figure \ref{fig:LoginActivity}
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=\textwidth]{LoginActivity}
+\caption{Activity Diagram for the user login flow.} \label{fig:LoginActivity}
+\end{figure}
 
 \subsection{Program Design}
 This section defines the programs that need to be written and the methods that will be utilised to satisfy the requirements.
@@ -307,15 +392,17 @@ This section defines the programs that need to be written and the methods that w
 \subsubsection{Distributed Authentication \& Access Control}
 The authentication process will be completed through the Android application. One AWS account may be used for multiple applications and so it is important to authenticate users and only grant access to the relevant resources. AWS Cognito and Identity and Access Management (IAM) tool kit provides an API and console to mange users and delegate role policies to restrict resource access. 
 
-Sequence diagram goes here
-
 \subsubsection {User Authentication}
-A user must be authenticated to avoid unnecessary AWS resource consumption. Authentication is to be made possible via email or a third-party service such as Facebook, Google or Twitter. Majority of users will have previously signed up to popular social networking sites and it has become a popular authentication pattern to utilise these services rather than to provide a custom sign up flow. By utilizing existing API?s repetitive user behaviour can me avoided and provides a speedy hassle free process. 
+A user must be authenticated to avoid unnecessary AWS resource consumption. Authentication is to be made possible via email or a third-party service such as Facebook, Google or Twitter. Majority of users will have previously signed up to popular social networking sites and it has become a popular authentication pattern to utilise these services rather than to provide a custom sign up flow. By utilising existing API?s repetitive user behaviour can me avoided and provides a speedy hassle free process. 
 
-Sequence diagram goes here
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{cognitoFlow}
+\caption{Activity Diagram for the user login flow.} \label{fig:cognitoFlow}
+\end{figure}
 
 \subsubsection {Delay Tolerant Networking}
-The system must be able to keep a consistent state by utilising a local cache on both the Android device and the Fridge application even in an event where Internet connection does not exist. Heterogeneous networks with multiple dependencies and the reliance on wireless Internet access must be fault tolerant.
+The system must be able to keep a consistent state by utilising a local cache on both the Android device and the Fridge application even in an event where Internet connection does not exist. Heterogeneous networks with multiple dependencies and the reliance on wireless Internet access must be fault tolerant
 
 \subsubsection {Database \& File Specification}
 \paragraph{AWS DynamoDB}Data will be stored in Amazon?s key-value NoSQL database DynamoDB. DynamoDB is a managed distributed database built on Solid State Drives (SSD) for efficient low latency response time. Data is free to store and Amazon will only charge for throughput used. As user demand grows DynamoDB is able to scale seamlessly and traffic is managed and balanced automatically. The highly available nature is backed by a robust fault recovery mechanism. Data is replicated across multiple nodes to ensure that even in a situation where a cluster is damaged and is offline another is always available. 
@@ -327,6 +414,12 @@ Over the years Smartphone users have become accustom to certain navigation patte
 
 \subsubsection {RFID Client}
 The RFID client will be written using the Java development kit version 8, using the IntelliJ Integrated development Environment (IDE). The AWS SDK will also be used to access DynamoDB resources. Tag ID?s will be read and persisted in the relevant fridge where the android application will receive the data. The hardware will be connected to an Internet enabled computer with the Java Runtime Environment installed. A console will display a log to communicate any errors that may occur. 
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=\textwidth]{RFIDApplicationFlow}
+\caption{Activity Diagram for the user login flow.} \label{fig:RFIDApplicationFlow}
+\end{figure}
 
 \subsubsection {Android Client}
 The Android application will be written using Java and utilise the Android SDK version 4.4 to target as many devices as possible. The application will be developed using Android Studio IDE and the AWS Mobile SDK. Implementation will take into consideration Android?s unique activity lifecycle methods to avoid undesired behaviour. Android development and object oriented best practices will be applied to maximise code reusability and minimise decoupling of classed to avoid strong dependencies between classes and activities.

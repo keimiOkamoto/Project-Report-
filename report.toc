@@ -22,68 +22,76 @@
 \contentsline {subsubsection}{\numberline {2.5.2}Proposed Item Level Product Identification}{7}
 \contentsline {subsubsection}{\numberline {2.5.3}Case Studies}{7}
 \contentsline {paragraph}{Transparency \& Consumer Rights}{7}
-\contentsline {subsection}{\numberline {2.6}Technology \& Risk Analysis}{8}
-\contentsline {subsubsection}{\numberline {2.6.1}Mobile Platforms}{8}
-\contentsline {subsubsection}{\numberline {2.6.2}RFID}{8}
-\contentsline {subsubsection}{\numberline {2.6.3}Cloud Services}{8}
-\contentsline {subsubsection}{\numberline {2.6.4}Data Storage}{9}
-\contentsline {subsubsection}{\numberline {2.6.5}Distributed Authentication \& Access Control}{10}
-\contentsline {section}{\numberline {3}Design}{11}
-\contentsline {subsection}{\numberline {3.1}Requirements}{11}
-\contentsline {subsubsection}{\numberline {3.1.1}Automated Product Logging Using RFID}{11}
-\contentsline {subsubsection}{\numberline {3.1.2}Offline Inventory Management}{11}
-\contentsline {subsubsection}{\numberline {3.1.3}User Verification}{11}
-\contentsline {subsubsection}{\numberline {3.1.4}Access Control to Resources}{11}
-\contentsline {subsubsection}{\numberline {3.1.5}Data Organisation}{11}
-\contentsline {subsubsection}{\numberline {3.1.6}Multiple user support}{12}
-\contentsline {subsubsection}{\numberline {3.1.7}Displaying of Fridge Contents}{12}
-\contentsline {subsubsection}{\numberline {3.1.8}Offline Viewing}{12}
-\contentsline {subsubsection}{\numberline {3.1.9}Engaging Users with Notifications}{12}
-\contentsline {subsubsection}{\numberline {3.1.10}User Interface}{12}
-\contentsline {subsection}{\numberline {3.2}Requirements Definition Report}{12}
-\contentsline {subsubsection}{\numberline {3.2.1}Non-Functional Requirements}{12}
-\contentsline {subsubsection}{\numberline {3.2.2}Functional Requirements}{13}
-\contentsline {subsection}{\numberline {3.3}Usecase Report}{14}
-\contentsline {subsection}{\numberline {3.4}Program Design}{14}
-\contentsline {subsubsection}{\numberline {3.4.1}Distributed Authentication \& Access Control}{14}
-\contentsline {subsubsection}{\numberline {3.4.2}User Authentication}{14}
-\contentsline {subsubsection}{\numberline {3.4.3}Delay Tolerant Networking}{14}
-\contentsline {subsubsection}{\numberline {3.4.4}Database \& File Specification}{14}
-\contentsline {paragraph}{AWS DynamoDB}{14}
-\contentsline {paragraph}{Internal Device Storage}{15}
-\contentsline {subsubsection}{\numberline {3.4.5}Interface Design}{15}
-\contentsline {subsubsection}{\numberline {3.4.6}RFID Client}{15}
-\contentsline {subsubsection}{\numberline {3.4.7}Android Client}{15}
-\contentsline {section}{\numberline {4}Implementation}{16}
-\contentsline {subsection}{\numberline {4.1}RFID Client}{16}
-\contentsline {subsection}{\numberline {4.2}Android Development}{16}
-\contentsline {subsubsection}{\numberline {4.2.1}Android Activity \& Life Cycle Methods}{16}
-\contentsline {subsubsection}{\numberline {4.2.2}Login Activity}{16}
-\contentsline {paragraph}{Buttons}{16}
-\contentsline {paragraph}{Back Stack Management}{17}
-\contentsline {paragraph}{Graceful Application shutdown}{18}
-\contentsline {subsubsection}{\numberline {4.2.3}Fridge Code Request Activity}{18}
-\contentsline {paragraph}{User actions and feedback}{18}
-\contentsline {subsubsection}{\numberline {4.2.4}Main Activity}{18}
-\contentsline {paragraph}{Fragments}{18}
-\contentsline {paragraph}{Custom List Adapter}{19}
-\contentsline {paragraph}{Settings}{19}
-\contentsline {subsubsection}{\numberline {4.2.5}Graphical User Interface Design \& Resources}{19}
-\contentsline {subsubsection}{\numberline {4.2.6}Manifest File}{20}
-\contentsline {subsubsection}{\numberline {4.2.7}Notifications}{20}
-\contentsline {subsubsection}{\numberline {4.2.8}Threads \& Concurrency Management}{20}
-\contentsline {subsubsection}{\numberline {4.2.9}Service}{20}
-\contentsline {subsubsection}{\numberline {4.2.10}Error Handling}{20}
-\contentsline {paragraph}{Exceptions}{20}
-\contentsline {paragraph}{Logging}{20}
-\contentsline {subsection}{\numberline {4.3}Distributed Authentication and Access Control}{20}
-\contentsline {subsubsection}{\numberline {4.3.1}Identity Pool}{20}
-\contentsline {subsubsection}{\numberline {4.3.2}Identity Access Management Role}{21}
-\contentsline {paragraph}{Security Policy}{21}
-\contentsline {subsection}{\numberline {4.4}Delay Tolerant Networking}{21}
-\contentsline {subsection}{\numberline {4.5}Data Management}{21}
-\contentsline {section}{\numberline {5}Testing and Evaluation}{23}
-\contentsline {subsection}{\numberline {5.1}Unit Tests \& Mocking}{23}
-\contentsline {subsection}{\numberline {5.2}Integration Test}{23}
-\contentsline {section}{\numberline {6}Review and Conclusion}{23}
-\contentsline {subsection}{\numberline {6.1}Security Concerns}{23}
+\contentsline {paragraph}{Food Safety and tractability}{8}
+\contentsline {paragraph}{Remote amendment of human errors}{9}
+\contentsline {paragraph}{Efficient Checkout Process}{9}
+\contentsline {paragraph}{Discounting Tags}{9}
+\contentsline {subsubsection}{\numberline {2.5.4}Mobile Platforms}{9}
+\contentsline {subsubsection}{\numberline {2.5.5}RFID}{10}
+\contentsline {subsubsection}{\numberline {2.5.6}Cloud Services}{10}
+\contentsline {subsubsection}{\numberline {2.5.7}Data Storage}{11}
+\contentsline {subsubsection}{\numberline {2.5.8}Distributed Authentication \& Access Control}{12}
+\contentsline {section}{\numberline {3}Design}{13}
+\contentsline {subsection}{\numberline {3.1}Requirements}{13}
+\contentsline {subsubsection}{\numberline {3.1.1}Automated Product Logging Using RFID}{13}
+\contentsline {subsubsection}{\numberline {3.1.2}Offline Inventory Management}{13}
+\contentsline {subsubsection}{\numberline {3.1.3}User Verification}{13}
+\contentsline {subsubsection}{\numberline {3.1.4}Access Control to Resources}{13}
+\contentsline {subsubsection}{\numberline {3.1.5}Data Organisation}{13}
+\contentsline {subsubsection}{\numberline {3.1.6}Multiple user support}{14}
+\contentsline {subsubsection}{\numberline {3.1.7}Displaying of Fridge Contents}{14}
+\contentsline {subsubsection}{\numberline {3.1.8}Offline Viewing}{14}
+\contentsline {subsubsection}{\numberline {3.1.9}Engaging Users with Notifications}{14}
+\contentsline {subsubsection}{\numberline {3.1.10}User Interface}{14}
+\contentsline {subsection}{\numberline {3.2}Requirements Definition Report}{14}
+\contentsline {subsubsection}{\numberline {3.2.1}Non-Functional Requirements}{14}
+\contentsline {subsubsection}{\numberline {3.2.2}Functional Requirements}{15}
+\contentsline {subsection}{\numberline {3.3}Use Case Reports}{16}
+\contentsline {subsubsection}{\numberline {3.3.1}Add item into the fridge.}{16}
+\contentsline {subsubsection}{\numberline {3.3.2}User Login}{16}
+\contentsline {subsubsection}{\numberline {3.3.3}Refresh Contents.}{17}
+\contentsline {subsection}{\numberline {3.4}Business Process Modelling with Activity Diagrams}{17}
+\contentsline {subsubsection}{\numberline {3.4.1}User Login}{17}
+\contentsline {subsection}{\numberline {3.5}Program Design}{17}
+\contentsline {subsubsection}{\numberline {3.5.1}Distributed Authentication \& Access Control}{17}
+\contentsline {subsubsection}{\numberline {3.5.2}User Authentication}{17}
+\contentsline {subsubsection}{\numberline {3.5.3}Delay Tolerant Networking}{19}
+\contentsline {subsubsection}{\numberline {3.5.4}Database \& File Specification}{19}
+\contentsline {paragraph}{AWS DynamoDB}{19}
+\contentsline {paragraph}{Internal Device Storage}{19}
+\contentsline {subsubsection}{\numberline {3.5.5}Interface Design}{20}
+\contentsline {subsubsection}{\numberline {3.5.6}RFID Client}{20}
+\contentsline {subsubsection}{\numberline {3.5.7}Android Client}{20}
+\contentsline {section}{\numberline {4}Implementation}{22}
+\contentsline {subsection}{\numberline {4.1}RFID Client}{22}
+\contentsline {subsection}{\numberline {4.2}Android Development}{22}
+\contentsline {subsubsection}{\numberline {4.2.1}Android Activity \& Life Cycle Methods}{22}
+\contentsline {subsubsection}{\numberline {4.2.2}Login Activity}{22}
+\contentsline {paragraph}{Buttons}{22}
+\contentsline {paragraph}{Back Stack Management}{23}
+\contentsline {paragraph}{Graceful Application shutdown}{24}
+\contentsline {subsubsection}{\numberline {4.2.3}Fridge Code Request Activity}{24}
+\contentsline {paragraph}{User actions and feedback}{24}
+\contentsline {subsubsection}{\numberline {4.2.4}Main Activity}{24}
+\contentsline {paragraph}{Fragments}{24}
+\contentsline {paragraph}{Custom List Adapter}{25}
+\contentsline {paragraph}{Settings}{25}
+\contentsline {subsubsection}{\numberline {4.2.5}Graphical User Interface Design \& Resources}{25}
+\contentsline {subsubsection}{\numberline {4.2.6}Manifest File}{26}
+\contentsline {subsubsection}{\numberline {4.2.7}Notifications}{26}
+\contentsline {subsubsection}{\numberline {4.2.8}Threads \& Concurrency Management}{26}
+\contentsline {subsubsection}{\numberline {4.2.9}Service}{26}
+\contentsline {subsubsection}{\numberline {4.2.10}Error Handling}{26}
+\contentsline {paragraph}{Exceptions}{26}
+\contentsline {paragraph}{Logging}{26}
+\contentsline {subsection}{\numberline {4.3}Distributed Authentication and Access Control}{26}
+\contentsline {subsubsection}{\numberline {4.3.1}Identity Pool}{26}
+\contentsline {subsubsection}{\numberline {4.3.2}Identity Access Management Role}{27}
+\contentsline {paragraph}{Security Policy}{27}
+\contentsline {subsection}{\numberline {4.4}Delay Tolerant Networking}{27}
+\contentsline {subsection}{\numberline {4.5}Data Management}{27}
+\contentsline {section}{\numberline {5}Testing and Evaluation}{29}
+\contentsline {subsection}{\numberline {5.1}Unit Tests \& Mocking}{29}
+\contentsline {subsection}{\numberline {5.2}Integration Test}{29}
+\contentsline {section}{\numberline {6}Review and Conclusion}{29}
+\contentsline {subsection}{\numberline {6.1}Security Concerns}{29}
