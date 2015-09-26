@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.27)  24 SEP 2015 20:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.27)  26 SEP 2015 14:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -609,7 +609,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 2.
  [1]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 86.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 87.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
@@ -656,19 +656,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [4]
 
+LaTeX Warning: Citation `FoodWaste' on page 5 undefined on input line 152.
+
+
+LaTeX Warning: Citation `rfidFood' on page 5 undefined on input line 158.
+
+
+LaTeX Warning: Citation `add image Barcodes' on page 5 undefined on input line 
+164.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [5]
-
-LaTeX Warning: Citation `FoodWaste' on page 6 undefined on input line 167.
-
-
-LaTeX Warning: Citation `add image Barcodes' on page 6 undefined on input line 
-174.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -705,6 +708,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [10]
 
+LaTeX Warning: Citation `B' on page 11 undefined on input line 226.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
@@ -724,23 +730,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13]
+[13
+
+]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14
-
-]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 282.
+[14]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 294.
 
  (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 282.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 294.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -755,25 +761,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[17] <images/LoginActivity.png, id=84, 523.9575pt x 634.37pt>
+[16] <images/LoginActivity.png, id=81, 523.9575pt x 634.37pt>
 File: images/LoginActivity.png Graphic file (type png)
 
 <use images/LoginActivity.png>
-Package pdftex.def Info: images/LoginActivity.png used on input line 407.
+Package pdftex.def Info: images/LoginActivity.png used on input line 425.
 (pdftex.def)             Requested size: 360.0pt x 435.87662pt.
 
-<images/cognitoFlow.png, id=86, 642.4pt x 433.62pt>
+<images/cognitoFlow.png, id=83, 642.4pt x 433.62pt>
 File: images/cognitoFlow.png Graphic file (type png)
 
 <use images/cognitoFlow.png>
-Package pdftex.def Info: images/cognitoFlow.png used on input line 422.
+Package pdftex.def Info: images/cognitoFlow.png used on input line 440.
 (pdftex.def)             Requested size: 360.0pt x 243.00418pt.
 
 
@@ -785,26 +784,26 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18]
+[17]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[19 <./images/LoginActivity.png>]
+[18 <./images/LoginActivity.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20 <./images/cognitoFlow.png>]
-<images/RFIDApplicationFlow.png, id=98, 438.63875pt x 423.5825pt>
+[19 <./images/cognitoFlow.png>]
+<images/RFIDApplicationFlow.png, id=95, 438.63875pt x 423.5825pt>
 File: images/RFIDApplicationFlow.png Graphic file (type png)
 
 <use images/RFIDApplicationFlow.png>
-Package pdftex.def Info: images/RFIDApplicationFlow.png used on input line 442.
+Package pdftex.def Info: images/RFIDApplicationFlow.png used on input line 460.
 
 (pdftex.def)             Requested size: 360.0pt x 347.65013pt.
 
@@ -814,26 +813,26 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[21]
+[20]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22 <./images/RFIDApplicationFlow.png>]
+[21 <./images/RFIDApplicationFlow.png>]
 
-LaTeX Warning: Reference `fig:activity' on page 23 undefined on input line 466.
+LaTeX Warning: Reference `fig:activity' on page 22 undefined on input line 484.
 
 
 
-Overfull \hbox (0.11214pt too wide) in paragraph at lines 477--478
+Overfull \hbox (0.11214pt too wide) in paragraph at lines 495--496
  \T1/cmr/bx/n/10.95 But-tons[] \T1/cmr/m/n/10.95 The Logi-n-Ac-tiv-ity class im
 -ple-ments the \T1/pcr/m/n/10.95 onClickListenter()
  []
 
 
-Overfull \hbox (1.79172pt too wide) in paragraph at lines 477--478
+Overfull \hbox (1.79172pt too wide) in paragraph at lines 495--496
 \T1/cmr/m/n/10.95 cuted the nec-es-sary block . For ex-am-ple, \T1/pcr/m/n/10.9
 5 R.id.facebook_login_button
  []
@@ -844,18 +843,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[23
+[22
 
 ]
 
-LaTeX Warning: Reference `fig:fbProfileEmail' on page 24 undefined on input lin
-e 481.
+LaTeX Warning: Reference `fig:fbProfileEmail' on page 23 undefined on input lin
+e 499.
 
-<images/fbProfileEmail.png, id=110, 790.955pt x 470.75874pt>
+<images/fbProfileEmail.png, id=107, 790.955pt x 470.75874pt>
 File: images/fbProfileEmail.png Graphic file (type png)
 
 <use images/fbProfileEmail.png>
-Package pdftex.def Info: images/fbProfileEmail.png used on input line 485.
+Package pdftex.def Info: images/fbProfileEmail.png used on input line 503.
 (pdftex.def)             Requested size: 360.0pt x 214.2674pt.
 
 
@@ -864,7 +863,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24 <./images/fbProfileEmail.png>]
+[23 <./images/fbProfileEmail.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[24]
+Overfull \hbox (49.04475pt too wide) in paragraph at lines 538--539
+\T1/cmr/m/n/10.95 adapter were made. The \T1/pcr/m/n/10.95 InventoryListAdapter
+ \T1/cmr/m/n/10.95 class ex-tends an \T1/pcr/m/n/10.95 ArrayAdapter\T1/cmr/m/n/
+10.95 .
+ []
+
+
+LaTeX Warning: Reference `fig:settings' on page 25 undefined on input line 547.
+
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -872,47 +888,30 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [25]
-Overfull \hbox (49.04475pt too wide) in paragraph at lines 520--521
-\T1/cmr/m/n/10.95 adapter were made. The \T1/pcr/m/n/10.95 InventoryListAdapter
- \T1/cmr/m/n/10.95 class ex-tends an \T1/pcr/m/n/10.95 ArrayAdapter\T1/cmr/m/n/
-10.95 .
- []
 
-
-LaTeX Warning: Reference `fig:settings' on page 26 undefined on input line 529.
-
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[26]
-
-LaTeX Warning: Reference `fig:xml' on page 27 undefined on input line 534.
+LaTeX Warning: Reference `fig:xml' on page 26 undefined on input line 552.
 
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 550.
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 568.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[27] <images/cognito_client_code.png, id=126, 572.1375pt x 92.345pt>
+[26] <images/cognito_client_code.png, id=122, 572.1375pt x 92.345pt>
 File: images/cognito_client_code.png Graphic file (type png)
 
 <use images/cognito_client_code.png>
-Package pdftex.def Info: images/cognito_client_code.png used on input line 572.
+Package pdftex.def Info: images/cognito_client_code.png used on input line 590.
 
 (pdftex.def)             Requested size: 360.0pt x 58.10577pt.
 
-<images/iam_policy.png, id=127, 725.71124pt x 741.77126pt>
+<images/iam_policy.png, id=123, 725.71124pt x 741.77126pt>
 File: images/iam_policy.png Graphic file (type png)
 
 <use images/iam_policy.png>
-Package pdftex.def Info: images/iam_policy.png used on input line 581.
+Package pdftex.def Info: images/iam_policy.png used on input line 599.
 (pdftex.def)             Requested size: 360.0pt x 367.97586pt.
 
 
@@ -921,15 +920,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[28 <./images/cognito_client_code.png>]
+[27 <./images/cognito_client_code.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[29 <./images/iam_policy.png>]
-Overfull \hbox (7.01852pt too wide) in paragraph at lines 601--602
+[28 <./images/iam_policy.png>]
+Overfull \hbox (7.01852pt too wide) in paragraph at lines 619--620
 \T1/cmr/m/n/10.95 the spec-i-fied ta-ble. By plac-ing \T1/pcr/m/n/10.95 DynamoD
 BTable(table Name="Fridge")
  []
@@ -940,7 +939,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[30] 
+[29] 
 AED: lastpage setting LastPage
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -948,7 +947,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[31
+[30
 
 ] (./report.aux)
 
@@ -956,10 +955,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 13473 strings out of 493117
- 269602 string characters out of 6135433
+ 13475 strings out of 493117
+ 269615 string characters out of 6135433
  314595 words of memory out of 5000000
- 16621 multiletter control sequences out of 15000+600000
+ 16623 multiletter control sequences out of 15000+600000
  16419 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,14n,61p,1541b,289s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -978,10 +977,10 @@ ist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2014/texmf-dis
 t/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2014/texmf-dist/
 fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
 pe1/urw/courier/ucrr8a.pfb>
-Output written on report.pdf (35 pages, 448648 bytes).
+Output written on report.pdf (34 pages, 447128 bytes).
 PDF statistics:
- 187 PDF objects out of 1000 (max. 8388607)
- 123 compressed objects within 2 object streams
+ 184 PDF objects out of 1000 (max. 8388607)
+ 121 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
