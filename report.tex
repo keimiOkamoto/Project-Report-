@@ -523,8 +523,19 @@ The Android application will be written using Java and utilise the Android SDK v
 \section{Implementation}
 
 \subsection{RFID Java Client Development}
-\subsubsection{Hardware}The selected interrogator is a 125khz Mifare technology RFID reader. It has a short read range of up to ten centimetres. The tag type is an ISO/IEC 14443 standard, passive low frequency RFID embedded stickers.\subsubsection{Application} The java client continuously polls for incoming tags. When a tag is read the unique code is extracted and queried against the database. Once the item is successfully identified the product is added to the users table. Where the Android client may retrieve the data, thus automating the item registration process. When the same item is read the reader will acknowledge the removal of the item and the product is removed from the table.In the even of a network failure a local cache will store the item ID?s, details on the implementation can be found in the section -----Delay Tolerant Networking. 
+\subsubsection{Hardware}The selected interrogator is a 125khz Mifare technology RFID reader. It has a short read range of up to ten centimetres. The tag type is an ISO/IEC 14443 standard, passive low frequency RFID embedded stickers. Figure \ref{fig:RFID} is an image of the hardware used. 
 
+\vspace{\baselineskip}
+
+\begin{figure}[!hp]
+\centering
+\includegraphics[width=9cm]{rfid}
+\caption{Image of NFC tags and a RFID reader} \label{fig:RFID}
+\end{figure}
+
+\subsubsection{Application} The java client continuously polls for incoming tags. When a tag is read the unique code is extracted and queried against the database. Once the item is successfully identified the product is added to the users table. Where the Android client may retrieve the data, thus automating the item registration process. When the same item is read the reader will acknowledge the removal of the item and the product is removed from the table.In the even of a network failure a local cache will store the item ID?s, details on the implementation can be found in the section -----Delay Tolerant Networking. 
+
+\vspace{\baselineskip}
 \subsection{Android Development} 
 
 \subsubsection{Android Activity \& Life Cycle Methods}Android uses a component called an activity to depict an action a user may accomplish within the application. When an activity class is extended some key methods listed below may be overridden and custom behaviour can be implemented. The developer has no control over when the methods are called and so given a situation the implementations can vary. Figure \ref{fig:activity} shows the life cycle of an activity and the methods that may be called. Careful management and implantation of the methods is needed to avoid unexpected behaviour and system crashes.Activities may be launched as an intent. When activities are launched they are places on top of a stack, where the history of the activity is kept, this is called the back stack. Upon the user pressing the back button the current activity is popped off the stack and they may return to the previously running activity. 
@@ -601,6 +612,8 @@ Once the connection is established using the Cognito client the DynamoDB client 
 Importance, maintainable code.
 \subsection{Unit Tests \& Mocking}
 \subsection{Integration Test}
+\subsection{Logging}
+\subsection{Facebook Testing Platform}
 
 %...................................................
 % Conclusion 

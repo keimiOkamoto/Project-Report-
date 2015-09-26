@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.27)  27 SEP 2015 00:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.27)  27 SEP 2015 00:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -847,22 +847,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25]
-
-LaTeX Warning: Reference `fig:activity' on page 26 undefined on input line 550.
-
-
-
-Overfull \hbox (0.11214pt too wide) in paragraph at lines 561--562
- \T1/cmr/bx/n/10.95 But-tons[] \T1/cmr/m/n/10.95 The Logi-n-Ac-tiv-ity class im
--ple-ments the \T1/pcr/m/n/10.95 onClickListenter()
- []
+[25] <images/rfid.jpg, id=116, 3882.505pt x 2300.595pt>
+File: images/rfid.jpg Graphic file (type jpg)
+ <use images/rfid.jpg>
+Package pdftex.def Info: images/rfid.jpg used on input line 547.
+(pdftex.def)             Requested size: 256.0748pt x 151.72038pt.
 
 
-Overfull \hbox (1.79172pt too wide) in paragraph at lines 561--562
-\T1/cmr/m/n/10.95 cuted the nec-es-sary block . For ex-am-ple, \T1/pcr/m/n/10.9
-5 R.id.facebook_login_button
- []
+LaTeX Warning: Reference `fig:activity' on page 26 undefined on input line 560.
+
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -872,41 +865,51 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [26
 
-]
+ <./images/rfid.jpg>]
+Overfull \hbox (0.11214pt too wide) in paragraph at lines 571--572
+ \T1/cmr/bx/n/10.95 But-tons[] \T1/cmr/m/n/10.95 The Logi-n-Ac-tiv-ity class im
+-ple-ments the \T1/pcr/m/n/10.95 onClickListenter()
+ []
+
+
+Overfull \hbox (1.79172pt too wide) in paragraph at lines 571--572
+\T1/cmr/m/n/10.95 cuted the nec-es-sary block . For ex-am-ple, \T1/pcr/m/n/10.9
+5 R.id.facebook_login_button
+ []
+
 
 LaTeX Warning: Reference `fig:fbProfileEmail' on page 27 undefined on input lin
-e 565.
+e 575.
 
-<images/fbProfileEmail.png, id=119, 790.955pt x 470.75874pt>
+<images/fbProfileEmail.png, id=120, 790.955pt x 470.75874pt>
 File: images/fbProfileEmail.png Graphic file (type png)
 
 <use images/fbProfileEmail.png>
-Package pdftex.def Info: images/fbProfileEmail.png used on input line 569.
+Package pdftex.def Info: images/fbProfileEmail.png used on input line 579.
 (pdftex.def)             Requested size: 360.0pt x 214.2674pt.
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[27 <./images/fbProfileEmail.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[28]
-Overfull \hbox (49.04475pt too wide) in paragraph at lines 604--605
+[27]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[28 <./images/fbProfileEmail.png>]
+Overfull \hbox (49.04475pt too wide) in paragraph at lines 614--615
 \T1/cmr/m/n/10.95 adapter were made. The \T1/pcr/m/n/10.95 InventoryListAdapter
  \T1/cmr/m/n/10.95 class ex-tends an \T1/pcr/m/n/10.95 ArrayAdapter\T1/cmr/m/n/
 10.95 .
  []
-
-
-LaTeX Warning: Reference `fig:settings' on page 29 undefined on input line 613.
-
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -916,46 +919,46 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [29]
 
-LaTeX Warning: Reference `fig:xml' on page 30 undefined on input line 618.
+LaTeX Warning: Reference `fig:settings' on page 30 undefined on input line 623.
 
-LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 634.
+
+
+LaTeX Warning: Reference `fig:xml' on page 30 undefined on input line 628.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[30] <images/cognito_client_code.png, id=135, 572.1375pt x 92.345pt>
+[30]
+LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 644.
+ <images/cognito_client_code.png, id=135, 572.1375pt x 92.345pt>
 File: images/cognito_client_code.png Graphic file (type png)
 
 <use images/cognito_client_code.png>
-Package pdftex.def Info: images/cognito_client_code.png used on input line 656.
+Package pdftex.def Info: images/cognito_client_code.png used on input line 666.
 
 (pdftex.def)             Requested size: 360.0pt x 58.10577pt.
 
-<images/iam_policy.png, id=136, 725.71124pt x 741.77126pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[31] <images/iam_policy.png, id=140, 725.71124pt x 741.77126pt>
 File: images/iam_policy.png Graphic file (type png)
 
 <use images/iam_policy.png>
-Package pdftex.def Info: images/iam_policy.png used on input line 665.
+Package pdftex.def Info: images/iam_policy.png used on input line 675.
 (pdftex.def)             Requested size: 360.0pt x 367.97586pt.
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[31 <./images/cognito_client_code.png>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[32 <./images/iam_policy.png>]
-Overfull \hbox (7.01852pt too wide) in paragraph at lines 685--686
+Overfull \hbox (7.01852pt too wide) in paragraph at lines 695--696
 \T1/cmr/m/n/10.95 the spec-i-fied ta-ble. By plac-ing \T1/pcr/m/n/10.95 DynamoD
 BTable(table Name="Fridge")
  []
@@ -966,16 +969,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[33]
+[32 <./images/cognito_client_code.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[34
+[33 <./images/iam_policy.png>]
 
-]
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[34]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -985,13 +993,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [35
 
 ]
-Underfull \hbox (badness 3019) in paragraph at lines 762--764
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[36
+
+]
+Underfull \hbox (badness 3019) in paragraph at lines 774--776
 []\T1/cmr/m/n/10.95 R. Chen, \T1/cmr/m/it/10.95 ``Us-ing RFID Tech-nol-ogy in F
 ood Pro-duce Trace-abil-
  []
 
 
-Underfull \hbox (badness 1057) in paragraph at lines 762--764
+Underfull \hbox (badness 1057) in paragraph at lines 774--776
 \T1/cmr/m/it/10.95 ity''\T1/cmr/m/n/10.95 ,WSEAS Trans-ac-tion on in-for-ma-tio
 n sci-ence and ap-pli-ca-tions,
  []
@@ -1002,7 +1019,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[36] 
+[37] 
 AED: lastpage setting LastPage
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1010,19 +1027,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[37] (./report.aux)
+[38] (./report.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 13497 strings out of 493117
- 269788 string characters out of 6135433
- 313681 words of memory out of 5000000
- 16645 multiletter control sequences out of 15000+600000
+ 13504 strings out of 493117
+ 269889 string characters out of 6135433
+ 313690 words of memory out of 5000000
+ 16650 multiletter control sequences out of 15000+600000
  16419 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,16n,61p,1568b,329s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1041,10 +1055,10 @@ ist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2014/texmf-dis
 t/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2014/texmf-dist/
 fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
 pe1/urw/courier/ucrr8a.pfb>
-Output written on report.pdf (41 pages, 470074 bytes).
+Output written on report.pdf (42 pages, 2949568 bytes).
 PDF statistics:
- 208 PDF objects out of 1000 (max. 8388607)
- 138 compressed objects within 2 object streams
+ 212 PDF objects out of 1000 (max. 8388607)
+ 140 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 48 words of extra memory for PDF output out of 10000 (max. 10000000)
 
