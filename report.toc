@@ -1,7 +1,7 @@
 \contentsline {section}{\numberline {1}Introduction}{1}
 \contentsline {subsection}{\numberline {1.1}Abstract}{1}
 \contentsline {subsection}{\numberline {1.2}Structure of the report}{1}
-\contentsline {subsection}{\numberline {1.3}Development Methodology}{1}
+\contentsline {subsection}{\numberline {1.3}Development Methodology}{2}
 \contentsline {section}{\numberline {2}Background \& Analysis}{3}
 \contentsline {subsection}{\numberline {2.1}Motivation}{3}
 \contentsline {subsubsection}{\numberline {2.1.1}Environment}{3}
@@ -87,25 +87,38 @@
 \contentsline {paragraph}{AsyncTask}{34}
 \contentsline {paragraph}{Future Task, Runnable and Handlers }{34}
 \contentsline {subsubsection}{\numberline {4.2.9}Service and BroadcastReceiver}{35}
-\contentsline {subsubsection}{\numberline {4.2.10}Error Handling}{36}
+\contentsline {subsubsection}{\numberline {4.2.10}Swipe Refresh Layout Function}{36}
+\contentsline {subsubsection}{\numberline {4.2.11}Error Handling}{36}
 \contentsline {paragraph}{Logging}{36}
-\contentsline {subsection}{\numberline {4.3}Distributed Authentication and Access Control}{36}
-\contentsline {subsubsection}{\numberline {4.3.1}Identity Pool}{36}
+\contentsline {subsection}{\numberline {4.3}Distributed Authentication and Access Control}{37}
+\contentsline {subsubsection}{\numberline {4.3.1}Identity Pool}{37}
 \contentsline {subsubsection}{\numberline {4.3.2}Identity Access Management Role}{37}
-\contentsline {paragraph}{Security Policy}{37}
-\contentsline {subsection}{\numberline {4.4}Delay Tolerant Networking}{37}
+\contentsline {paragraph}{Security Policy}{38}
+\contentsline {subsection}{\numberline {4.4}Delay Tolerant Networking}{39}
 \contentsline {subsection}{\numberline {4.5}Data Management}{39}
 \contentsline {subsubsection}{\numberline {4.5.1}DynamoDB}{39}
 \contentsline {paragraph}{Data modelling}{39}
-\contentsline {subsubsection}{\numberline {4.5.2}Primary Key \& Range}{39}
-\contentsline {paragraph}{Object Mapper}{39}
+\contentsline {subsubsection}{\numberline {4.5.2}Primary Key \& Range}{40}
+\contentsline {paragraph}{Object Mapper}{40}
 \contentsline {subsubsection}{\numberline {4.5.3}Android Internal Storage}{40}
 \contentsline {paragraph}{Shared preferences}{40}
 \contentsline {paragraph}{Internal Storage}{40}
-\contentsline {section}{\numberline {5}Testing \& Evaluation}{42}
-\contentsline {subsection}{\numberline {5.1}Unit Tests \& Mocking}{42}
-\contentsline {subsection}{\numberline {5.2}Integration Test}{42}
-\contentsline {subsection}{\numberline {5.3}Facebook Testing Platform}{42}
-\contentsline {subsection}{\numberline {5.4}Testing the Service with Toast}{42}
-\contentsline {section}{\numberline {6}Review \& Conclusion}{42}
-\contentsline {subsection}{\numberline {6.1}Security Concerns}{42}
+\contentsline {section}{\numberline {5}Testing \& Evaluation}{43}
+\contentsline {subsection}{\numberline {5.1}Unit Tests \& Mocking}{43}
+\contentsline {section}{\numberline {6}Manual Testing}{44}
+\contentsline {subsection}{\numberline {6.1}Facebook Testing Platform}{44}
+\contentsline {subsection}{\numberline {6.2}Testing the Service with Toast}{45}
+\contentsline {subsection}{\numberline {6.3}Test Reports}{46}
+\contentsline {subsubsection}{\numberline {6.3.1}User Login}{46}
+\contentsline {subsubsection}{\numberline {6.3.2}User Logout}{46}
+\contentsline {subsubsection}{\numberline {6.3.3}Add Fridge Code}{46}
+\contentsline {subsubsection}{\numberline {6.3.4}Adds Items to Fridge}{46}
+\contentsline {subsubsection}{\numberline {6.3.5}Refresh Contents}{47}
+\contentsline {section}{\numberline {7}Review \& Conclusion}{48}
+\contentsline {subsection}{\numberline {7.1}Item Weight and Quantity}{48}
+\contentsline {subsection}{\numberline {7.2}Security Concerns}{48}
+\contentsline {subsection}{\numberline {7.3}Enhancements}{48}
+\contentsline {subsubsection}{\numberline {7.3.1}Features}{48}
+\contentsline {paragraph}{Statistics and shopping list}{48}
+\contentsline {subsubsection}{\numberline {7.3.2}Technology}{48}
+\contentsline {subsection}{\numberline {7.4}Review}{49}
