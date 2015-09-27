@@ -529,8 +529,23 @@ The Android application will be written using Java and utilise the Android SDK v
 
 \section{Implementation}
 
+\subsection{System Architecture}
+Figure \ref{fig:sysArch} is a high level system architecture diagram and the various components. AWS's resources are controlled through an admin entity where access rights are set up and regulated. The clients will abide by the security policies and communicate with the database accordingly. The next sections will discuss the methods of implementation for each component. 
+
+\vspace{\baselineskip}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=10cm]{sysArch}
+\caption{System Architecture Diagram} \label{fig:sysArch}
+\end{figure}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+
 \subsection{RFID Java Client Development}
 \subsubsection{Hardware}The selected interrogator is a 125khz Mifare technology RFID reader. It has a short read range of up to ten centimetres. The tag type is an ISO/IEC 14443 standard, passive low frequency RFID embedded stickers. Figure \ref{fig:RFID} is an image of the hardware used. 
+
+\subsubsection{Application} The java client continuously polls for incoming tags. When a tag is read the unique code is extracted and queried against the database. Once the item is successfully identified the product is added to the users table. Where the Android client may retrieve the data, thus automating the item registration process. When the same item is read the reader will acknowledge the removal of the item and the product is removed from the table.In the even of a network failure a local cache will store the item identifiers, details on the implementation can be found in the section \ref{sec:Delay Tolerant Networking}.
 
 \vspace{\baselineskip}
 
@@ -539,8 +554,6 @@ The Android application will be written using Java and utilise the Android SDK v
 \includegraphics[width=9cm]{rfid}
 \caption{Image of NFC tags and a RFID reader} \label{fig:RFID}
 \end{figure}
-
-\subsubsection{Application} The java client continuously polls for incoming tags. When a tag is read the unique code is extracted and queried against the database. Once the item is successfully identified the product is added to the users table. Where the Android client may retrieve the data, thus automating the item registration process. When the same item is read the reader will acknowledge the removal of the item and the product is removed from the table.In the even of a network failure a local cache will store the item identifiers, details on the implementation can be found in the section \ref{sec:Delay Tolerant Networking}.
 
 \vspace{\baselineskip}
 
@@ -818,11 +831,11 @@ Figure \ref{fig:facebookTest} is a screen capture of the Facebook console, the e
 % Conclusion 
 %..................................................
 \section{Review \& Conclusion}
-For the final chapter critically evaluates the final product and discusses the possible areas of improvement that can be made. Additionally security concerns over the Internet of Things (IOT) movement is discussed. 
+The final chapter critically evaluates the final product and discusses the possible areas of improvement that can be made.
 
-\subsection{Item Weight and Quantity} With the use of RFID the application has successfully automated the logging of the items but the difficulty arose when the quantity of the product was needed. For example, a carton of milk may almost be empty and still have a small amount left. This is not enough for the user and they must be notified, however the fridge is still communicating to the user that milk is present in the fridge. The system is not able to keep track of the mass of the produce. In the past products such as 'Milkey Weight' but ChillHub were built to solve this problem. An item is places on top of a weight measuring surface connected via USB cable. But this would result in every product having a delegated storage location which is highly inconvenient.\cite{milky}  
+\subsection{Item Weight and Quantity} With the use of RFID the application has successfully automated the logging of the items but the difficulty emerged when the quantity of the product was needed. For example, a carton of milk may almost be empty This is not enough for the user and they must be notified, however the fridge is still communicating to the user that milk is present in the fridge. The system is not able to keep track of the mass of the produce. Products such as `Milky Weight', a weigh calculating surface intended to be installed within the fridge has been created by ChillHub. An item is places on top of the weight measuring surface which can then notify the owner. But this would result in every product having a delegated storage location in the fridge which is highly inconvenient for the user.\cite{milky} Other solutions such as installing a camera that periodically takes snapshots has also been explored but the problem with this solution is that packaging is not always transparent. 
 
-\subsection{Security Concerns} There has been growing security concern over highly connected smart objects. Recently a test was carried out were an internet enabled vehicle was hacked into and the engine was disabled whilst speeding down a highway. \cite{jeep} This demonstrated the ease in which hackers are able to tamper with the objects, any object with an IP address is vulnerable to malicious attacks and no matter how secure we try to make it attackers will always exist and is impossible to fully guard against.  
+\subsection{Security Concerns}There has been growing security concern over highly connected smart objects. Recently a test was carried out, were an Internet enabled vehicle was speeding down a highway when hackers infiltrated the system and managed to disable the cars engine.\cite{jeep} This demonstrated the ease in which hackers are able to tamper with the objects as any object with an IP address is vulnerable to malicious attacks and no matter how secure the system is, it is impossible to fully guard against attackers.  
 
 \subsection{Enhancements}
 \subsubsection{Features}
@@ -830,10 +843,11 @@ For the final chapter critically evaluates the final product and discusses the p
 In addition to the inventory list, a statistics report may be presented to the user detailing the monetary savings made and the environmental impact the saving have had to encourage the user. Shopping list generator could be created where suggestions can be made to the user based on past behaviour and purchase patterns. 
 
 \subsubsection{Technology}
-Currently a service is implemented on the Android application. The service is set to poll the database every thirty minutes. Instead a trigger can be implemented on the database layer where any alterations to a table triggers a network operation. As the user base grown polling ever thirty seconds for every fridge would be highly ineffective. 
+Currently a service is implemented on the Android application. The service is set to poll the database every thirty seconds. Instead a trigger can be implemented on the database layer where any alterations to a table triggers a network operation. As the user base grows, polling ever thirty seconds for every fridge would be highly ineffective and costly.  
 
 \subsection{Review}
-Overall the project has successfully managed to automate the logging of items and the inventory can be displayed to the user in any location via a smartphone. The project has been a highly educational experience where unexpected hurdles were met. Some challenging cases arose where previously taught skills from the MSc Computer Science course were revises and applied. To conclude the project has provided a better understanding of software development cycle and confidence in experimenting with new technologies.    
+Overall the project has successfully managed to automate the logging of items and the inventory may be displayed to the user in any location by utilising a smartphone. The development of the product from concept to implementation has allowed discoveries to be made with in a technological sense and conceptual. The initial idea proposed has evolved and new use cases arose which required quick changes in design decisions and detaching from previously though of processes and ideas and at times even the disposal of code for a better cause. 
+The project has been a highly educational experience where unexpected hurdles were met. Some challenging cases arose where previously taught skills from the MSc Computer Science course were revises and applied. To conclude the project has provided a better understanding of software development cycle and confidence in experimenting with new technologies.    
 
 \vspace{\baselineskip}
 \vspace{\baselineskip}
