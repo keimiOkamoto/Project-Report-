@@ -519,7 +519,6 @@ The Android application will be written using Java and utilise the Android SDK v
 % Implementation
 %..................................................
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Implementation}
 
 \subsection{RFID Java Client Development}
@@ -533,36 +532,102 @@ The Android application will be written using Java and utilise the Android SDK v
 \caption{Image of NFC tags and a RFID reader} \label{fig:RFID}
 \end{figure}
 
-\subsubsection{Application} The java client continuously polls for incoming tags. When a tag is read the unique code is extracted and queried against the database. Once the item is successfully identified the product is added to the users table. Where the Android client may retrieve the data, thus automating the item registration process. When the same item is read the reader will acknowledge the removal of the item and the product is removed from the table.In the even of a network failure a local cache will store the item ID?s, details on the implementation can be found in the section -----Delay Tolerant Networking. 
+\subsubsection{Application} The java client continuously polls for incoming tags. When a tag is read the unique code is extracted and queried against the database. Once the item is successfully identified the product is added to the users table. Where the Android client may retrieve the data, thus automating the item registration process. When the same item is read the reader will acknowledge the removal of the item and the product is removed from the table.In the even of a network failure a local cache will store the item identifiers, details on the implementation can be found in the section \ref{sec:Delay Tolerant Networking}.
 
 \vspace{\baselineskip}
+
 \subsection{Android Development} 
 
-\subsubsection{Android Activity \& Life Cycle Methods}Android uses a component called an activity to depict an action a user may accomplish within the application. When an activity class is extended some key methods listed below may be overridden and custom behaviour can be implemented. The developer has no control over when the methods are called and so given a situation the implementations can vary. Figure \ref{fig:activity} shows the life cycle of an activity and the methods that may be called. Careful management and implantation of the methods is needed to avoid unexpected behaviour and system crashes.Activities may be launched as an intent. When activities are launched they are places on top of a stack, where the history of the activity is kept, this is called the back stack. Upon the user pressing the back button the current activity is popped off the stack and they may return to the previously running activity. 
+\subsubsection{Android Activity \& Life Cycle Methods}Android uses a component called an activity to depict an action a user may accomplish within the application. When an activity class is extended some key methods listed below may be overridden and custom behaviour can be implemented. The developer has no control over when the methods are called and so given a situation the implementations can vary. Figure \ref{fig:activity_lifecycle} taken from the android developers website, shows the life cycle of an activity and the methods that may be called. Careful management and implantation of the methods is needed to avoid unexpected behaviour and system crashes.
+
+\begin{figure}[!hp]
+\centering
+\includegraphics[width=9cm]{activity_lifecycle}
+\caption{Life cycle of an Android activity.} \label{fig:activity_lifecycle}
+\end{figure}
+Activities may be launched as an intent. When activities are launched they are places on top of a stack where the history of the activity is kept, this is called the back stack. Upon the user pressing the back button the current activity is popped off the top of the stack and they may return to the previously running activity. 
 
 
-\subsubsection{Login Activity}The login activity is responsible for the user authentication process. Graphical elements such as buttons and text boxes instantly translate the needed actions the user is to take. **Add image
+\subsubsection{Login Activity}The login activity is responsible for the user authentication process. Graphical elements such as buttons and text boxes instantly translate the needed actions the user is to take. 
+\paragraph{Buttons}The LoginActivity class implements the \texttt{onClickListenter()} interface which enforces the implementation of the \texttt{onClick()} method. In this method a switch statement is used to determine which button was pressed. The switch statement checks for the interacted resource ID and executed the necessary block . For example, \texttt{R.id.facebook\_login\_button} corresponds to the Facebook login button. When the Facebook button is pressed the  user must go through Facebook's authentication process, if the user has not previously signed up. If the user is a retuning user then the login process is avoided and the user is directed straight to the main activity.  When the user enters their credentials, a request for an access token is made to Facebook as shown on Figure.\ref{fig:cognitoFlow} If the user is a registered member of Facebook a new activity is launched requesting that the user grant the application permission to extract the requested details from their account. In this case the user's profile and email address is needed to use the application, as shown in Figure \ref{fig:onClick}. If the user accepts, a graph JSON object is retuned containing the user's details and the next activity is launched.
 
-\paragraph{Buttons}The LoginActivity class implements the \texttt{onClickListenter()} interface which enforces the implementation of the \texttt{onClick()} method. In this method a switch statement is used to determine which button was pressed. The switch statement checks for the interacted resource ID and executed the necessary block . For example, \texttt{R.id.facebook\_login\_button} corresponds to the Facebook login button. When the Facebook button is pressed the  user must go through Facebook?s authentication process if the user has not previously signed up. If the user is a retuning user then the login process is avoided and the user is directed straight to the main activity.  When the user enters their credentials, a request for an access token is made to Facebook. If the user is a registered member of Facebook a new activity is launched requesting that the user grant the application permission to extract the listed details from their account. In this case the user?s profile and email address is needed to use the application, as shown in Figure \ref{fig:fbProfileEmail}. If the user accepts, a graph JSON object is retuned containing the user?s details and the next activity is launched.\begin{figure}[h]
+\vspace{\baselineskip}
+\begin{figure}[h]
 \centering
 \includegraphics[width=\textwidth]{fbProfileEmail}
-\caption{onClick() method implementation.}
+\caption{onClick() method implementation.} \label{fig:onClick}
 \end{figure}
 
-If the user is invalid the error will display a toast message communicating the failure to the user. The user will stay on the login page and will not be able progress until valid credentials are provided. Once the user has been authenticated this state is preserved to avoid the user needing to go through the signup flow each time the application is closed. Only when the logout button situated in the settings is explicitly pressed the user is logged out and in order for the user to use the app the sign up activity is launched again. 
+\vspace{\baselineskip}
 
 
-\paragraph{Back Stack Management}When launching a new Intent, flags may be added to it to manage the Back Stack. The history of the login page is not needed and does not need to be kept on the stack, doing so could even pose a security risk if the user is able to navigate back to the page where they entered confidential information. Also if the Back Stack is not managed, a trail of activities become visible when exiting the application and is perceived as bad practice and unprofessional. Activities that the user will never return to should be disposed of and should avoid being kept on the Back Stack. To ensure that the user cannot return to the login activity the history must be removed. By calling the Intents \texttt{addFlags()} method and passing it the parameters \texttt{Intent.FLAG\_ACTIVITY\_NO\_HISTORY}, if this is set then the intent is not saved in the tasks history.\paragraph{Graceful Application shutdown}Commonly, if the user is on the main page and the back button is pressed the application will exit and return to either the device home screen or the previously running application on the Back Stack. But as the aim is to get the user to sign up, if the back button is pressed the application will ask for confirmation from the user that the user truly would like to exit, if so the user is prompted to press the back button again. This is achieved by overriding the \texttt{onBackPressed()}method. **add image
+If the user is invalid the error will display a toast message, a light-weight message displaying process, communicating the failure to the user. The user will stay on the login page and will not be able progress until valid credentials are provided. Once the user has been authenticated this state is preserved to avoid the user needing to go through the signup flow each time the application is closed. Only when the logout button situated in the settings is explicitly pressed the user is logged out and the next time the user launches the application the sign up activity is launched again. 
 
-\subsubsection{Fridge Code Request Activity}Users will be able to subscribe to a fridge using this activity. The activity displays a text box there they are prompted to enter a unique ID. If the ID is valid the contents of the fridge will be retrieved and displayed. If the user is an existing user of the application this activity will not be launched and they will be directed to the main activity, listing the contents of their subscribed fridge.After the user logs in the first a query will be made to the database to check if the user has previously signed up. If the records exist they are received and the EnterFridgeIDActivity is never launched. If no records exist this intent will be launched and the user will not be able to proceed unless the \paragraph{User actions and feedback}When the application requires the user to input or edit a field the actions must be visually translated to the user. If no feedback is provided to the user they may mistake that the application has frozen or is broken. Toast messages may be used to provide feedback to the user. Here when an empty field is submitted the user will be prompted of their error. However if the entered id is invalid another message will be displayed so the user is informed of the mistake with accurate detail. **Add images both toast messages
 
-\subsubsection{Main Activity}The main activity is launched after the user is successfully authenticated. This activity will allow the user to remotely access the contents of the fridge. Below describes the construction process of the activity. \paragraph{Fragments} The Main Activity is made up of fragments. In Android development the use of fragments is encouraged to avoid duplication of code and to create a transportable UI element that can be used with devices that vary in screen size. Fragments can be composed into activates allowing UI elements to be transported with ease and promote code reusability. Fragments belong inside an activity and also has a life cycle of it?s own, similar to an Activity. The fragment can be declared in two ways. Either statically using the activities layout file, or programmatically set in the \texttt{onCreate()} method.  	\paragraph{Custom List Adapter} As the format the data is presented in the list element is not available using the Android library, a custom list view and adapter were made. The \texttt{InventoryListAdapter} class extends an \texttt{ArrayAdapter}. The adapter class is responsible for dynamically setting the graphical elements and text fields in the list elements.  In the \texttt {onCreateView()} method in the \texttt{InventoryFragment} the custom adapter is set to the list view. As the activity?s \texttt{onCreate()} method is called and in turn the fragments are launched the information will display to the viewer. The \texttt{compare()} method in the products class is overridden and in the Adapter, the products are rearranged in priority order. The text will be displayed in red if the product is expiring today and green if there is no urgency. ** Image 
+\paragraph{Back Stack Management}When launching a new Intent, flags may be added to manage the back stack. The history of the login page should not be kept on the stack. This is to avoid the user navigating back to the activity holding sensitive information such as user name and password. Also if the Back Stack is not managed, a trail of activities become visible when exiting the application and is perceived as bad practice and unprofessional by the android develops guide.\cite{android} Activities that the user will never return to should be disposed of and eliminated form the back stack. To ensure that the user cannot return to the login activity the history must be removed. By calling the Intents \texttt{addFlags()} method and passing it the parameters \texttt{Intent.FLAG\_ACTIVITY\_NO\_HISTORY}, if this is set then the intent is not saved in the tasks history. Other flags may also be added to control the life-cycle of an intent. Figure \ref{fig:intent} is an example taken from the \texttt{LoginActivity.java} class. 
 
-\paragraph{Settings} The settings icon and location have conformed to the Android recommended design practice. As shown in \ref{fig:settings} the settings contains the logout button where the user must navigate to in order to logout. To implement this the ::onOptionsItemSelected() must be overridden. Same as the onClickListener() method it uses the resource ID to find which field was selected.  \subsubsection{Graphical User Interface Design \& Resources}Interface elements can be created using XML elements that make up the UI. Elements that build the GUI are declared inside the layout files and can be styled within the XML document. Alternatively graphical elements can be set at runtime programmatically using Views and ViewGroups objects, where graphical elements can be extracted and edited within the code. For each Activity and Fragment the application will style the interface using XML to keep the business logic and GUI logic separated, allowing the code to be more readable and maintainable. Figure \ref{fig:xml} is the layout used for the Main Activity. **image goes hereResources such as graphical icons, logos, colours and Strings are stored in the values file within the resources. Strings are kept in a separate XML document so others may reference it and avoid hardcoding into the code and created a single access point where modifications can be made. Android operates world wide so this approach can also facilitate the 
+\vspace{\baselineskip}
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{intent}
+\caption{Implementation of an Intent and the use of flags.} \label{fig:intent}
+\end{figure}
 
+\vspace{\baselineskip}
+
+\paragraph{Graceful Application shutdown}Commonly, if the user is on the main page and the back button is pressed the application will exit and return to either the device home screen or the previously running application on the back stack. But as the aim of login page is is to get the user to sign up, if the back button is pressed the application will ask for confirmation from the user that the user truly would like to exit. If so the user is prompted to press the back button again. This is achieved by overriding the \texttt{onBackPressed()}method. Figure \ref{fig:onBack} is the implementation of the  \texttt{onBackPressed()}method taken from the  \texttt{LogingActivity} class.\vspace{\baselineskip}
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{onBack}
+\caption{Implementation of the onBackPressed method.} \label{fig:onBack}
+\end{figure}
+
+
+\subsubsection{Fridge Code Request Activity}Users will be able to subscribe to a fridge using the \texttt{FridgeCodeRequestActivity}. This activity displays a text box. The user is prompted to enter a unique ID. If the ID exists in the database, the contents of the fridge will be retrieved and displayed. If the user is an existing user of the application this activity will not be launched and they will be directed to the main activity.\paragraph{User actions and feedback}When the application requires the user to input or edit a field, the actions must be visually translated to the user. If no feedback is provided to the user they may mistake that the application has frozen or has encountered a system crash. Toast messages may be used to provide feedback to the user. Here when an empty field is submitted the user will be prompted of their error. However if the entered id is invalid another message will be displayed so the user is informed of the mistake with accurate detail. Figure \ref{fig:toast} is a screen capture of the activity when the user attempts to pocceed without entering any characters. 
+
+\vspace{\baselineskip}
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=5cm]{toast}
+\caption{Screen capture of the toast message appearing when nothing is entered.} \label{fig:toast}
+\end{figure}
+
+\vspace{\baselineskip}
+
+\subsubsection{Main Activity}The main activity is launched after the user is successfully authenticated. This activity will allow the user to remotely access the contents of the fridge. Below describes the construction process of the activity. \paragraph{Fragments} The Main Activity is made up of fragments. In Android development the use of fragments is encouraged to eliminate duplicate code and to create a transportable UI element. Fragments can be composed into activates allowing UI elements to be transported with ease and promote code reusability. Fragments belong inside an activity and also has a life-cycle of it's own, similar to an Activity. The fragment can be declared in two ways. Either statically using the activities layout file, or programmatically set in the \texttt{onCreate()} method.  	
+\paragraph{Custom List Adapter and View} 
+Just by using the list adapter in the Android library would not be able to display all the elements needed such as the expiry date, quantity, product name and image icon. Instead a custom adapter and list view were created. The \texttt{InventoryListAdapter} class extends an \texttt{ArrayAdapter}. The adapter class is responsible for dynamically setting the graphical elements and text fields in the list elements. As the list is populated the correct icons and text colours are assigned.In the \texttt {onCreateView()} method in the \texttt{InventoryFragment.java} class the custom adapter is set to the list view. As the activity's \texttt{onCreate()} method is called and in turn the fragments are launched the information will display to the viewer. The \texttt{compare()} method in the products class is overridden and in the adapter, the products are rearranged in priority order. The text will be displayed in red if the product is expiring today and green if there is no urgency. 
+\paragraph{Settings} The settings icon and location have conformed to the Android recommended design practice. As shown in Figure.\ref{fig:settings} the settings contains the logout button where the user must navigate to in order to logout. To implement this the \texttt{onOptionsItemSelected()} must be overridden. Same as the \texttt{onClickListener()} method it uses the resource ID to find which field was selected. 
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=5cm]{settings}
+\caption{Screen capture of the settings tab.} \label{fig:settings}
+\end{figure}
+
+\vspace{\baselineskip}
+
+\subsubsection{Graphical User Interface Design \& Resources}Interface elements can be created using XML elements that make up the UI. Elements that build the GUI are declared inside the layout files and can be styled within the XML document. Alternatively graphical elements can be set at runtime programmatically using Views and ViewGroups objects, where graphical elements can be extracted and edited within the code. For each Activity and Fragment the application will style the interface using XML to keep the business logic and GUI logic separated, allowing the code to be more readable and maintainable. Figure \ref{fig:xml} is the layout used for the Main Activity. \begin{figure}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{xml}
+\caption{Static layout initialisation using XML} \label{fig:xml}
+\end{figure}
+
+Resources such as graphical icons, logos, colours and Strings are stored in the values file within the resources. Strings are kept in a separate XML document so others may reference it and avoid hardcoding into the code and created a single access point where modifications can be made. Android operates world wide so this approach can also facilitate the 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Manifest File}All Android application has a manifest file. Activities, services, receivers and content providers must all be registered in this file in order for them to be utilised. Permission are also set here to enable privileged features such as access to the Internet and cross application data sharing. Application name and screen orientation and even setting the start up activity is declared in this document.
 
-\subsubsection{Notifications}Android uses notification alerts to communicate with the user. Notifications can be triggered when certain events occur. When a new item is added to the fridge an alert is triggered notifying the user of the change in state. This way even without the user having the application open they are kept informed of the state reducing the likelihood of the user unknowingly purchasing the same product.**add image\subsubsection{Threads \& Concurrency Management}
+\subsubsection{Notifications}Android uses notification alerts to communicate with the user. Notifications can be triggered when certain events occur. When a new item is added to the fridge an alert is triggered notifying the user of the change in state. This way even without the user having the application open they are kept informed of the state reducing the likelihood of the user unknowingly purchasing the same product. Figure \ref{notification} is the notification a user will see when the event is triggered.\begin{figure}[!htbp]
+\centering
+\includegraphics[width=5cm]{notification}
+\caption{Notification displaying a message.} \label{fig:notification}
+\end{figure}
+
+\subsubsection{Threads \& Concurrency Management}
+Application component by default run in the same thread called the ?main thread?. This can be problematic for the operations that could potentially take a long time, as it will cause the UI to become unresponsive. An unresponsive UI can lead the user to believe that the application has encountered and error and even block other features of the application. Android best practices suggest that network and I/O operations are performed in a separate thread to the main thread.\paragraph{AsyncTask}Android provides a thread management class that preforms asynchronous tasks. Using the tttext{AsyncTask} class the management is performed automatically by the Android environment. When extending tttext{AsyncTask} the \texttt{doInBackground()} method is implemented. Once this method has completed the tttext{onPostExecute()} method is called, unon completion any information processed can be displayed in the UI.  This class can be executed using the tttext{execute()} method from the UI thread. Figure ---- shows the asynchronous network request using the Facebook API.\paragraph{ Future Task, Runnable and Handlers } At times finer control is needed for threads. In some circumstances race conditions can arise, where the main thread attempts to process data that is dependant on a previously executed AsyncTask?s completion. Blocking and forcing the main thread to wait is a bad idea as it will cause the UI to become unresponsive. FutureTasks is a cancellable asynchronous operation and can also ensures that the results are only retrieved if the computation has completed. It implements the Runnable interface so it may be submitted to an executor. Figure ---- is an example implementation of FutureTask that will only retrieve the data once the query to the database has completed. Stream of data and execute
+
+
 \subsubsection{Service and BroadcastReceiver 
 \texttt{ScheduleReceiver}
 }
@@ -587,7 +652,8 @@ If the user is invalid the error will display a toast message communicating the 
 \end{figure}
 \paragraph{Security Policy}Policy statements are written in Java Script Object Notation (JSON). The statement is split into three sections, actions, resource and effect. The action block specifies the actions that are allowed on the service. For example the policy in Figure \ref{fig:iam} lists the actions that may be performed on a service, in this case DynamoDB. Actions that are not explicitly specified will be rejected. Resource block specify the AWS recourse that the policy is allowing access to, a resources is indicated by the ARN. The effect block specifies the result after the user requests access to the service. By default the effect is set to ?deny? so this must explicitly set. Additionally, a condition block may be set to further restrict the type of user gaining access. In the example below only users associated with Facebook are granted access.
 
-\subsection{Delay Tolerant Networking}
+\subsection{Delay Tolerant Networking}\
+\label{sec:Delay Tolerant Networking}
 \subsubsection{Caching}
 %-Analytics, how these api's provide analytics, user patterns
 
@@ -706,6 +772,9 @@ bibitem{georgeR}G. Roussos, \emph{\say{Networked RFID System, software \& servic
 \vspace{\baselineskip}
 
 \bibitem{rdbms}Ramakrishnan, R., \& Gehrke, J. \emph{\say{Database Management Systems}}, Boston: McGraw-Hill,(3rd ed.); 2003
+\vspace{\baselineskip}
+
+\bibitem{activity_lifecycle}Figure 1. \emph{\say{http://developer.android.com/guide/components/activities.html}}, September 2015
 \vspace{\baselineskip}
 
 \end{thebibliography}
