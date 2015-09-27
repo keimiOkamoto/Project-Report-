@@ -641,17 +641,23 @@ Application component by default run in the same thread called the 'main thread'
 \end{figure}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \subsubsection{Service and BroadcastReceiver}
-\subsubsection{Service}	Android recommends the use of a service for long running operations. Unlike activities, services do not have a user interface; services are designed to run in the background of the application and can run even if the user happens to switch to another application. For the system to have close to real time as possible data, a service was created to periodically poll the database. This operation is able to continue even when the application is not in the foreground. \texttt{LoadFridgeContentService} extends the service class. For the service to function the first thing an activity must do is bind to the service. The \texttt{onBind()} will return an \texttt{IBinder} this way the client may communicate with this service. When \texttt{startService} is called by the client the \texttt{onStartCommand()}, this method will continue to run indefinitely.
+Android recommends the use of a service for long running operations. Unlike activities, services do not have a interface; services are designed to run in the background and can continue, even if the user happens to switch to another application.
+For the system to display data as the user loads the fridge, a service was created to periodically poll the database. This operation is able to continue even when the application is not in the foreground. \texttt{LoadFridgeContentService} extends the service class. For the service to function the first thing an activity must do is bind to the service. The \texttt{onBind()} will return an \texttt{IBinder} this way the client may communicate with this service. When \texttt{startService} is called by the client the \texttt{onStartCommand()}, this method will continue to run indefinitely. The \texttt{ScheduleReceiver} class extended the \texttt{BroardcastReceiver} class. The \texttt{onReceive()} method is overridden where an alarm service is implemented and set to poll every thirty seconds. Figure \ref{fig:service} is the implementation of the ScheduleReceiver.
+
+%%%%%%%%%%%pulldown refresh
 
 
-\subsubsection{Error Handling}\paragraph{Exceptions}\paragraph{Logging}
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{service}
+\caption{Implementation of ScheduleReceiver} \label{fig:service}
+\end{figure}
 
-\subsection{Distributed Authentication and Access Control}Access control to resources is imperative to avoid security breeches and data loss. When using AWS mobile SDK, AWS enforces the use of Cognito for mobile identity management. Cognito uses Identity Pools to manage the different layers of user privileges and Identity Access Management (IAM) roles.\subsubsection{Identity Pool}An identity pool is specific to the application. As a single AWS account is used by many different applications the segmentation of users can help organise the subscribing users and facilitate the allocation of correct recourses to the user. By using the Cognito client developers can avoid hardcoding credentials into the application?s source code. This is particularly important for programs intended for mass distribution. The image below is a method that initialises the Cognito client using the activities context, Identity pool id of the Amazon Resource Name (ARN) and the region code the resource resides on, in this case it accessing the servers in Ireland.  %\vspace{\baselineskip}
+\subsubsection{Error Handling}\paragraph{Logging} The Android library has a logging class to enable the organisation of errors. Log messages aids the debugging workflow, if the log is for debugging purposes the \texttt{Log.d} will be used to explain the process, similarly, \texttt{Log.e} is for errors, \texttt{Log.i} is for information, \texttt{Log.v} is for verbose messaging descriptions, \texttt{Log.w} is a warning message and \texttt{Log.wtf} is 'What a terrible failure' message to signify situations that should not happen. \cite{android}
+\subsection{Distributed Authentication and Access Control}Access control to resources is imperative to avoid security breeches and data loss. When using AWS mobile SDK, AWS enforces the use of Cognito for mobile identity management. Cognito uses Identity Pools to manage the different layers of user privileges and Identity Access Management (IAM) roles.\subsubsection{Identity Pool}An identity pool is specific to the application. As a single AWS account is used by many different applications the segmentation of users can help organise the subscribing users and facilitate the allocation of correct recourses to the user. By using the Cognito client developers can avoid hardcoding credentials into the application?s source code. This is particularly important for programs intended for mass distribution. The image below is a method that initialises the Cognito client using the activities context, Identity pool id of the Amazon Resource Name (ARN) and the region code the resource resides on, in this case it accessing the servers in Ireland.  %\vspace{\baselineskip}
 
-\begin{figure}[h]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=\textwidth]{cognito_client_code.png}
 \caption{Initialisation of Cognito Client}
@@ -659,46 +665,56 @@ Application component by default run in the same thread called the 'main thread'
 
 \subsubsection{Identity Access Management Role}IAM Roles are assigned in identity pools. IAM roles allow fine grain access control to AWS resources such as S3 and DynamoDB. The Cognito client utilises the IAM role?s ARN to specify the access rights of each role. By default AWS creates an authenticated and unauthenticated access role for an identity pool. Authenticated users may only access the specified resources in the policy if the requirements are met in the statement. Unauthenticated roles are for users that may want to try the application before committing to signing up. Internally, temporary credentials are created for an unauthenticated user granting them temporary access to resources. 
 
-\begin{figure}[t]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=\textwidth]{iam_policy.png}
 \caption{Policy for Authenticated Users}\label{fig:iam}
 \end{figure}
 \paragraph{Security Policy}Policy statements are written in Java Script Object Notation (JSON). The statement is split into three sections, actions, resource and effect. The action block specifies the actions that are allowed on the service. For example the policy in Figure \ref{fig:iam} lists the actions that may be performed on a service, in this case DynamoDB. Actions that are not explicitly specified will be rejected. Resource block specify the AWS recourse that the policy is allowing access to, a resources is indicated by the ARN. The effect block specifies the result after the user requests access to the service. By default the effect is set to ?deny? so this must explicitly set. Additionally, a condition block may be set to further restrict the type of user gaining access. In the example below only users associated with Facebook are granted access.
 
-\subsection{Delay Tolerant Networking}\
-\label{sec:Delay Tolerant Networking}
-\subsubsection{Caching}
-%-Analytics, how these api's provide analytics, user patterns
+\subsection{Delay Tolerant Networking}
+\label{sec:Delay Tolerant Networking}Local storage is needed to facilitate the event of a loss of Internet connection. Local cache is needed to persist the latest data retrieved from the database so the latest data is always available and can manage the dependency on the database. As the service class polls for data it is written to internal memory, if the Internet connection is disturbed the application will still display the last received data until the network connection resumes. 
 
-\subsection{Data Management}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Data Management}\subsubsection{DynamoDB}The first step was to create the products table. Tables may be initialised programmatically within the application using the AWS DynamoDB API or within the AWS console. Throughput is provisioned at table creation time using the console. This figure can be altered if the application needs more resources. The console also estimates monthly costs and displays statistical data for a given table. Figure \ref{fig:dynamoConsole}
 
-\subsubsection{Data Modelling}
-\paragraph{Primary Key \& Range}The primary key consists of a hash value. DynamoDB uses this unique attribute to identify items in the table. Additionally a range key may also be defined when creating the table. //What does the range key do\paragraph{Secondary Index}
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{dynamoConsole}
+\caption{Policy for Authenticated Users}\label{fig:dynamoConsole}
+\end{figure}\paragraph{Data modelling} Unlike relational databases DynamoDB does not require tables to have a predefined schema. The only requirement is for the primary key type to be specified, any number of attributes may exist providing the size of a single item does not exceed 400kb. Each attribute can be a single name value pair or the value can be a complex data structure such as Maps and Lists. The value is a set data structure, meaning duplicate values are not allowed. \subsubsection{Primary Key \& Range}The primary key consists of a hash value. DynamoDB uses this unique attribute to identify items in the table. Additionally a range key may also be defined when creating the table. The range key acts as an index, when the range key is set efficient retrieval of data can be made.\paragraph{Object Mapper}Once the connection is established using the Cognito client the DynamoDB client can be initialised using the returned credentials. Classes that are intended to be persisted in the tables must be decorated with DynamoDB anotations. The annotated classes are translated into JSON format and added to the specified table. By placing \texttt{\@DynamoDBTable(table Name="Fridge")} before the class declaration the object can be utilised by DymanoDB. The primary key field is also required to be notated with \texttt{@DynamoDBHashKey}. Any other field that DynamoDB would like to interact with must also be annotated with \texttt{DynamoDBAttribute}. Similarly range keys and secondary indexes are also needed.  Using the object mapper data can be stored and retrieved with ease. Figure \ref{fig:products} shows part of the implementation of the Products class with DynamoDB annotations.
 
 
-\subsubsection{Querying Tables}
-Once the connection is established using the Cognito client the DynamoDB client can be initialised using the returned credentials. Classes that are intended to be persisted in the tables must be decorated with DynamoDB anotations. The annotated classes are translated into JSON format and added to the specified table. By placing \texttt{\@DynamoDBTable(table Name="Fridge")} before the class declaration the object can be utilised by DymanoDB. The primary key field is also required to be notated with \texttt{@DynamoDBHashKey}. Any other field that DynamoDB would like to interact with must also be annotated with \texttt{DynamoDBAttribute}. Similarly range keys and secondary indexes are also needed. Using the object mapper data can be stored and retrieved with ease. Figure --- shows an implementation of the Products class and an example query.
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{products}
+\caption{Implementation of the Products class with DynamoDB annotations.}\label{fig:products}
+\end{figure}\subsubsection{Android Internal Storage}\paragraph{Shared preferences}Shared preference is a lightweight key-value storage that can be accessed by components working in the same context. Firstly the mode of must be set to \texttt{Private} or \texttt{Public} for this particular use the data is set to \texttt{Private} then an editor is needed to write the data into storage. \paragraph{Internal Storage} 
+For more complex objects androids internal storage can be used using the Java I/O library. The \texttt{Products} class must implement \texttt{Serializable} interface so the class may be serialised. Figure \ref{fig:serializable} is an implementation of the \texttt{InternalStorageManager}. 
 
-\subsubsection{Android Storage}
-
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{serializable}
+\caption{Implementation of the InternalStorageManager.}\label{fig:serializable}
+\end{figure}
 \clearpage
 
 
 %...................................................
 % Testing and evaluation
 %..................................................
-\section{Testing and Evaluation}
-Importance, maintainable code.
+\section{Testing \& Evaluation}
+This section will 
 \subsection{Unit Tests \& Mocking}
 \subsection{Integration Test}
-\subsection{Logging}
 \subsection{Facebook Testing Platform}
+\subsection{Testing the Service with Toast}
+
 
 %...................................................
 % Conclusion 
 %..................................................
-\section{Review and Conclusion}
+\section{Review \& Conclusion}
 \subsection{Security Concerns} look at link from George. 
 
 %cite

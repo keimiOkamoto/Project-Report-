@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.27)  27 SEP 2015 03:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.27)  27 SEP 2015 04:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1005,9 +1005,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [34 <./images/notification.png>]
-Overfull \hbox (36.59836pt too wide) in paragraph at lines 715--716
-\T1/cmr/m/n/10.95 even when the ap-pli-ca-tion is not in the fore-ground. \T1/p
-cr/m/n/10.95 LoadFridgeContentService
+Overfull \hbox (3.26857pt too wide) in paragraph at lines 710--712
+\T1/pcr/m/n/10.95 ScheduleReceiver \T1/cmr/m/n/10.95 class ex-tended the \T1/pc
+r/m/n/10.95 BroardcastReceiver \T1/cmr/m/n/10.95 class. The
  []
 
 
@@ -1017,11 +1017,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [35 <./images/async.png> <./images/future.png>]
-<images/cognito_client_code.png, id=166, 572.1375pt x 92.345pt>
+<images/service.png, id=166, 913.4125pt x 273.02pt>
+File: images/service.png Graphic file (type png)
+ <use images/service.png>
+Package pdftex.def Info: images/service.png used on input line 718.
+(pdftex.def)             Requested size: 360.0pt x 107.60217pt.
+
+<images/cognito_client_code.png, id=167, 572.1375pt x 92.345pt>
 File: images/cognito_client_code.png Graphic file (type png)
 
 <use images/cognito_client_code.png>
-Package pdftex.def Info: images/cognito_client_code.png used on input line 736.
+Package pdftex.def Info: images/cognito_client_code.png used on input line 738.
 
 (pdftex.def)             Requested size: 360.0pt x 58.10577pt.
 
@@ -1031,12 +1037,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[36 <./images/cognito_client_code.png>]
-<images/iam_policy.png, id=171, 725.71124pt x 741.77126pt>
+[36 <./images/service.png>]
+<images/iam_policy.png, id=172, 725.71124pt x 741.77126pt>
 File: images/iam_policy.png Graphic file (type png)
 
 <use images/iam_policy.png>
-Package pdftex.def Info: images/iam_policy.png used on input line 745.
+Package pdftex.def Info: images/iam_policy.png used on input line 747.
 (pdftex.def)             Requested size: 360.0pt x 367.97586pt.
 
 
@@ -1045,11 +1051,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[37 <./images/iam_policy.png>]
-Overfull \hbox (7.01852pt too wide) in paragraph at lines 766--767
-\T1/cmr/m/n/10.95 the spec-i-fied ta-ble. By plac-ing \T1/pcr/m/n/10.95 DynamoD
-BTable(table Name="Fridge")
- []
+[37 <./images/cognito_client_code.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[38 <./images/iam_policy.png>]
+<images/dynamoConsole.png, id=181, 1435.3625pt x 734.745pt>
+File: images/dynamoConsole.png Graphic file (type png)
+
+<use images/dynamoConsole.png>
+Package pdftex.def Info: images/dynamoConsole.png used on input line 764.
+(pdftex.def)             Requested size: 360.0pt x 184.27998pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1057,14 +1072,42 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38]
+[39 <./images/dynamoConsole.png>]
+<images/products.png, id=187, 711.65875pt x 510.90875pt>
+File: images/products.png Graphic file (type png)
+
+<use images/products.png>
+Package pdftex.def Info: images/products.png used on input line 781.
+(pdftex.def)             Requested size: 360.0pt x 258.44734pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[39
+[40 <./images/products.png>]
+<images/serializable.png, id=192, 860.21375pt x 414.54875pt>
+File: images/serializable.png Graphic file (type png)
+
+<use images/serializable.png>
+Package pdftex.def Info: images/serializable.png used on input line 794.
+(pdftex.def)             Requested size: 360.0pt x 173.48938pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[41 <./images/serializable.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[42
 
 ]
 
@@ -1073,16 +1116,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[40
+[43
 
 ]
-Underfull \hbox (badness 3019) in paragraph at lines 845--847
+Underfull \hbox (badness 3019) in paragraph at lines 874--876
 []\T1/cmr/m/n/10.95 R. Chen, \T1/cmr/m/it/10.95 ``Us-ing RFID Tech-nol-ogy in F
 ood Pro-duce Trace-abil-
  []
 
 
-Underfull \hbox (badness 1057) in paragraph at lines 845--847
+Underfull \hbox (badness 1057) in paragraph at lines 874--876
 \T1/cmr/m/it/10.95 ity''\T1/cmr/m/n/10.95 ,WSEAS Trans-ac-tion on in-for-ma-tio
 n sci-ence and ap-pli-ca-tions,
  []
@@ -1093,8 +1136,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[41]
-Overfull \hbox (17.91754pt too wide) in paragraph at lines 876--878
+[44]
+Overfull \hbox (17.91754pt too wide) in paragraph at lines 905--907
 []\T1/cmr/m/n/10.95 Figure 1. \T1/cmr/m/it/10.95 ``http://developer.android.com
 /guide/components/activities.html''\T1/cmr/m/n/10.95 ,
  []
@@ -1107,16 +1150,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[42] (./report.aux)
+[45] (./report.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 13553 strings out of 493117
- 270922 string characters out of 6135433
- 313802 words of memory out of 5000000
- 16692 multiletter control sequences out of 15000+600000
+ 13577 strings out of 493117
+ 271454 string characters out of 6135433
+ 312842 words of memory out of 5000000
+ 16712 multiletter control sequences out of 15000+600000
  15798 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,16n,61p,1568b,329s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1134,10 +1177,10 @@ mf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2014/texmf
 ist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2014/texmf-dis
 t/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2014/texmf-dist/
 fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on report.pdf (46 pages, 4021851 bytes).
+Output written on report.pdf (49 pages, 4271537 bytes).
 PDF statistics:
- 236 PDF objects out of 1000 (max. 8388607)
- 146 compressed objects within 2 object streams
+ 254 PDF objects out of 1000 (max. 8388607)
+ 153 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 93 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 

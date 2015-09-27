@@ -87,26 +87,25 @@
 \contentsline {paragraph}{AsyncTask}{34}
 \contentsline {paragraph}{Future Task, Runnable and Handlers }{34}
 \contentsline {subsubsection}{\numberline {4.2.9}Service and BroadcastReceiver}{35}
-\contentsline {subsubsection}{\numberline {4.2.10}Service}{35}
-\contentsline {subsubsection}{\numberline {4.2.11}Error Handling}{36}
-\contentsline {paragraph}{Exceptions}{36}
+\contentsline {subsubsection}{\numberline {4.2.10}Error Handling}{36}
 \contentsline {paragraph}{Logging}{36}
 \contentsline {subsection}{\numberline {4.3}Distributed Authentication and Access Control}{36}
 \contentsline {subsubsection}{\numberline {4.3.1}Identity Pool}{36}
-\contentsline {subsubsection}{\numberline {4.3.2}Identity Access Management Role}{36}
+\contentsline {subsubsection}{\numberline {4.3.2}Identity Access Management Role}{37}
 \contentsline {paragraph}{Security Policy}{37}
-\contentsline {subsection}{\numberline {4.4}Delay Tolerant Networking}{38}
-\contentsline {subsubsection}{\numberline {4.4.1}Caching}{38}
-\contentsline {subsection}{\numberline {4.5}Data Management}{38}
-\contentsline {subsubsection}{\numberline {4.5.1}Data Modelling}{38}
-\contentsline {paragraph}{Primary Key \& Range}{38}
-\contentsline {paragraph}{Secondary Index}{38}
-\contentsline {subsubsection}{\numberline {4.5.2}Querying Tables}{38}
-\contentsline {subsubsection}{\numberline {4.5.3}Android Storage}{38}
-\contentsline {section}{\numberline {5}Testing and Evaluation}{39}
-\contentsline {subsection}{\numberline {5.1}Unit Tests \& Mocking}{39}
-\contentsline {subsection}{\numberline {5.2}Integration Test}{39}
-\contentsline {subsection}{\numberline {5.3}Logging}{39}
-\contentsline {subsection}{\numberline {5.4}Facebook Testing Platform}{39}
-\contentsline {section}{\numberline {6}Review and Conclusion}{39}
-\contentsline {subsection}{\numberline {6.1}Security Concerns}{39}
+\contentsline {subsection}{\numberline {4.4}Delay Tolerant Networking}{37}
+\contentsline {subsection}{\numberline {4.5}Data Management}{39}
+\contentsline {subsubsection}{\numberline {4.5.1}DynamoDB}{39}
+\contentsline {paragraph}{Data modelling}{39}
+\contentsline {subsubsection}{\numberline {4.5.2}Primary Key \& Range}{39}
+\contentsline {paragraph}{Object Mapper}{39}
+\contentsline {subsubsection}{\numberline {4.5.3}Android Internal Storage}{40}
+\contentsline {paragraph}{Shared preferences}{40}
+\contentsline {paragraph}{Internal Storage}{40}
+\contentsline {section}{\numberline {5}Testing \& Evaluation}{42}
+\contentsline {subsection}{\numberline {5.1}Unit Tests \& Mocking}{42}
+\contentsline {subsection}{\numberline {5.2}Integration Test}{42}
+\contentsline {subsection}{\numberline {5.3}Facebook Testing Platform}{42}
+\contentsline {subsection}{\numberline {5.4}Testing the Service with Toast}{42}
+\contentsline {section}{\numberline {6}Review \& Conclusion}{42}
+\contentsline {subsection}{\numberline {6.1}Security Concerns}{42}
