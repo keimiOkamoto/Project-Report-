@@ -615,27 +615,41 @@ Just by using the list adapter in the Android library would not be able to displ
 
 Resources such as graphical icons, logos, colours and Strings are stored in the values file within the resources. Strings are kept in a separate XML document so others may reference it and avoid hardcoding into the code and created a single access point where modifications can be made. Android operates world wide so this approach can also facilitate the 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Manifest File}All Android application has a manifest file. Activities, services, receivers and content providers must all be registered in this file in order for them to be utilised. Permission are also set here to enable privileged features such as access to the Internet and cross application data sharing. Application name and screen orientation and even setting the start up activity is declared in this document.
 
-\subsubsection{Notifications}Android uses notification alerts to communicate with the user. Notifications can be triggered when certain events occur. When a new item is added to the fridge an alert is triggered notifying the user of the change in state. This way even without the user having the application open they are kept informed of the state reducing the likelihood of the user unknowingly purchasing the same product. Figure \ref{notification} is the notification a user will see when the event is triggered.\begin{figure}[!htbp]
+\subsubsection{Notifications}Android uses notification alerts to communicate with the user. Notifications can be triggered when certain events occur. When a new item is added to the fridge an alert is triggered notifying the user of the change in state. This way even without the user having the application open they are kept informed of the state reducing the likelihood of the user unknowingly purchasing the same product. Figure \ref{fig:notification} is the screen a user will see when the event is triggered.\begin{figure}[!htbp]
 \centering
 \includegraphics[width=5cm]{notification}
 \caption{Notification displaying a message.} \label{fig:notification}
 \end{figure}
 
-\subsubsection{Threads \& Concurrency Management}
-Application component by default run in the same thread called the ?main thread?. This can be problematic for the operations that could potentially take a long time, as it will cause the UI to become unresponsive. An unresponsive UI can lead the user to believe that the application has encountered and error and even block other features of the application. Android best practices suggest that network and I/O operations are performed in a separate thread to the main thread.\paragraph{AsyncTask}Android provides a thread management class that preforms asynchronous tasks. Using the tttext{AsyncTask} class the management is performed automatically by the Android environment. When extending tttext{AsyncTask} the \texttt{doInBackground()} method is implemented. Once this method has completed the tttext{onPostExecute()} method is called, unon completion any information processed can be displayed in the UI.  This class can be executed using the tttext{execute()} method from the UI thread. Figure ---- shows the asynchronous network request using the Facebook API.\paragraph{ Future Task, Runnable and Handlers } At times finer control is needed for threads. In some circumstances race conditions can arise, where the main thread attempts to process data that is dependant on a previously executed AsyncTask?s completion. Blocking and forcing the main thread to wait is a bad idea as it will cause the UI to become unresponsive. FutureTasks is a cancellable asynchronous operation and can also ensures that the results are only retrieved if the computation has completed. It implements the Runnable interface so it may be submitted to an executor. Figure ---- is an example implementation of FutureTask that will only retrieve the data once the query to the database has completed. Stream of data and execute
+\subsubsection{Threads \& Concurrency Management}
+Application component by default run in the same thread called the 'main thread'. If processed that take a long time to complete are ran on the main thread it will cause the UI to become unresponsive and can even block other features of the application. An unresponsive UI can lead the user to believe that the application has encountered and error. Android best practices suggest that network and I/O operations are performed in a separate thread to the main thread.\paragraph{AsyncTask}Android provides a thread management class that preforms asynchronous tasks. Using the \texttt{AsyncTask} class the management is performed automatically by the Android environment. When extending  AsyncTask the \texttt{doInBackground()} method is implemented. Once this method has completed the \texttt{onPostExecute()} method is called, upon completion any information processed can be displayed in the UI. This class can be executed using the \texttt{execute()} method from the UI thread. Figure \ref{fig:async} shows the asynchronous network request using the Facebook API.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{async}
+\caption{Implementation of AsyncTask} \label{fig:async}
+\end{figure}
+\paragraph{Future Task, Runnable and Handlers } At times finer control is needed for threads. In some circumstances race conditions can arise, where the main thread attempts to process data that is dependant on a previously executed AsyncTask's completion. Blocking and forcing the main thread to wait is a bad idea as it will cause the UI to become unresponsive. FutureTask is a cancellable asynchronous operation and can also ensures that the results are only retrieved if the computation has completed. It implements the \texttt{Runnable} interface so it may be submitted to an executor. Figure \ref{fig:future} is an example implementation of \texttt{FutureTask} that will only retrieve the data once the query to the database has completed. Stream of data and execute
 
 
-\subsubsection{Service and BroadcastReceiver 
-\texttt{ScheduleReceiver}
-}
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{future}
+\caption{Implementation of FutureTask} \label{fig:future}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Service and BroadcastReceiver}
+\subsubsection{Service}	Android recommends the use of a service for long running operations. Unlike activities, services do not have a user interface; services are designed to run in the background of the application and can run even if the user happens to switch to another application. For the system to have close to real time as possible data, a service was created to periodically poll the database. This operation is able to continue even when the application is not in the foreground. \texttt{LoadFridgeContentService} extends the service class. For the service to function the first thing an activity must do is bind to the service. The \texttt{onBind()} will return an \texttt{IBinder} this way the client may communicate with this service. When \texttt{startService} is called by the client the \texttt{onStartCommand()}, this method will continue to run indefinitely.
 
 
 \subsubsection{Error Handling}\paragraph{Exceptions}\paragraph{Logging}
 
-\subsection{Distributed Authentication and Access Control}Access control to resources is imperative to avoid security breeches and data loss. When using AWS mobile SDK, AWS enforces the use of Cognito for mobile identity management. Cognito uses Identity Pools to manage the different layers of user privileges and Identity Access Management (IAM) roles.\subsubsection{Identity Pool}An identity pool is specific to the application. As a single AWS account is used by many different applications the segmentation of users can help organise the subscribing users and facilitate the allocation of correct recourses to the user. By using the Cognito client developers can avoid hardcoding credentials into the application?s source code. This is particularly important for programs intended for mass distribution. The image below is a method that initialises the Cognito client using the activities context, Identity pool id of the Amazon Resource Name (ARN) and the region code the resource resides on, in this case it accessing the servers in Ireland.  %\vspace{\baselineskip}
+\subsection{Distributed Authentication and Access Control}Access control to resources is imperative to avoid security breeches and data loss. When using AWS mobile SDK, AWS enforces the use of Cognito for mobile identity management. Cognito uses Identity Pools to manage the different layers of user privileges and Identity Access Management (IAM) roles.\subsubsection{Identity Pool}An identity pool is specific to the application. As a single AWS account is used by many different applications the segmentation of users can help organise the subscribing users and facilitate the allocation of correct recourses to the user. By using the Cognito client developers can avoid hardcoding credentials into the application?s source code. This is particularly important for programs intended for mass distribution. The image below is a method that initialises the Cognito client using the activities context, Identity pool id of the Amazon Resource Name (ARN) and the region code the resource resides on, in this case it accessing the servers in Ireland.  %\vspace{\baselineskip}
 
 \begin{figure}[h]
 \centering
