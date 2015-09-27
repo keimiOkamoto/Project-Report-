@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.27)  27 SEP 2015 21:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.27)  27 SEP 2015 22:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -613,7 +613,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout4 = `report.toc'.
 
  [3]
-Overfull \hbox (28.12126pt too wide) in paragraph at lines 118--119
+Overfull \hbox (28.12126pt too wide) in paragraph at lines 122--123
 \T1/cmr/m/n/10.95 The de-vel-op-ment method-ol-ogy used will be the ag-ile de-v
 el-op-ment methodology[[]].
  []
@@ -659,7 +659,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [5]
 
-LaTeX Warning: Citation `georgeR' on page 6 undefined on input line 173.
+LaTeX Warning: Citation `georgeR' on page 6 undefined on input line 177.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -676,7 +676,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [7]
 
-LaTeX Warning: Citation `FDA' on page 8 undefined on input line 199.
+LaTeX Warning: Citation `FDA' on page 8 undefined on input line 203.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -686,7 +686,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [8]
 
-LaTeX Warning: Citation `fukushima' on page 9 undefined on input line 210.
+LaTeX Warning: Citation `fukushima' on page 9 undefined on input line 214.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -695,7 +695,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [9]
-Overfull \hbox (6.66504pt too wide) in paragraph at lines 217--218
+Overfull \hbox (6.66504pt too wide) in paragraph at lines 221--222
 \T1/cmr/m/it/10.95 the ori-gin of meat in-gre-di-ents in meat prod-ucts, and in
  the Agency's
  []
@@ -751,13 +751,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [16]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 326.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 330.
 
  (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 326.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 330.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -783,7 +783,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: images/LoginActivity.png Graphic file (type png)
 
 <use images/LoginActivity.png>
-Package pdftex.def Info: images/LoginActivity.png used on input line 487.
+Package pdftex.def Info: images/LoginActivity.png used on input line 491.
 (pdftex.def)             Requested size: 360.0pt x 435.87662pt.
 
 
@@ -804,7 +804,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: images/cognitoFlow.png Graphic file (type png)
 
 <use images/cognitoFlow.png>
-Package pdftex.def Info: images/cognitoFlow.png used on input line 510.
+Package pdftex.def Info: images/cognitoFlow.png used on input line 514.
 (pdftex.def)             Requested size: 360.0pt x 243.00418pt.
 
 
@@ -818,7 +818,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: images/RFIDApplicationFlow.png Graphic file (type png)
 
 <use images/RFIDApplicationFlow.png>
-Package pdftex.def Info: images/RFIDApplicationFlow.png used on input line 532.
+Package pdftex.def Info: images/RFIDApplicationFlow.png used on input line 536.
 
 (pdftex.def)             Requested size: 284.52756pt x 274.76305pt.
 
@@ -846,7 +846,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: images/sysArch.png Graphic file (type png)
 
 <use images/sysArch.png>
-Package pdftex.def Info: images/sysArch.png used on input line 554.
+Package pdftex.def Info: images/sysArch.png used on input line 558.
 (pdftex.def)             Requested size: 284.52756pt x 306.94673pt.
 
 
@@ -861,14 +861,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: images/rfid.jpg Graphic file (type jpg)
 
 <use images/rfid.jpg>
-Package pdftex.def Info: images/rfid.jpg used on input line 572.
+Package pdftex.def Info: images/rfid.jpg used on input line 576.
 (pdftex.def)             Requested size: 256.0748pt x 151.72038pt.
 
 <images/activity_lifecycle.png, id=121, 514.92375pt x 665.48625pt>
 File: images/activity_lifecycle.png Graphic file (type png)
 
 <use images/activity_lifecycle.png>
-Package pdftex.def Info: images/activity_lifecycle.png used on input line 585.
+Package pdftex.def Info: images/activity_lifecycle.png used on input line 589.
 (pdftex.def)             Requested size: 256.0748pt x 330.95511pt.
 
 
@@ -885,18 +885,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [28 <./images/activity_lifecycle.png>]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 596.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 600.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Overfull \hbox (0.11214pt too wide) in paragraph at lines 596--597
+Overfull \hbox (0.11214pt too wide) in paragraph at lines 600--601
  \T1/cmr/bx/n/10.95 But-tons[] \T1/cmr/m/n/10.95 The Logi-n-Ac-tiv-ity class im
 -ple-ments the \T1/pcr/m/n/10.95 onClickListenter()
  []
 
 
-Overfull \hbox (1.79172pt too wide) in paragraph at lines 596--597
+Overfull \hbox (1.79172pt too wide) in paragraph at lines 600--601
 \T1/cmr/m/n/10.95 cuted the nec-es-sary block . For ex-am-ple, \T1/pcr/m/n/10.9
 5 R.id.facebook_login_button
  []
@@ -905,7 +905,7 @@ Overfull \hbox (1.79172pt too wide) in paragraph at lines 596--597
 File: images/fbProfileEmail.png Graphic file (type png)
 
 <use images/fbProfileEmail.png>
-Package pdftex.def Info: images/fbProfileEmail.png used on input line 606.
+Package pdftex.def Info: images/fbProfileEmail.png used on input line 610.
 (pdftex.def)             Requested size: 360.0pt x 214.2674pt.
 
 
@@ -921,7 +921,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: images/intent.png Graphic file (type png)
 
 <use images/intent.png>
-Package pdftex.def Info: images/intent.png used on input line 625.
+Package pdftex.def Info: images/intent.png used on input line 629.
 (pdftex.def)             Requested size: 360.0pt x 24.41516pt.
 
 
@@ -934,18 +934,31 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 <images/onBack.png, id=141, 648.4225pt x 198.7425pt>
 File: images/onBack.png Graphic file (type png)
  <use images/onBack.png>
-Package pdftex.def Info: images/onBack.png used on input line 639.
+Package pdftex.def Info: images/onBack.png used on input line 643.
 (pdftex.def)             Requested size: 360.0pt x 110.3428pt.
 
-Overfull \hbox (42.91483pt too wide) in paragraph at lines 645--646
+<images/back.png, id=142, 1084.05pt x 1927.2pt>
+File: images/back.png Graphic file (type png)
+ <use images/back.png>
+Package pdftex.def Info: images/back.png used on input line 651.
+(pdftex.def)             Requested size: 142.26378pt x 252.89732pt.
+
+Overfull \hbox (42.91483pt too wide) in paragraph at lines 658--659
 \T1/cmr/m/n/10.95 Users will be able to sub-scribe to a fridge us-ing the \T1/p
 cr/m/n/10.95 FridgeCodeRequestActivity\T1/cmr/m/n/10.95 .
  []
 
-<images/toast.png, id=142, 1084.05pt x 1927.2pt>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[31 <./images/onBack.png> <./images/back.png>]
+<images/toast.png, id=147, 1084.05pt x 1927.2pt>
 File: images/toast.png Graphic file (type png)
  <use images/toast.png>
-Package pdftex.def Info: images/toast.png used on input line 654.
+Package pdftex.def Info: images/toast.png used on input line 667.
 (pdftex.def)             Requested size: 142.26378pt x 252.89732pt.
 
 
@@ -954,29 +967,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[31 <./images/onBack.png>]
-Overfull \hbox (1.9185pt too wide) in paragraph at lines 668--669
+[32 <./images/toast.png>]
+Overfull \hbox (1.9185pt too wide) in paragraph at lines 681--682
 \T1/cmr/m/n/10.95 class the cus-tom adapter is set to the list view. As the ac-
 tiv-ity's \T1/pcr/m/n/10.95 onCreate()
  []
 
+<images/settings.png, id=151, 1084.05pt x 1927.2pt>
+File: images/settings.png Graphic file (type png)
+ <use images/settings.png>
+Package pdftex.def Info: images/settings.png used on input line 690.
+(pdftex.def)             Requested size: 142.26378pt x 252.89732pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[32 <./images/toast.png>] <images/settings.png, id=150, 1084.05pt x 1927.2pt>
-File: images/settings.png Graphic file (type png)
-
-<use images/settings.png>
-Package pdftex.def Info: images/settings.png used on input line 677.
-(pdftex.def)             Requested size: 142.26378pt x 252.89732pt.
- <images/xml.png, id=151, 619.31375pt x 466.74374pt>
+[33] <images/xml.png, id=156, 619.31375pt x 466.74374pt>
 File: images/xml.png Graphic file (type png)
-
-<use images/xml.png>
-Package pdftex.def Info: images/xml.png used on input line 690.
+ <use images/xml.png>
+Package pdftex.def Info: images/xml.png used on input line 703.
 (pdftex.def)             Requested size: 360.0pt x 271.32404pt.
 
 
@@ -985,26 +997,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[33 <./images/settings.png>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[34 <./images/xml.png>]
+[34 <./images/settings.png>]
 <images/notification.png, id=160, 1084.05pt x 1927.2pt>
 File: images/notification.png Graphic file (type png)
 
 <use images/notification.png>
-Package pdftex.def Info: images/notification.png used on input line 705.
+Package pdftex.def Info: images/notification.png used on input line 718.
 (pdftex.def)             Requested size: 142.26378pt x 252.89732pt.
-
-<images/async.png, id=161, 723.70375pt x 414.54875pt>
-File: images/async.png Graphic file (type png)
- <use images/async.png>
-Package pdftex.def Info: images/async.png used on input line 716.
-(pdftex.def)             Requested size: 360.0pt x 206.2175pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1012,14 +1011,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[35 <./images/notification.png>]
-<images/future.png, id=165, 837.1275pt x 191.71625pt>
+[35 <./images/xml.png>] <images/async.png, id=165, 723.70375pt x 414.54875pt>
+File: images/async.png Graphic file (type png)
+
+<use images/async.png>
+Package pdftex.def Info: images/async.png used on input line 729.
+(pdftex.def)             Requested size: 360.0pt x 206.2175pt.
+ <images/future.png, id=166, 837.1275pt x 191.71625pt>
 File: images/future.png Graphic file (type png)
- <use images/future.png>
-Package pdftex.def Info: images/future.png used on input line 725.
+
+<use images/future.png>
+Package pdftex.def Info: images/future.png used on input line 738.
 (pdftex.def)             Requested size: 360.0pt x 82.44514pt.
 
-Overfull \hbox (3.26857pt too wide) in paragraph at lines 731--733
+Overfull \hbox (3.26857pt too wide) in paragraph at lines 744--746
 \T1/pcr/m/n/10.95 ScheduleReceiver \T1/cmr/m/n/10.95 class ex-tended the \T1/pc
 r/m/n/10.95 BroardcastReceiver \T1/cmr/m/n/10.95 class. The
  []
@@ -1030,18 +1035,25 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[36 <./images/async.png> <./images/future.png>]
-<images/service.png, id=171, 913.4125pt x 273.02pt>
+[36 <./images/notification.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[37 <./images/async.png> <./images/future.png>]
+<images/service.png, id=175, 913.4125pt x 273.02pt>
 File: images/service.png Graphic file (type png)
  <use images/service.png>
-Package pdftex.def Info: images/service.png used on input line 738.
+Package pdftex.def Info: images/service.png used on input line 751.
 (pdftex.def)             Requested size: 360.0pt x 107.60217pt.
 
-<images/swiperefreshlayout.jpg, id=172, 1079.03125pt x 768.8725pt>
+<images/swiperefreshlayout.jpg, id=176, 1079.03125pt x 768.8725pt>
 File: images/swiperefreshlayout.jpg Graphic file (type jpg)
 
 <use images/swiperefreshlayout.jpg>
-Package pdftex.def Info: images/swiperefreshlayout.jpg used on input line 748.
+Package pdftex.def Info: images/swiperefreshlayout.jpg used on input line 761.
 (pdftex.def)             Requested size: 142.26378pt x 101.36478pt.
 
 
@@ -1050,12 +1062,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[37 <./images/service.png>]
-<images/cognito_client_code.png, id=177, 572.1375pt x 92.345pt>
+[38 <./images/service.png>]
+<images/cognito_client_code.png, id=181, 572.1375pt x 92.345pt>
 File: images/cognito_client_code.png Graphic file (type png)
 
 <use images/cognito_client_code.png>
-Package pdftex.def Info: images/cognito_client_code.png used on input line 771.
+Package pdftex.def Info: images/cognito_client_code.png used on input line 782.
 
 (pdftex.def)             Requested size: 360.0pt x 58.10577pt.
 
@@ -1065,12 +1077,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38 <./images/swiperefreshlayout.jpg> <./images/cognito_client_code.png>]
-<images/iam_policy.png, id=182, 725.71124pt x 741.77126pt>
+[39 <./images/swiperefreshlayout.jpg>]
+<images/iam_policy.png, id=186, 725.71124pt x 741.77126pt>
 File: images/iam_policy.png Graphic file (type png)
 
 <use images/iam_policy.png>
-Package pdftex.def Info: images/iam_policy.png used on input line 782.
+Package pdftex.def Info: images/iam_policy.png used on input line 793.
 (pdftex.def)             Requested size: 360.0pt x 367.97586pt.
 
 
@@ -1079,12 +1091,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[39 <./images/iam_policy.png>]
-<images/dynamoConsole.png, id=188, 1435.3625pt x 734.745pt>
+[40 <./images/cognito_client_code.png> <./images/iam_policy.png>]
+<images/dynamoConsole.png, id=192, 1435.3625pt x 734.745pt>
 File: images/dynamoConsole.png Graphic file (type png)
 
 <use images/dynamoConsole.png>
-Package pdftex.def Info: images/dynamoConsole.png used on input line 801.
+Package pdftex.def Info: images/dynamoConsole.png used on input line 812.
 (pdftex.def)             Requested size: 360.0pt x 184.27998pt.
 
 
@@ -1093,18 +1105,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[40] <images/datastruct.png, id=192, 889.3225pt x 435.6275pt>
+[41] <images/datastruct.png, id=196, 889.3225pt x 435.6275pt>
 File: images/datastruct.png Graphic file (type png)
 
 <use images/datastruct.png>
-Package pdftex.def Info: images/datastruct.png used on input line 820.
+Package pdftex.def Info: images/datastruct.png used on input line 831.
 (pdftex.def)             Requested size: 360.0pt x 176.34175pt.
 
-<images/products.png, id=193, 711.65875pt x 510.90875pt>
+<images/products.png, id=197, 711.65875pt x 510.90875pt>
 File: images/products.png Graphic file (type png)
 
 <use images/products.png>
-Package pdftex.def Info: images/products.png used on input line 828.
+Package pdftex.def Info: images/products.png used on input line 839.
 (pdftex.def)             Requested size: 360.0pt x 258.44734pt.
 
 
@@ -1113,19 +1125,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[41 <./images/dynamoConsole.png>]
+[42 <./images/dynamoConsole.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[42 <./images/datastruct.png> <./images/products.png>]
-<images/serializable.png, id=203, 860.21375pt x 414.54875pt>
+[43 <./images/datastruct.png> <./images/products.png>]
+<images/serializable.png, id=207, 860.21375pt x 414.54875pt>
 File: images/serializable.png Graphic file (type png)
 
 <use images/serializable.png>
-Package pdftex.def Info: images/serializable.png used on input line 843.
+Package pdftex.def Info: images/serializable.png used on input line 854.
 (pdftex.def)             Requested size: 360.0pt x 173.48938pt.
 
 
@@ -1134,29 +1146,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[43 <./images/serializable.png>]
-<images/unitTest.png, id=208, 811.03pt x 733.74126pt>
+[44 <./images/serializable.png>]
+<images/unitTest.png, id=212, 811.03pt x 733.74126pt>
 File: images/unitTest.png Graphic file (type png)
 
 <use images/unitTest.png>
-Package pdftex.def Info: images/unitTest.png used on input line 861.
+Package pdftex.def Info: images/unitTest.png used on input line 872.
 (pdftex.def)             Requested size: 360.0pt x 325.70212pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[44
-
- <./images/unitTest.png>]
-<images/facebookTest.png, id=213, 962.59625pt x 701.62125pt>
-File: images/facebookTest.png Graphic file (type png)
-
-<use images/facebookTest.png>
-Package pdftex.def Info: images/facebookTest.png used on input line 876.
-(pdftex.def)             Requested size: 360.0pt x 262.39001pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1166,17 +1162,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [45
 
- <./images/facebookTest.png>]
-Overfull \hbox (59.6373pt too wide) in paragraph at lines 881--883
-\T1/cmr/m/n/10.95 As ser-vice have no in-ter-faces a toast mes-sage was used to
- en-sure the \T1/pcr/m/n/10.95 onStartCommand()
- []
+ <./images/unitTest.png>]
+<images/facebookTest.png, id=218, 962.59625pt x 701.62125pt>
+File: images/facebookTest.png Graphic file (type png)
 
-<images/toast2.png, id=219, 1084.05pt x 1927.2pt>
-File: images/toast2.png Graphic file (type png)
- <use images/toast2.png>
-Package pdftex.def Info: images/toast2.png used on input line 886.
-(pdftex.def)             Requested size: 142.26378pt x 252.89732pt.
+<use images/facebookTest.png>
+Package pdftex.def Info: images/facebookTest.png used on input line 887.
+(pdftex.def)             Requested size: 360.0pt x 262.39001pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1186,7 +1178,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [46
 
- <./images/toast2.png>]
+ <./images/facebookTest.png>]
+Overfull \hbox (59.6373pt too wide) in paragraph at lines 892--894
+\T1/cmr/m/n/10.95 As ser-vice have no in-ter-faces a toast mes-sage was used to
+ en-sure the \T1/pcr/m/n/10.95 onStartCommand()
+ []
+
+<images/toast2.png, id=224, 1084.05pt x 1927.2pt>
+File: images/toast2.png Graphic file (type png)
+ <use images/toast2.png>
+Package pdftex.def Info: images/toast2.png used on input line 897.
+(pdftex.def)             Requested size: 142.26378pt x 252.89732pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1195,14 +1198,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [47
 
-]
+ <./images/toast2.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[48]
+[48
+
+]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1228,13 +1233,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [51
 
 ]
-Underfull \hbox (badness 3019) in paragraph at lines 1064--1066
+Underfull \hbox (badness 3019) in paragraph at lines 1074--1076
 []\T1/cmr/m/n/10.95 R. Chen, \T1/cmr/m/it/10.95 ``Us-ing RFID Tech-nol-ogy in F
 ood Pro-duce Trace-abil-
  []
 
 
-Underfull \hbox (badness 1057) in paragraph at lines 1064--1066
+Underfull \hbox (badness 1057) in paragraph at lines 1074--1076
 \T1/cmr/m/it/10.95 ity''\T1/cmr/m/n/10.95 ,WSEAS Trans-ac-tion on in-for-ma-tio
 n sci-ence and ap-pli-ca-tions,
  []
@@ -1246,7 +1251,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [52]
-Overfull \hbox (17.91754pt too wide) in paragraph at lines 1095--1097
+Overfull \hbox (17.91754pt too wide) in paragraph at lines 1105--1107
 []\T1/cmr/m/n/10.95 Figure 1. \T1/cmr/m/it/10.95 ``http://developer.android.com
 /guide/components/activities.html''\T1/cmr/m/n/10.95 ,
  []
@@ -1265,10 +1270,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 13615 strings out of 493117
- 272271 string characters out of 6135433
- 315911 words of memory out of 5000000
- 16744 multiletter control sequences out of 15000+600000
+ 13621 strings out of 493117
+ 272368 string characters out of 6135433
+ 315921 words of memory out of 5000000
+ 16749 multiletter control sequences out of 15000+600000
  15798 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,16n,61p,1568b,329s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1286,10 +1291,10 @@ mf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2014/texmf
 ist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2014/texmf-dis
 t/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2014/texmf-dist/
 fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on report.pdf (57 pages, 6670071 bytes).
+Output written on report.pdf (57 pages, 6715081 bytes).
 PDF statistics:
- 289 PDF objects out of 1000 (max. 8388607)
+ 290 PDF objects out of 1000 (max. 8388607)
  170 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 143 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 148 words of extra memory for PDF output out of 10000 (max. 10000000)
 

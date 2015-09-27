@@ -75,45 +75,45 @@
 \contentsline {paragraph}{Buttons}{29}
 \contentsline {paragraph}{Back Stack Management}{29}
 \contentsline {paragraph}{Graceful Application shutdown}{30}
-\contentsline {subsubsection}{\numberline {4.3.3}Fridge Code Request Activity}{31}
-\contentsline {paragraph}{User actions and feedback}{31}
-\contentsline {subsubsection}{\numberline {4.3.4}Main Activity}{31}
-\contentsline {paragraph}{Fragments}{31}
-\contentsline {paragraph}{Custom List Adapter and View}{32}
+\contentsline {subsubsection}{\numberline {4.3.3}Fridge Code Request Activity}{32}
+\contentsline {paragraph}{User actions and feedback}{32}
+\contentsline {subsubsection}{\numberline {4.3.4}Main Activity}{33}
+\contentsline {paragraph}{Fragments}{33}
+\contentsline {paragraph}{Custom List Adapter and View}{33}
 \contentsline {paragraph}{Settings}{33}
 \contentsline {subsubsection}{\numberline {4.3.5}Graphical User Interface Design \& Resources}{33}
 \contentsline {subsubsection}{\numberline {4.3.6}Manifest File}{34}
-\contentsline {subsubsection}{\numberline {4.3.7}Notifications}{34}
+\contentsline {subsubsection}{\numberline {4.3.7}Notifications}{35}
 \contentsline {subsubsection}{\numberline {4.3.8}Threads \& Concurrency Management}{35}
-\contentsline {paragraph}{AsyncTask}{35}
+\contentsline {paragraph}{AsyncTask}{36}
 \contentsline {paragraph}{Future Task, Runnable and Handlers }{36}
-\contentsline {subsubsection}{\numberline {4.3.9}Service and BroadcastReceiver}{36}
-\contentsline {subsubsection}{\numberline {4.3.10}Swipe Refresh Layout Function}{37}
-\contentsline {subsubsection}{\numberline {4.3.11}Error Handling}{37}
-\contentsline {paragraph}{Logging}{37}
-\contentsline {subsection}{\numberline {4.4}Distributed Authentication and Access Control}{38}
-\contentsline {subsubsection}{\numberline {4.4.1}Identity Pool}{38}
+\contentsline {subsubsection}{\numberline {4.3.9}Service and BroadcastReceiver}{38}
+\contentsline {subsubsection}{\numberline {4.3.10}Swipe Refresh Layout Function}{38}
+\contentsline {subsubsection}{\numberline {4.3.11}Error Handling}{38}
+\contentsline {paragraph}{Logging}{38}
+\contentsline {subsection}{\numberline {4.4}Distributed Authentication and Access Control}{39}
+\contentsline {subsubsection}{\numberline {4.4.1}Identity Pool}{39}
 \contentsline {subsubsection}{\numberline {4.4.2}Identity Access Management Role}{39}
-\contentsline {paragraph}{Security Policy}{40}
-\contentsline {subsection}{\numberline {4.5}Delay Tolerant Networking}{40}
-\contentsline {subsection}{\numberline {4.6}Data Management}{40}
-\contentsline {subsubsection}{\numberline {4.6.1}DynamoDB}{40}
-\contentsline {paragraph}{Data modelling}{40}
-\contentsline {subsubsection}{\numberline {4.6.2}Primary Key \& Range}{41}
-\contentsline {paragraph}{Object Mapper}{41}
-\contentsline {subsubsection}{\numberline {4.6.3}Android Internal Storage}{43}
-\contentsline {paragraph}{Shared preferences}{43}
-\contentsline {paragraph}{Internal Storage}{43}
-\contentsline {section}{\numberline {5}Testing \& Evaluation}{44}
-\contentsline {subsection}{\numberline {5.1}Unit Tests \& Mocking}{44}
-\contentsline {section}{\numberline {6}Manual Testing}{45}
-\contentsline {subsection}{\numberline {6.1}Facebook Testing Platform}{45}
-\contentsline {subsection}{\numberline {6.2}Testing the Service with Toast}{46}
-\contentsline {subsection}{\numberline {6.3}Test Reports}{47}
-\contentsline {subsubsection}{\numberline {6.3.1}User Login}{47}
-\contentsline {subsubsection}{\numberline {6.3.2}User Logout}{47}
-\contentsline {subsubsection}{\numberline {6.3.3}Add Fridge Code}{47}
-\contentsline {subsubsection}{\numberline {6.3.4}Adds Items to Fridge}{47}
+\contentsline {paragraph}{Security Policy}{41}
+\contentsline {subsection}{\numberline {4.5}Delay Tolerant Networking}{41}
+\contentsline {subsection}{\numberline {4.6}Data Management}{41}
+\contentsline {subsubsection}{\numberline {4.6.1}DynamoDB}{41}
+\contentsline {paragraph}{Data modelling}{41}
+\contentsline {subsubsection}{\numberline {4.6.2}Primary Key \& Range}{42}
+\contentsline {paragraph}{Object Mapper}{42}
+\contentsline {subsubsection}{\numberline {4.6.3}Android Internal Storage}{44}
+\contentsline {paragraph}{Shared preferences}{44}
+\contentsline {paragraph}{Internal Storage}{44}
+\contentsline {section}{\numberline {5}Testing \& Evaluation}{45}
+\contentsline {subsection}{\numberline {5.1}Unit Tests \& Mocking}{45}
+\contentsline {section}{\numberline {6}Manual Testing}{46}
+\contentsline {subsection}{\numberline {6.1}Facebook Testing Platform}{46}
+\contentsline {subsection}{\numberline {6.2}Testing the Service with Toast}{47}
+\contentsline {subsection}{\numberline {6.3}Test Reports}{48}
+\contentsline {subsubsection}{\numberline {6.3.1}User Login}{48}
+\contentsline {subsubsection}{\numberline {6.3.2}User Logout}{48}
+\contentsline {subsubsection}{\numberline {6.3.3}Add Fridge Code}{48}
+\contentsline {subsubsection}{\numberline {6.3.4}Adds Items to Fridge}{48}
 \contentsline {subsubsection}{\numberline {6.3.5}Refresh Contents}{48}
 \contentsline {section}{\numberline {7}Review \& Conclusion}{49}
 \contentsline {subsection}{\numberline {7.1}Item Weight and Quantity}{49}
