@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.27)  27 SEP 2015 22:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.27)  27 SEP 2015 23:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -659,9 +659,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [5]
 
-LaTeX Warning: Citation `georgeR' on page 6 undefined on input line 177.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
@@ -676,18 +673,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [7]
 
-LaTeX Warning: Citation `FDA' on page 8 undefined on input line 203.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [8]
-
-LaTeX Warning: Citation `fukushima' on page 9 undefined on input line 214.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1067,7 +1058,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: images/cognito_client_code.png Graphic file (type png)
 
 <use images/cognito_client_code.png>
-Package pdftex.def Info: images/cognito_client_code.png used on input line 782.
+Package pdftex.def Info: images/cognito_client_code.png used on input line 780.
 
 (pdftex.def)             Requested size: 360.0pt x 58.10577pt.
 
@@ -1077,12 +1068,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[39 <./images/swiperefreshlayout.jpg>]
-<images/iam_policy.png, id=186, 725.71124pt x 741.77126pt>
+[39 <./images/swiperefreshlayout.jpg> <./images/cognito_client_code.png>]
+<images/iam_policy.png, id=187, 725.71124pt x 741.77126pt>
 File: images/iam_policy.png Graphic file (type png)
 
 <use images/iam_policy.png>
-Package pdftex.def Info: images/iam_policy.png used on input line 793.
+Package pdftex.def Info: images/iam_policy.png used on input line 791.
 (pdftex.def)             Requested size: 360.0pt x 367.97586pt.
 
 
@@ -1091,12 +1082,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[40 <./images/cognito_client_code.png> <./images/iam_policy.png>]
+[40 <./images/iam_policy.png>]
 <images/dynamoConsole.png, id=192, 1435.3625pt x 734.745pt>
 File: images/dynamoConsole.png Graphic file (type png)
 
 <use images/dynamoConsole.png>
-Package pdftex.def Info: images/dynamoConsole.png used on input line 812.
+Package pdftex.def Info: images/dynamoConsole.png used on input line 810.
 (pdftex.def)             Requested size: 360.0pt x 184.27998pt.
 
 
@@ -1109,14 +1100,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: images/datastruct.png Graphic file (type png)
 
 <use images/datastruct.png>
-Package pdftex.def Info: images/datastruct.png used on input line 831.
+Package pdftex.def Info: images/datastruct.png used on input line 829.
 (pdftex.def)             Requested size: 360.0pt x 176.34175pt.
 
 <images/products.png, id=197, 711.65875pt x 510.90875pt>
 File: images/products.png Graphic file (type png)
 
 <use images/products.png>
-Package pdftex.def Info: images/products.png used on input line 839.
+Package pdftex.def Info: images/products.png used on input line 837.
 (pdftex.def)             Requested size: 360.0pt x 258.44734pt.
 
 
@@ -1137,7 +1128,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: images/serializable.png Graphic file (type png)
 
 <use images/serializable.png>
-Package pdftex.def Info: images/serializable.png used on input line 854.
+Package pdftex.def Info: images/serializable.png used on input line 852.
 (pdftex.def)             Requested size: 360.0pt x 173.48938pt.
 
 
@@ -1151,7 +1142,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: images/unitTest.png Graphic file (type png)
 
 <use images/unitTest.png>
-Package pdftex.def Info: images/unitTest.png used on input line 872.
+Package pdftex.def Info: images/unitTest.png used on input line 870.
 (pdftex.def)             Requested size: 360.0pt x 325.70212pt.
 
 
@@ -1167,7 +1158,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: images/facebookTest.png Graphic file (type png)
 
 <use images/facebookTest.png>
-Package pdftex.def Info: images/facebookTest.png used on input line 887.
+Package pdftex.def Info: images/facebookTest.png used on input line 885.
 (pdftex.def)             Requested size: 360.0pt x 262.39001pt.
 
 
@@ -1179,7 +1170,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [46
 
  <./images/facebookTest.png>]
-Overfull \hbox (59.6373pt too wide) in paragraph at lines 892--894
+Overfull \hbox (59.6373pt too wide) in paragraph at lines 890--892
 \T1/cmr/m/n/10.95 As ser-vice have no in-ter-faces a toast mes-sage was used to
  en-sure the \T1/pcr/m/n/10.95 onStartCommand()
  []
@@ -1187,7 +1178,7 @@ Overfull \hbox (59.6373pt too wide) in paragraph at lines 892--894
 <images/toast2.png, id=224, 1084.05pt x 1927.2pt>
 File: images/toast2.png Graphic file (type png)
  <use images/toast2.png>
-Package pdftex.def Info: images/toast2.png used on input line 897.
+Package pdftex.def Info: images/toast2.png used on input line 895.
 (pdftex.def)             Requested size: 142.26378pt x 252.89732pt.
 
 
@@ -1199,6 +1190,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [47
 
  <./images/toast2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 977--977
+
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1214,7 +1209,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[49
+[49]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[50
 
 ]
 
@@ -1223,23 +1225,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[50]
+[51]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[51
+[52
 
 ]
-Underfull \hbox (badness 3019) in paragraph at lines 1074--1076
+Underfull \hbox (badness 3019) in paragraph at lines 1072--1074
 []\T1/cmr/m/n/10.95 R. Chen, \T1/cmr/m/it/10.95 ``Us-ing RFID Tech-nol-ogy in F
 ood Pro-duce Trace-abil-
  []
 
 
-Underfull \hbox (badness 1057) in paragraph at lines 1074--1076
+Underfull \hbox (badness 1057) in paragraph at lines 1072--1074
 \T1/cmr/m/it/10.95 ity''\T1/cmr/m/n/10.95 ,WSEAS Trans-ac-tion on in-for-ma-tio
 n sci-ence and ap-pli-ca-tions,
  []
@@ -1250,8 +1252,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[52]
-Overfull \hbox (17.91754pt too wide) in paragraph at lines 1105--1107
+[53]
+Overfull \hbox (17.91754pt too wide) in paragraph at lines 1106--1108
 []\T1/cmr/m/n/10.95 Figure 1. \T1/cmr/m/it/10.95 ``http://developer.android.com
 /guide/components/activities.html''\T1/cmr/m/n/10.95 ,
  []
@@ -1264,37 +1266,33 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[53] (./report.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+[54] (./report.aux) ) 
 Here is how much of TeX's memory you used:
  13621 strings out of 493117
  272368 string characters out of 6135433
- 315921 words of memory out of 5000000
+ 315933 words of memory out of 5000000
  16749 multiletter control sequences out of 15000+600000
  15798 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,16n,61p,1568b,329s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
-exlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/tex
-live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
-ive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texliv
-e/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/
-2014/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/20
-14/texmf-dist/fonts/type1/public/cm-super/sfcc0900.pfb></usr/local/texlive/2014
-/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2014/t
-exmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2014/tex
-mf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2014/texmf
--dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2014/texmf-d
-ist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2014/texmf-dis
-t/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2014/texmf-dist/
-fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on report.pdf (57 pages, 6715081 bytes).
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8
+r.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.
+enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfcc0900.pfb></usr
+/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/l
+ocal/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/loc
+al/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on report.pdf (58 pages, 6723971 bytes).
 PDF statistics:
- 290 PDF objects out of 1000 (max. 8388607)
- 170 compressed objects within 2 object streams
+ 293 PDF objects out of 1000 (max. 8388607)
+ 172 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  148 words of extra memory for PDF output out of 10000 (max. 10000000)
 

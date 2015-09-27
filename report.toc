@@ -93,7 +93,7 @@
 \contentsline {paragraph}{Logging}{38}
 \contentsline {subsection}{\numberline {4.4}Distributed Authentication and Access Control}{39}
 \contentsline {subsubsection}{\numberline {4.4.1}Identity Pool}{39}
-\contentsline {subsubsection}{\numberline {4.4.2}Identity Access Management Role}{39}
+\contentsline {subsubsection}{\numberline {4.4.2}Identity Access Management Role}{40}
 \contentsline {paragraph}{Security Policy}{41}
 \contentsline {subsection}{\numberline {4.5}Delay Tolerant Networking}{41}
 \contentsline {subsection}{\numberline {4.6}Data Management}{41}
@@ -114,12 +114,12 @@
 \contentsline {subsubsection}{\numberline {6.3.2}User Logout}{48}
 \contentsline {subsubsection}{\numberline {6.3.3}Add Fridge Code}{48}
 \contentsline {subsubsection}{\numberline {6.3.4}Adds Items to Fridge}{48}
-\contentsline {subsubsection}{\numberline {6.3.5}Refresh Contents}{48}
-\contentsline {section}{\numberline {7}Review \& Conclusion}{49}
-\contentsline {subsection}{\numberline {7.1}Item Weight and Quantity}{49}
-\contentsline {subsection}{\numberline {7.2}Security Concerns}{49}
-\contentsline {subsection}{\numberline {7.3}Enhancements}{49}
-\contentsline {subsubsection}{\numberline {7.3.1}Features}{49}
-\contentsline {paragraph}{Statistics and shopping list}{49}
-\contentsline {subsubsection}{\numberline {7.3.2}Technology}{49}
-\contentsline {subsection}{\numberline {7.4}Review}{50}
+\contentsline {subsubsection}{\numberline {6.3.5}Refresh Contents}{49}
+\contentsline {section}{\numberline {7}Review \& Conclusion}{50}
+\contentsline {subsection}{\numberline {7.1}Item Weight and Quantity}{50}
+\contentsline {subsection}{\numberline {7.2}Security Concerns}{50}
+\contentsline {subsection}{\numberline {7.3}Enhancements}{50}
+\contentsline {subsubsection}{\numberline {7.3.1}Features}{50}
+\contentsline {paragraph}{Statistics and shopping list}{50}
+\contentsline {subsubsection}{\numberline {7.3.2}Technology}{50}
+\contentsline {subsection}{\numberline {7.4}Review}{51}

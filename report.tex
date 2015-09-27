@@ -170,7 +170,7 @@ NXP Semiconductors, a Dutch research team have collaborated with the Netherlands
 The primary draw back of existing systems such as the smart fridge and the mobile applications is the lack of automation in the item registration process. Convincing consumers to alter habitual behaviours such as stocking the fridge is challenging and would most likely be met with resistance unless the new process yields better results than the current. Thus, the user having to either manually punch in the product name, or scan every item with a barcode reader is an unappealing process and can prevent the user from utilising the technology. 
 
 \subsubsection{Current Item Level Product Identification Methods} 
-Predominantly, the current methods of item level identification in the supply chain rely on the "picket-fence" style, one-dimensional barcodes \cite{georgeR} have been prevalent in grocery stores since the 1970's and introduced as a means to manage inventory and to accelerate the checkout process. A laser scans the code and the catalogued code is used to retrieve details of the item, such as the name and cost. The scanning of the barcode requires that no objects obstruct the line of sight between the code and laser and even the smallest scratch or dirt can render the code unreadable. Simultaneous reads are not possible and codes must be scanned one by one with precision. Barcodes also have limited capacity; usually can only hold twenty to twenty-five characters. Furthermore, the code is limited to identifying a collection of items rather than the individual item level, omitting crucial fine-grain information such as sell-by-dates and the life-cycle of produce. 
+Predominantly, the current methods of item level identification in the supply chain rely on the "picket-fence" style, one-dimensional barcodes have been prevalent in grocery stores since the 1970's and introduced as a means to manage inventory and to accelerate the checkout process. A laser scans the code and the catalogued code is used to retrieve details of the item, such as the name and cost. The scanning of the barcode requires that no objects obstruct the line of sight between the code and laser and even the smallest scratch or dirt can render the code unreadable. Simultaneous reads are not possible and codes must be scanned one by one with precision. Barcodes also have limited capacity; usually can only hold twenty to twenty-five characters. Furthermore, the code is limited to identifying a collection of items rather than the individual item level, omitting crucial fine-grain information such as sell-by-dates and the life-cycle of produce. 
 
 \subsection{Proposed Approach to the Problem}
 In attempts to reduce the generation of food waste, the British government has intervened and officials pressured retailers to abolish the multi-buy offers. But the suggestion was met with reluctance. Instead a compromise was reached and the revised promotions allowing consumers a wider variety of products to choose from. Although figures declined periodically it was not maintained. It is evident from this that persuading retailers to prioritise the reduction of waste over the increase in revenue is an up hill struggle. Without constant monitoring, retailers will favour the increase in revenue over the betterment of the public.\cite{waste}
@@ -213,7 +213,7 @@ The law enforces that the label on fresh meat must contain the country of origin
 \vspace{\baselineskip}
 
 With the use of RFID the overloading of the label would no longer be a reason to withhold information from the consumer. Allowing the individual to decide what information is of importance.
-\subsubsection{Efficient Checkout Process} The traditional checkout process requires the cashier to scan each item one by one, even with the new self checkout systems introduced to reduce queuing time, the line is often held up by an unreadable barcode or the numerous failed attempts of the laser initiating a read. Items must be loaded out of the basket or shopping-trolley and places into a shopping bag. As demonstrated by MyGrocer, a system that was designed to modernise the shopping experience, utilises a trolley lined with RFID readers. As tagged products are loaded the readers record the presence of goods and upon checkout all the user needs to do is pay a bill. \subsubsection{Discounting Tags} When products are nearing expiration it is common practice for the retailers to discount the products. A store assistant will usually carry a barcode-printing device that generates a sticker with the discounted code. He or she will manually check the date and if the item is eligible a sticker with a new discounted barcode will replace the original. With the use of RFID the amendment can be made remotely and automatically, filtering and amending only the relevant products. 
+\subsubsection{Efficient Checkout Process} The traditional checkout process requires the cashier to scan each item one by one, even with the new self checkout systems introduced to reduce queuing time, the line is often held up by an unreadable barcode or the numerous failed attempts of the laser initiating a read. Items must be loaded out of the basket or shopping-trolley and places into a shopping bag. As demonstrated by MyGrocer, a system that was designed to modernise the shopping experience, utilises a trolley lined with RFID readers. As tagged products are loaded the readers record the presence of goods and upon checkout all the user needs to do is pay a bill. \cite{georgeR}\subsubsection{Discounting Tags} When products are nearing expiration it is common practice for the retailers to discount the products. A store assistant will usually carry a barcode-printing device that generates a sticker with the discounted code. He or she will manually check the date and if the item is eligible a sticker with a new discounted barcode will replace the original. With the use of RFID the amendment can be made remotely and automatically, filtering and amending only the relevant products. 
 
 \subsection{Technology Risk Analysis}
 \subsubsection{Mobile Platforms}
@@ -699,7 +699,7 @@ An alternative to waiting thirty seconds for the service to refresh automaticall
 
 
 \subsubsection{Error Handling}\paragraph{Logging} The Android library has a logging class to enable the organisation of errors. Log messages aids the debugging workflow, if the log is for debugging purposes the \texttt{Log.d} will be used to explain the process, similarly, \texttt{Log.e} is for errors, \texttt{Log.i} is for information, \texttt{Log.v} is for verbose messaging descriptions, \texttt{Log.w} is a warning message and \texttt{Log.wtf} is `What a terrible failure' message to signify situations that should not happen. \cite{android}
-\subsection{Distributed Authentication and Access Control}Access control to resources is imperative to avoid security breeches and data loss. When using AWS mobile SDK, AWS enforces the use of Cognito for mobile identity management. Cognito uses Identity Pools to manage the different layers of user privileges and Identity Access Management (IAM) roles.\subsubsection{Identity Pool}An identity pool is specific to the application. As a single AWS account is used by many different applications the segmentation of users can help organise the subscribing users and facilitate the allocation of correct recourses to the user. By using the Cognito client developers can avoid hardcoding credentials into the application?s source code. This is particularly important for programs intended for mass distribution. The image below is a method that initialises the Cognito client using the activities context, Identity pool id of the Amazon Resource Name (ARN) and the region code the resource resides on, in this case it accessing the servers in Ireland.  
+\subsection{Distributed Authentication and Access Control}Access control to resources is imperative to avoid security breeches and data loss. When using AWS mobile SDK, AWS enforces the use of Cognito for mobile identity management. Cognito uses Identity Pools to manage the different layers of user privileges and Identity Access Management (IAM) roles.\subsubsection{Identity Pool}An identity pool is specific to the application. As a single AWS account is used by many different applications the segmentation of users can help organise the subscribing users and facilitate the allocation of correct recourses to the user. By using the Cognito client developers can avoid hardcoding credentials into the application's source code. This is particularly important for programs intended for mass distribution. The image below is a method that initialises the Cognito client using the activities context, Identity pool id of the Amazon Resource Name (ARN) and the region code the resource resides on, in this case it accessing the servers in Ireland.  
 \vspace{\baselineskip}
 
 \begin{figure}[!htbp]
@@ -708,7 +708,7 @@ An alternative to waiting thirty seconds for the service to refresh automaticall
 \caption{Initialisation of Cognito Client}
 \end{figure}
 
-\subsubsection{Identity Access Management Role}IAM Roles are assigned in identity pools. IAM roles allow fine grain access control to AWS resources such as S3 and DynamoDB. The Cognito client utilises the IAM role?s ARN to specify the access rights of each role. By default AWS creates an authenticated and unauthenticated access role for an identity pool. Authenticated users may only access the specified resources in the policy if the requirements are met in the statement. Unauthenticated roles are for users that may want to try the application before committing to signing up. Internally, temporary credentials are created for an unauthenticated user granting them temporary access to resources. 
+\subsubsection{Identity Access Management Role}IAM Roles are assigned in identity pools. IAM roles allow fine grain access control to AWS resources such as S3 and DynamoDB. The Cognito client utilises the IAM role's ARN to specify the access rights of each role. By default AWS creates an authenticated and unauthenticated access role for an identity pool. Authenticated users may only access the specified resources in the policy if the requirements are met in the statement. Unauthenticated roles are for users that may want to try the application before committing to signing up. Internally, temporary credentials are created for an unauthenticated user granting them temporary access to resources. 
 
 \vspace{\baselineskip}
 
@@ -717,7 +717,7 @@ An alternative to waiting thirty seconds for the service to refresh automaticall
 \includegraphics[width=\textwidth]{iam_policy.png}
 \caption{Policy for Authenticated Users}\label{fig:iam}
 \end{figure}
-\paragraph{Security Policy}Policy statements are written in Java Script Object Notation (JSON). The statement is split into three sections, actions, resource and effect. The action block specifies the actions that are allowed on the service. For example the policy in Figure \ref{fig:iam} lists the actions that may be performed on a service, in this case DynamoDB. Actions that are not explicitly specified will be rejected. Resource block specify the AWS recourse that the policy is allowing access to, a resources is indicated by the ARN. The effect block specifies the result after the user requests access to the service. By default the effect is set to ?deny? so this must explicitly set. Additionally, a condition block may be set to further restrict the type of user gaining access. In the example below only users associated with Facebook are granted access.
+\paragraph{Security Policy}Policy statements are written in Java Script Object Notation (JSON). The statement is split into three sections, actions, resource and effect. The action block specifies the actions that are allowed on the service. For example the policy in Figure \ref{fig:iam} lists the actions that may be performed on a service, in this case DynamoDB. Actions that are not explicitly specified will be rejected. Resource block specify the AWS recourse that the policy is allowing access to, a resources is indicated by the ARN. The effect block specifies the result after the user requests access to the service. By default the effect is set to `deny' so this must explicitly set. Additionally, a condition block may be set to further restrict the type of user gaining access. In the example below only users associated with Facebook are granted access.
 
 \subsection{Delay Tolerant Networking}
 \label{sec:Delay Tolerant Networking}Local storage is needed to facilitate the event of a loss of Internet connection. Local cache is needed to persist the latest data retrieved from the database so the latest data is always available and can manage the dependency on the database. As the service class polls for data it is written to internal memory, if the Internet connection is disturbed the application will still display the last received data until the network connection resumes. 
@@ -826,9 +826,9 @@ Figure \ref{fig:facebookTest} is a screen capture of the Facebook console, the e
 
 
 \subsubsection{Adds Items to Fridge} \begin{center}\noindent\resizebox{\textwidth}{!}{\begin{tabular}{| l | l | l | l | l |} \hline \textbf{Case ID} & \textbf{Test Case Details} & \textbf{Expected Results}  & Pass/Fail & Remarks \\  \hline
- 01 & \pbox{10cm}{A user adds a\\tagged item to the fridge.} & \pbox{10cm}{The user should see the item\\in the list from their Android device.}  & Pass & n/a \\  \hline
+ 01 & \pbox{10cm}{A user adds a\\tagged item to the fridge.} & \pbox{10cm}{The user should see the item\\in the list on their\\Android device.\\}  & Pass & n/a \\  \hline
  02 & \pbox{10cm}{A user removes\\a tagger item from the fridge.} & \pbox{10cm}{The user should not see the\\enter fridge code activity.}  & Pass & n/a \\  \hline
- 03 & \pbox{10cm}{A user adds a\\tagged item to the fridge.} & \pbox{10cm}{The subscribing members of the fridge receive a notification.}  & Pass & n/a \\  \hline\end{tabular}}\end{center}
+ 03 & \pbox{10cm}{A user adds a\\tagged item to the fridge.} & \pbox{10cm}{The subscribing members\\of the fridge\\receive a notification.}  & Pass & n/a \\  \hline\end{tabular}}\end{center}
 
 
 
@@ -908,13 +908,14 @@ The project has been a highly educational and enjoyable experience. Some challen
 \bibitem{nano}Handford, Caroline E., et al, \emph{\say{Implications of nanotechnology for the agri-food industry: Opportunities, benefits and risks}}, Trends in Food Science \& Technology 40.2 2014: 226-241.
 \vspace{\baselineskip}
 
-bibitem{georgeR}G. Roussos, \emph{\say{Networked RFID System, software \& services}}, 1st edition, Springer, August 29, 2008
+\bibitem{georgeR}G. Roussos, \emph{\say{Networked RFID System, software \& services}}, 1st edition, Springer, August 29, 2008
 \vspace{\baselineskip}
 
 \bibitem{rfidFood} R. Chen, \emph{\say{Using RFID Technology in Food Produce Traceability}},WSEAS Transaction on information science and applications, November 2008
 \vspace{\baselineskip}
 
-\bibitem{rfidFood2}S. Piramuthu, \emph{et al.}, \emph{\say{RFID-generated traceability for contaminated product recall in perishable food supply networks.}} European Journal of Operational Research 225.2 (2013): 253-262.?\vspace{\baselineskip}
+\bibitem{rfidFood2}S. Piramuthu, \emph{et al.}, \emph{\say{RFID-generated traceability for contaminated product recall in perishable food supply networks.}} European Journal of Operational Research 225.2 (2013): 253-262.
+\vspace{\baselineskip}
 
 \bibitem{retailRFID}G. Roussos, \emph{\say{Enabling RFID in Retail}}, IEEE Computer Society, 2006
 \vspace{\baselineskip}
@@ -923,6 +924,8 @@ bibitem{georgeR}G. Roussos, \emph{\say{Networked RFID System, software \& servic
 
 \bibitem{FSA}Food Standard Agency, \emph{\say{Country of Origin Labelling Guidance}}, October 2008
 \vspace{\baselineskip}
+
+\bibitem{FDA}FDA, \emph{\say{Sweet Sam's Baking Company Issues Allergy Alert on Undeclared Milk in Starbucks Black \& White Mini Cookies}}, Firm Press Release, April 13th 2015
 
 \bibitem{android}Android Developers,Dashboards.(n.d.). \emph{\say{https://developer.android.com\\/about/dashboards/index.html}}, October 2015
 \vspace{\baselineskip}
@@ -949,6 +952,9 @@ bibitem{georgeR}G. Roussos, \emph{\say{Networked RFID System, software \& servic
 \vspace{\baselineskip}
 
 \bibitem{jeep}Tufekci, Z. \emph{\say{Why `Smart' Objects May Be a Dumb Idea}}, August 2015
+\vspace{\baselineskip}
+
+\bibitem{fukushima}World Health Organisation, \emph{\say{Health risk assessment from the nuclear accident after the 2011 Great East Japan Earthquake and Tsunami based on a preliminary dose estimation}}, ISBN9789241505130 Geneva, Switzerland: WHO Press, 2013
 \vspace{\baselineskip}
 
 \end{thebibliography}
